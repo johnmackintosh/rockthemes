@@ -12,9 +12,8 @@ knitr::opts_chunk$set(
 ```
 
 <!-- badges: start -->
-
-
-<!-- badges: end -->
+  [![Travis build status](https://travis-ci.com/johnmackintosh/rockthemes.svg?branch=master)](https://travis-ci.com/johnmackintosh/rockthemes)
+  <!-- badges: end -->
 
 
 ## What?
