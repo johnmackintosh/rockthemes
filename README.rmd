@@ -44,6 +44,8 @@ This will not go to CRAN, so please install using the remotes package.
 #library(remotes)
 #remotes::install_github("johnmackintosh/rockthemes")
 library(rockthemes)
+library(ggplot2)
+library(dplyr)
 ```
 
 ## Data Viz Friendly
@@ -147,4 +149,166 @@ rock_palette("swift")
 rock_palette("tencc")
 ```
 
+## ggplot2 use
+
+```{r}
+airquality %>% 
+    mutate(Month = as.factor(Month)) %>% 
+    ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
+    geom_line(size = 1.5) +
+    scale_color_californication() +
+    theme_bw()
+```
+
+```{r}
+airquality %>% 
+    mutate(Month = as.factor(Month)) %>% 
+    ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
+    geom_line(size = 1.5) +
+    scale_color_coltrane() +
+    theme_bw()
+```
+
+```{r}
+airquality %>% 
+    mutate(Month = as.factor(Month)) %>% 
+    ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
+    geom_line(size = 1.5) +
+    scale_color_electric() +
+    theme_bw()
+```
+
+
+```{r}
+airquality %>% 
+    mutate(Month = as.factor(Month)) %>% 
+    ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
+    geom_line(size = 1.5) +
+    scale_color_gogo() +
+    theme_bw()
+```
+
+
+```{r}
+airquality %>% 
+    mutate(Month = as.factor(Month)) %>% 
+    ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
+    geom_line(size = 1.5) +
+    scale_color_gunsnroses() +
+    theme_bw()
+```
+
+
+```{r}
+airquality %>% 
+    mutate(Month = as.factor(Month)) %>% 
+    ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
+    geom_line(size = 1.5) +
+    scale_color_harvey() +
+    theme_bw()
+```
+
+```{r}
+airquality %>% 
+    mutate(Month = as.factor(Month)) %>% 
+    ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
+    geom_line(size = 1.5) +
+    scale_color_heap() +
+    theme_bw()
+```
+
+
+```{r}
+airquality %>% 
+    mutate(Month = as.factor(Month)) %>% 
+    ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
+    geom_line(size = 1.5) +
+    scale_color_herb() +
+    theme_bw()
+```
+
+```{r}
+airquality %>% 
+    mutate(Month = as.factor(Month)) %>% 
+    ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
+    geom_line(size = 1.5) +
+    scale_color_husker() +
+    theme_bw()
+```
+
+
+```{r}
+airquality %>% 
+    mutate(Month = as.factor(Month)) %>% 
+    ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
+    geom_line(size = 1.5) +
+    scale_color_maiden() +
+    theme_bw()
+```
+
+
+```{r}
+airquality %>% 
+    mutate(Month = as.factor(Month)) %>% 
+    ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
+    geom_line(size = 1.5) +
+    scale_color_metallica() +
+    theme_bw()
+```
+
+```{r}
+airquality %>% 
+    mutate(Month = as.factor(Month)) %>% 
+    ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
+    geom_line(size = 1.5) +
+    scale_color_miles() +
+    theme_bw()
+```
+
+
+```{r}
+airquality %>% 
+    mutate(Month = as.factor(Month)) %>% 
+    ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
+    geom_line(size = 1.5) +
+    scale_color_nevermind() +
+    theme_bw()
+```
+
+
+```{r}
+airquality %>% 
+    mutate(Month = as.factor(Month)) %>% 
+    ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
+    geom_line(size = 1.5) +
+    scale_color_oasis() +
+    theme_bw()
+```
+
+```{r}
+airquality %>% 
+    mutate(Month = as.factor(Month)) %>% 
+    ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
+    geom_line(size = 1.5) +
+    scale_color_real_thing() +
+    theme_bw()
+```
+
+```{r}
+airquality %>% 
+    mutate(Month = as.factor(Month)) %>% 
+    ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
+    geom_line(size = 1.5) +
+    scale_color_taylor() +
+    theme_bw()
+```
+
+```{r}
+airquality %>% 
+    mutate(Month = as.factor(Month)) %>% 
+    ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
+    geom_line(size = 1.5) +
+    scale_color_tencc() +
+    theme_bw()
+```
 

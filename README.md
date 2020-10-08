@@ -38,6 +38,16 @@ remotes package.
 library(rockthemes)
 #> Warning: replacing previous import 'vctrs::data_frame' by 'tibble::data_frame'
 #> when loading 'dplyr'
+library(ggplot2)
+library(dplyr)
+#> 
+#> Attaching package: 'dplyr'
+#> The following objects are masked from 'package:stats':
+#> 
+#>     filter, lag
+#> The following objects are masked from 'package:base':
+#> 
+#>     intersect, setdiff, setequal, union
 ```
 
 ## Data Viz Friendly
@@ -154,3 +164,192 @@ rock_palette("tencc")
 ```
 
 ![](man/figures/README-unnamed-chunk-18-1.png)<!-- -->
+
+## ggplot2 use
+
+``` r
+airquality %>% 
+    mutate(Month = as.factor(Month)) %>% 
+    ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
+    geom_line(size = 1.5) +
+    scale_color_californication() +
+    theme_bw()
+```
+
+![](man/figures/README-unnamed-chunk-19-1.png)<!-- -->
+
+``` r
+airquality %>% 
+    mutate(Month = as.factor(Month)) %>% 
+    ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
+    geom_line(size = 1.5) +
+    scale_color_coltrane() +
+    theme_bw()
+```
+
+![](man/figures/README-unnamed-chunk-20-1.png)<!-- -->
+
+``` r
+airquality %>% 
+    mutate(Month = as.factor(Month)) %>% 
+    ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
+    geom_line(size = 1.5) +
+    scale_color_electric() +
+    theme_bw()
+```
+
+![](man/figures/README-unnamed-chunk-21-1.png)<!-- -->
+
+``` r
+airquality %>% 
+    mutate(Month = as.factor(Month)) %>% 
+    ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
+    geom_line(size = 1.5) +
+    scale_color_gogo() +
+    theme_bw()
+```
+
+![](man/figures/README-unnamed-chunk-22-1.png)<!-- -->
+
+``` r
+airquality %>% 
+    mutate(Month = as.factor(Month)) %>% 
+    ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
+    geom_line(size = 1.5) +
+    scale_color_gunsnroses() +
+    theme_bw()
+```
+
+![](man/figures/README-unnamed-chunk-23-1.png)<!-- -->
+
+``` r
+airquality %>% 
+    mutate(Month = as.factor(Month)) %>% 
+    ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
+    geom_line(size = 1.5) +
+    scale_color_harvey() +
+    theme_bw()
+```
+
+![](man/figures/README-unnamed-chunk-24-1.png)<!-- -->
+
+``` r
+airquality %>% 
+    mutate(Month = as.factor(Month)) %>% 
+    ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
+    geom_line(size = 1.5) +
+    scale_color_heap() +
+    theme_bw()
+```
+
+![](man/figures/README-unnamed-chunk-25-1.png)<!-- -->
+
+``` r
+airquality %>% 
+    mutate(Month = as.factor(Month)) %>% 
+    ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
+    geom_line(size = 1.5) +
+    scale_color_herb() +
+    theme_bw()
+```
+
+![](man/figures/README-unnamed-chunk-26-1.png)<!-- -->
+
+``` r
+airquality %>% 
+    mutate(Month = as.factor(Month)) %>% 
+    ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
+    geom_line(size = 1.5) +
+    scale_color_husker() +
+    theme_bw()
+```
+
+![](man/figures/README-unnamed-chunk-27-1.png)<!-- -->
+
+``` r
+airquality %>% 
+    mutate(Month = as.factor(Month)) %>% 
+    ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
+    geom_line(size = 1.5) +
+    scale_color_maiden() +
+    theme_bw()
+```
+
+![](man/figures/README-unnamed-chunk-28-1.png)<!-- -->
+
+``` r
+airquality %>% 
+    mutate(Month = as.factor(Month)) %>% 
+    ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
+    geom_line(size = 1.5) +
+    scale_color_metallica() +
+    theme_bw()
+```
+
+![](man/figures/README-unnamed-chunk-29-1.png)<!-- -->
+
+``` r
+airquality %>% 
+    mutate(Month = as.factor(Month)) %>% 
+    ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
+    geom_line(size = 1.5) +
+    scale_color_miles() +
+    theme_bw()
+```
+
+![](man/figures/README-unnamed-chunk-30-1.png)<!-- -->
+
+``` r
+airquality %>% 
+    mutate(Month = as.factor(Month)) %>% 
+    ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
+    geom_line(size = 1.5) +
+    scale_color_nevermind() +
+    theme_bw()
+```
+
+![](man/figures/README-unnamed-chunk-31-1.png)<!-- -->
+
+``` r
+airquality %>% 
+    mutate(Month = as.factor(Month)) %>% 
+    ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
+    geom_line(size = 1.5) +
+    scale_color_oasis() +
+    theme_bw()
+```
+
+![](man/figures/README-unnamed-chunk-32-1.png)<!-- -->
+
+``` r
+airquality %>% 
+    mutate(Month = as.factor(Month)) %>% 
+    ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
+    geom_line(size = 1.5) +
+    scale_color_real_thing() +
+    theme_bw()
+```
+
+![](man/figures/README-unnamed-chunk-33-1.png)<!-- -->
+
+``` r
+airquality %>% 
+    mutate(Month = as.factor(Month)) %>% 
+    ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
+    geom_line(size = 1.5) +
+    scale_color_taylor() +
+    theme_bw()
+```
+
+![](man/figures/README-unnamed-chunk-34-1.png)<!-- -->
+
+``` r
+airquality %>% 
+    mutate(Month = as.factor(Month)) %>% 
+    ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
+    geom_line(size = 1.5) +
+    scale_color_tencc() +
+    theme_bw()
+```
+
+![](man/figures/README-unnamed-chunk-35-1.png)<!-- -->
