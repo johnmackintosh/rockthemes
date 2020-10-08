@@ -3,8 +3,7 @@ rockthemes
 
 <!-- badges: start -->
 
-[![Travis build
-status](https://travis-ci.com/johnmackintosh/rockthemes.svg?branch=master)](https://travis-ci.com/johnmackintosh/rockthemes)
+[![Build Status](https://travis-ci.com/johnmackintosh/rockthemes.svg?branch=main)](https://travis-ci.com/johnmackintosh/rockthemes)
 <!-- badges: end -->
 
 ## What?
