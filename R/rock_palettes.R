@@ -9,7 +9,7 @@ rock_palettes <- list(
     heap = c("#466E9A", "#E84D45", "#21201C", "#A1BAAC"),
     herb = c("#5A5621", "#DAD2B8", "#7EC634", "#A4A897"),
     husker = c("#422537", "#D58078","#86A556", "#624FB0"),
-    maiden = c("#8FBBCE", "#265F8A", "#78704B", "#4A5372")
+    maiden = c("#8FBBCE", "#265F8A", "#78704B", "#4A5372"),
     metallica = c("#652113", "#D8CABC","#D77021", "#9E8C99"),
     miles = c("#C1C6CF", "#180C18", "#933450", "#D99755"),
     nevermind = c("#B5BECE","#4DB8DA","#286B9F","#121725"),
