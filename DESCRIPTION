@@ -2,12 +2,11 @@ Package: rockthemes
 Title: Colour palettes based on classic rock album covers
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "John",
+           family = "MacKintosh",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
+           email = "johnmackintosh.jm@gmail.com")
+Description: Colour palettes, scales and fills based on classic rock album covers.
 License: GPL-3 + file LICENSE
 Encoding: UTF-8
 LazyData: true
