@@ -1,5 +1,5 @@
 Package: rockthemes
-Title: What the Package Does (One Line, Title Case)
+Title: Colour palettes based on classic rock album covers
 Version: 0.0.0.9000
 Authors@R: 
     person(given = "First",
@@ -17,3 +17,7 @@ Imports:
     ggplot2,
     scales,
     glue
+Suggests:
+    dplyr, 
+    gapminder 
+    
