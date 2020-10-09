@@ -1,9 +1,12 @@
 rockthemes
 ================
 
+# rockthemes <img src="man/figures/logo.png" width="160px" align="right" />
+
 <!-- badges: start -->
 
-[![Build Status](https://travis-ci.com/johnmackintosh/rockthemes.svg?branch=main)](https://travis-ci.com/johnmackintosh/rockthemes)
+[![Travis build
+status](https://travis-ci.com/johnmackintosh/rockthemes.svg?branch=master)](https://travis-ci.com/johnmackintosh/rockthemes)
 <!-- badges: end -->
 
 ## What?
