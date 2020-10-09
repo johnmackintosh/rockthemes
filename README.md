@@ -48,6 +48,7 @@ library(dplyr)
 #> The following objects are masked from 'package:base':
 #> 
 #>     intersect, setdiff, setequal, union
+library(gapminder)
 ```
 
 ## Data Viz Friendly
@@ -353,3 +354,61 @@ airquality %>%
 ```
 
 ![](man/figures/README-unnamed-chunk-35-1.png)<!-- -->
+
+``` r
+data <- gapminder::gapminder %>% 
+    filter(country %in% c("France", "Germany", "Ireland", "Italy", "Japan")) %>% 
+    mutate(year = as.Date(paste(year, "-01-01", sep = "", format = '%Y-%b-%d')))
+
+ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
+    geom_area(alpha = 0.8) +
+    scale_x_date(breaks = data$year, date_labels = "%Y") +
+    scale_y_continuous(expand = c(0, 0), labels = scales::dollar) +
+    scale_fill_taylor()
+```
+
+![](man/figures/README-unnamed-chunk-36-1.png)<!-- -->
+
+``` r
+    
+ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
+    geom_area(alpha = 0.8) +
+    scale_x_date(breaks = data$year, date_labels = "%Y") +
+    scale_y_continuous(expand = c(0, 0), labels = scales::dollar) +
+    scale_fill_tencc()
+```
+
+![](man/figures/README-unnamed-chunk-36-2.png)<!-- -->
+
+``` r
+    
+    ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
+    geom_area(alpha = 0.8) +
+    scale_x_date(breaks = data$year, date_labels = "%Y") +
+    scale_y_continuous(expand = c(0, 0), labels = scales::dollar) +
+    scale_fill_husker()
+```
+
+![](man/figures/README-unnamed-chunk-36-3.png)<!-- -->
+
+``` r
+    
+    ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
+    geom_area(alpha = 0.8) +
+    scale_x_date(breaks = data$year, date_labels = "%Y") +
+    scale_y_continuous(expand = c(0, 0), labels = scales::dollar) +
+    scale_fill_californication()
+```
+
+![](man/figures/README-unnamed-chunk-36-4.png)<!-- -->
+
+``` r
+    
+    ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
+    geom_area(alpha = 0.8) +
+    scale_x_date(breaks = data$year, date_labels = "%Y") +
+    scale_y_continuous(expand = c(0, 0), labels = scales::dollar) +
+    scale_fill_miles()
+```
+
+![](man/figures/README-unnamed-chunk-36-5.png)<!-- -->
