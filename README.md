@@ -1,7 +1,7 @@
 rockthemes
 ================
 
-# rockthemes <img src="man/figures/logo.png" width="160px" align="right" />
+<img src="man/figures/logo.png" width="160px" align="right" />
 
 <!-- badges: start -->
 
