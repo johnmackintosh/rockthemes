@@ -1,5 +1,6 @@
 maiden_palette <- c(
-    "#D4D9CF", "#A89E4C", "#4D476C", "#23648C", "#8DBCD1"
+    "#c6e4ec", "#dae3c7", "#97b7c1", "#68a0d6", "#6195cb",
+    "#828282", "#868b72", "#7e6e52", "#4c5777", "#205970"
 )
 
 #' @title maiden palette

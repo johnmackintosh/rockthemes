@@ -1,9 +1,14 @@
 nevermind_palette <- c(
-    "#151C28", 
-    "#2C5D81",
-    "#4CB5D9", 
-    "#2FAAD6",
-    "#C7C8D5"
+    "#d5d9e0", 
+    "#50b3dc",
+    "#5a86aa",
+    "#5d7ba5",
+    "#2775b7",
+    "#465f71",
+    "#1366a1",
+    "#273f79",
+    "#0b1941",
+    "#05070a"
 )
 
 #' @title Nevermind palette

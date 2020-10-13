@@ -1,9 +1,14 @@
 taylor_palette <- c(
-    "#DEDED6", 
-    "#555A69", 
-    "#774937", 
-    "#C8B8A1", 
-    "#7A5B6F"
+    "#ebebe9", 
+    "#d3d8c6", 
+    "#dfc7b7", 
+    "#d0c2ac", 
+    "#9c9496",
+    "#b85f46",
+    "#a07051",
+    "#845a77",
+    "#795148",
+    "#2f333f"
 )
 
 #' @title taylor palette

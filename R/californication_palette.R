@@ -1,9 +1,14 @@
 californication_palette <- c(
-    "#604835", 
-    "#E9DCC5", 
-    "#608DB6", 
-    "#0F3C5E",
-    "#CF5D2A"
+    "#e0dcc2", 
+    "#88b1c1", 
+    "#23ccfa", 
+    "#b77d65",
+    "#db263a",
+    "#e05b1d",
+    "#1285da",
+    "#28229a",
+    "#51473f",
+    "#1c150f"
 )
 
 #' @title californication palette

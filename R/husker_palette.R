@@ -1,9 +1,14 @@
 husker_palette <- c(
-    "#94A643",
-    "#7163B7", 
-    "#2D203E", 
-    "#8A3E65",
-    "#D3506C"
+    "#dec2b0",
+    "#7a6dbc", 
+    "#ec1c4e", 
+    "#74a54e",
+    "#bcc22e",
+    "#8f446b",
+    "#6a2f99",
+    "#444c29",
+    "#4e1e35",
+    "#221e20"
 )
 
 #' @title husker palette

@@ -1,9 +1,14 @@
 gogo_palette <- c(
-    "#289AD8", 
-    "#6998AA", 
-    "#DFDBD8",
-    "#BA774F", 
-    "#914C29"
+    "#fbfcfa", 
+    "#cba592", 
+    "#93b0bf",
+    "#b86c6a", 
+    "#6092ab",
+    "#3c69cd",
+    "#2a7ac8",
+    "#714141",
+    "#5d4a3f",
+    "#251a1a"
 )
 
 #' @title gogo palette

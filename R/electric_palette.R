@@ -1,5 +1,6 @@
 electric_palette <- c(
-    "#2E1F1C", "#5B99BD", "#DBD0B6", "#C9936A", "#6D6462"
+    "#c5bea9", "#8487a4", "#8487a4", "#c17c62", "#cea63e",
+    "#6f7e85", "#937048", "#604936", "#44444a", "#1d1d1c"
 )
 
 #' @title electric palette

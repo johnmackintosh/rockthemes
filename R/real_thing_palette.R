@@ -1,5 +1,6 @@
 real_thing_palette <- c(
-    "#B13B2D","#452F2A","#7D635F","#AE8D3F","#E2CDC8"
+    "#e2d5cb","#bea3a8","#d7b674","#a27b74","#94797d",
+    "#dc4f2e", "#c49f1e", "#7a6178", "#42420b", "#2b1c1a"
 )
 
 #' @title real_thing palette

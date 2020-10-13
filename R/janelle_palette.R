@@ -1,60 +1,60 @@
-tencc_palette <- c(
-    "#e9926d", 
-    "#fcd456", 
-    "#a38b95",
-    "#c55e3b", 
-    "#a56e4a",
-    "#b48616",
-    "#702d2b",
-    "#444655",
-    "#492c1f",
-    "#2f241b"
+janelle_palette <- c(
+    "#e5d7cc", 
+    "#b0bebe", 
+    "#a89cc4", 
+    "#f6b663",
+    "#d66852",
+    "#ac5964",
+    "#595564",
+    "#8e1217",
+    "#851a5a",
+    "#3e2637"
 )
 
-#' @title tencc palette
-#' @description tencc palette
+#' @title janelle palette
+#' @description janelle palette
 #' @inheritDotParams ggplot2::discrete_scale
 #' @param n number of colors
 #' @param type discrete or continuous
 #' @param reverse reverse order, Default: FALSE
-#' @rdname tencc_pal
+#' @rdname janelle_pal
 #' @examples
 #' library(scales)
-#' show_col(tencc_pal()(5))
+#' show_col(janelle_pal()(5))
 #' @export
 #' @importFrom scales manual_pal
 #' @importFrom glue glue
 #' @importFrom grDevices colorRampPalette
 
-tencc_pal <- function(n, type = c("discrete", "continuous"),
+janelle_pal <- function(n, type = c("discrete", "continuous"),
                                 reverse = FALSE){
-    tencc <- tencc_palette
+    janelle <- janelle_palette
     
     if (reverse == TRUE) {
-        tencc <- rev(tencc)
+        janelle <- rev(janelle)
     }
     
     if (missing(n)) {
-        n <- length(tencc)
+        n <- length(janelle)
     }
     
     type <- match.arg(type)
     
-    if (type == "discrete" && n > length(tencc)) {
-        stop(glue::glue("Palette does not have {n} colors, maximum is {length(tencc)}!"))
+    if (type == "discrete" && n > length(janelle)) {
+        stop(glue::glue("Palette does not have {n} colors, maximum is {length(janelle)}!"))
     }
     
-    tencc <- switch(type,
-                              continuous = grDevices::colorRampPalette(tencc)(n),
-                              discrete = tencc[1:n])
+    janelle <- switch(type,
+                              continuous = grDevices::colorRampPalette(janelle)(n),
+                              discrete = janelle[1:n])
     
-    tencc <- scales::manual_pal(tencc)
+    janelle <- scales::manual_pal(janelle)
     
-    return(tencc)
+    return(janelle)
 }
 
-#' @title scale_color_tencc
-#' @rdname tencc_pal
+#' @title scale_color_janelle
+#' @rdname janelle_pal
 #' @export
 #' @examples
 #'
@@ -62,53 +62,53 @@ tencc_pal <- function(n, type = c("discrete", "continuous"),
 #' ggplot(airquality, aes(x = Day, y = Temp,
 #'      group = as.factor(Month), color = as.factor(Month))) +
 #'      geom_point(size = 2.5) +
-#'      scale_color_tencc()
+#'      scale_color_janelle()
 #' @importFrom ggplot2 discrete_scale scale_color_gradientn
 
-scale_color_tencc <- function(n, type = "discrete",
+scale_color_janelle <- function(n, type = "discrete",
                                         reverse = FALSE, ...){
     if (type == "discrete") {
-        ggplot2::discrete_scale("color", "tencc",
-                                tencc_pal(n = n, type = type,
+        ggplot2::discrete_scale("color", "janelle",
+                                janelle_pal(n = n, type = type,
                                                     reverse = reverse), ...)
     } else {
-        ggplot2::scale_color_gradientn(colors = tencc_pal(n = n, type = type,
+        ggplot2::scale_color_gradientn(colors = janelle_pal(n = n, type = type,
                                                                     reverse = reverse)(8))
     }
 }
 
-#' @title scale_colour_tencc
-#' @rdname tencc_pal
+#' @title scale_colour_janelle
+#' @rdname janelle_pal
 #' @export
 #' @examples
 #'
 #' ggplot(airquality, aes(x = Day, y = Temp,
 #'      group = as.factor(Month), color = as.factor(Month))) +
 #'      geom_point(size = 2.5) +
-#'      scale_colour_tencc()
+#'      scale_colour_janelle()
 #' @importFrom ggplot2 discrete_scale scale_color_gradientn
 
-scale_colour_tencc <- scale_color_tencc
+scale_colour_janelle <- scale_color_janelle
 
-#' @title scale_fill_tencc
-#' @rdname tencc_pal
+#' @title scale_fill_janelle
+#' @rdname janelle_pal
 #' @export
 #' @examples
 #'
 #' ggplot(mpg, aes(displ)) +
 #'     geom_histogram(aes(fill = class),
 #'                    col = "black", size = 0.1) +
-#'     scale_fill_tencc()
+#'     scale_fill_janelle()
 #' @importFrom ggplot2 discrete_scale scale_fill_gradientn
 
-scale_fill_tencc <- function(n, type = "discrete",
+scale_fill_janelle <- function(n, type = "discrete",
                                        reverse = FALSE, ...){
     if (type == "discrete") {
-        ggplot2::discrete_scale("fill", "tencc",
-                                tencc_pal(n = n, type = type,
+        ggplot2::discrete_scale("fill", "janelle",
+                                janelle_pal(n = n, type = type,
                                                     reverse = reverse), ...)
     } else {
-        ggplot2::scale_fill_gradientn(colors = tencc_pal(n = n, type = type,
+        ggplot2::scale_fill_gradientn(colors = janelle_pal(n = n, type = type,
                                                                    reverse = reverse)(8))
     }
 }

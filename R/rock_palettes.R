@@ -9,6 +9,7 @@ rock_palettes <- list(
     heap = c("#466E9A", "#E84D45", "#21201C", "#A1BAAC"),
     herb = c("#5A5621", "#DAD2B8", "#7EC634", "#A4A897"),
     husker = c("#422537", "#D58078","#86A556", "#624FB0"),
+    janelle = c("#916364","#E2D6BF", "#21121B", "#B3ACC7"),
     maiden = c("#8FBBCE", "#265F8A", "#78704B", "#4A5372"),
     metallica = c("#652113", "#D8CABC","#D77021", "#9E8C99"),
     miles = c("#C1C6CF", "#180C18", "#933450", "#D99755"),
@@ -29,9 +30,9 @@ rock_palettes <- list(
 #' @param name Name of palette. Select one:
 #' \code{californication}, \code{coltrane}, \code{electric}, \code{faithnomore}, 
 #' \code{gogo}, \code{gunsnroses},\code{harvey}, \code{heap},
-#' \code{herb}, \code{husker}, \code{maiden},\code{metallica},
-#' \code{miles}, \code{nevermind}, \code{oasis}, \code{swift}, 
-#' \code{tencc}
+#' \code{herb}, \code{husker}, \code{janelle}, \code{maiden},
+#' \code{metallica}, \code{miles}, \code{nevermind}, \code{oasis}, 
+#'  \code{swift}, \code{tencc}
 #'
 #' @param n Number of colors desired. 
 #' 

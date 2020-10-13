@@ -1,9 +1,14 @@
 harvey_palette <- c(
-    "#DFE3E4",
-    "#947A57",
-    "#8B432D", 
-    "#223C3D",
-    "#6A929D"
+    "#efefef",
+    "#aac2ce",
+    "#b9ab90", 
+    "#cbb87d",
+    "#719fb1",
+    "#5e98b2",
+    "#b76c41",
+    "#49909c",
+    "#8a211d",
+    "#8a211d"
 )
 
 #' @title harvey palette
