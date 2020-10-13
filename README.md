@@ -1,7 +1,7 @@
 rockthemes
 ================
 
-<img src="man/figures/logo.png" width="160px" align="right" />
+# rockthemes <img src="man/figures/logo.png" width="160px" align="right" />
 
 <!-- badges: start -->
 
@@ -127,46 +127,52 @@ rock_palette("husker")
 ![](man/figures/README-unnamed-chunk-11-1.png)<!-- -->
 
 ``` r
-rock_palette("maiden")
+rock_palette("janelle")
 ```
 
 ![](man/figures/README-unnamed-chunk-12-1.png)<!-- -->
 
 ``` r
-rock_palette("metallica")
+rock_palette("maiden")
 ```
 
 ![](man/figures/README-unnamed-chunk-13-1.png)<!-- -->
 
 ``` r
-rock_palette("miles")
+rock_palette("metallica")
 ```
 
 ![](man/figures/README-unnamed-chunk-14-1.png)<!-- -->
 
 ``` r
-rock_palette("nevermind")
+rock_palette("miles")
 ```
 
 ![](man/figures/README-unnamed-chunk-15-1.png)<!-- -->
 
 ``` r
-rock_palette("oasis")
+rock_palette("nevermind")
 ```
 
 ![](man/figures/README-unnamed-chunk-16-1.png)<!-- -->
 
 ``` r
-rock_palette("swift")
+rock_palette("oasis")
 ```
 
 ![](man/figures/README-unnamed-chunk-17-1.png)<!-- -->
 
 ``` r
-rock_palette("tencc")
+rock_palette("swift")
 ```
 
 ![](man/figures/README-unnamed-chunk-18-1.png)<!-- -->
+
+``` r
+rock_palette("tencc")
+```
+
+![](man/figures/README-unnamed-chunk-19-1.png)<!-- -->
 
 ## ggplot2 use
 
@@ -179,7 +185,7 @@ airquality %>%
     theme_bw()
 ```
 
-![](man/figures/README-unnamed-chunk-19-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-20-1.png)<!-- -->
 
 ``` r
 airquality %>% 
@@ -190,7 +196,7 @@ airquality %>%
     theme_bw()
 ```
 
-![](man/figures/README-unnamed-chunk-20-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-21-1.png)<!-- -->
 
 ``` r
 airquality %>% 
@@ -201,7 +207,7 @@ airquality %>%
     theme_bw()
 ```
 
-![](man/figures/README-unnamed-chunk-21-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-22-1.png)<!-- -->
 
 ``` r
 airquality %>% 
@@ -212,7 +218,7 @@ airquality %>%
     theme_bw()
 ```
 
-![](man/figures/README-unnamed-chunk-22-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-23-1.png)<!-- -->
 
 ``` r
 airquality %>% 
@@ -223,7 +229,7 @@ airquality %>%
     theme_bw()
 ```
 
-![](man/figures/README-unnamed-chunk-23-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-24-1.png)<!-- -->
 
 ``` r
 airquality %>% 
@@ -234,7 +240,7 @@ airquality %>%
     theme_bw()
 ```
 
-![](man/figures/README-unnamed-chunk-24-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-25-1.png)<!-- -->
 
 ``` r
 airquality %>% 
@@ -245,7 +251,7 @@ airquality %>%
     theme_bw()
 ```
 
-![](man/figures/README-unnamed-chunk-25-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-26-1.png)<!-- -->
 
 ``` r
 airquality %>% 
@@ -256,7 +262,7 @@ airquality %>%
     theme_bw()
 ```
 
-![](man/figures/README-unnamed-chunk-26-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-27-1.png)<!-- -->
 
 ``` r
 airquality %>% 
@@ -267,7 +273,7 @@ airquality %>%
     theme_bw()
 ```
 
-![](man/figures/README-unnamed-chunk-27-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-28-1.png)<!-- -->
 
 ``` r
 airquality %>% 
@@ -278,7 +284,7 @@ airquality %>%
     theme_bw()
 ```
 
-![](man/figures/README-unnamed-chunk-28-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-29-1.png)<!-- -->
 
 ``` r
 airquality %>% 
@@ -289,7 +295,7 @@ airquality %>%
     theme_bw()
 ```
 
-![](man/figures/README-unnamed-chunk-29-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-30-1.png)<!-- -->
 
 ``` r
 airquality %>% 
@@ -300,7 +306,7 @@ airquality %>%
     theme_bw()
 ```
 
-![](man/figures/README-unnamed-chunk-30-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-31-1.png)<!-- -->
 
 ``` r
 airquality %>% 
@@ -311,7 +317,7 @@ airquality %>%
     theme_bw()
 ```
 
-![](man/figures/README-unnamed-chunk-31-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-32-1.png)<!-- -->
 
 ``` r
 airquality %>% 
@@ -322,7 +328,7 @@ airquality %>%
     theme_bw()
 ```
 
-![](man/figures/README-unnamed-chunk-32-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-33-1.png)<!-- -->
 
 ``` r
 airquality %>% 
@@ -333,7 +339,7 @@ airquality %>%
     theme_bw()
 ```
 
-![](man/figures/README-unnamed-chunk-33-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-34-1.png)<!-- -->
 
 ``` r
 airquality %>% 
@@ -344,7 +350,7 @@ airquality %>%
     theme_bw()
 ```
 
-![](man/figures/README-unnamed-chunk-34-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-35-1.png)<!-- -->
 
 ``` r
 airquality %>% 
@@ -355,7 +361,7 @@ airquality %>%
     theme_bw()
 ```
 
-![](man/figures/README-unnamed-chunk-35-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-36-1.png)<!-- -->
 
 ``` r
 data <- gapminder::gapminder %>% 
@@ -369,7 +375,7 @@ ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
     scale_fill_taylor()
 ```
 
-![](man/figures/README-unnamed-chunk-36-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-37-1.png)<!-- -->
 
 ``` r
     
@@ -380,7 +386,7 @@ ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
     scale_fill_tencc()
 ```
 
-![](man/figures/README-unnamed-chunk-36-2.png)<!-- -->
+![](man/figures/README-unnamed-chunk-37-2.png)<!-- -->
 
 ``` r
     
@@ -391,7 +397,7 @@ ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
     scale_fill_husker()
 ```
 
-![](man/figures/README-unnamed-chunk-36-3.png)<!-- -->
+![](man/figures/README-unnamed-chunk-37-3.png)<!-- -->
 
 ``` r
     
@@ -402,7 +408,7 @@ ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
     scale_fill_californication()
 ```
 
-![](man/figures/README-unnamed-chunk-36-4.png)<!-- -->
+![](man/figures/README-unnamed-chunk-37-4.png)<!-- -->
 
 ``` r
     
@@ -413,4 +419,4 @@ ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
     scale_fill_miles()
 ```
 
-![](man/figures/README-unnamed-chunk-36-5.png)<!-- -->
+![](man/figures/README-unnamed-chunk-37-5.png)<!-- -->

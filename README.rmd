@@ -116,6 +116,9 @@ rock_palette("herb")
 rock_palette("husker")
 ```
 
+```{r}
+rock_palette("janelle")
+```
 
 
 ```{r}

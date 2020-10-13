@@ -10,9 +10,9 @@ rock_palette(name, n, type = c("discrete", "continuous"))
 \item{name}{Name of palette. Select one:
 \code{californication}, \code{coltrane}, \code{electric}, \code{faithnomore},
 \code{gogo}, \code{gunsnroses},\code{harvey}, \code{heap},
-\code{herb}, \code{husker}, \code{maiden},\code{metallica},
-\code{miles}, \code{nevermind}, \code{oasis}, \code{swift},
-\code{tencc}}
+\code{herb}, \code{husker}, \code{janelle}, \code{maiden},
+\code{metallica}, \code{miles}, \code{nevermind}, \code{oasis},
+\code{swift}, \code{tencc}}
 
 \item{n}{Number of colors desired.
 
