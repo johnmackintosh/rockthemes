@@ -88,15 +88,6 @@ rock_palette("gogo")
 ![](man/figures/README-unnamed-chunk-6-1.png)<!-- -->
 
 ``` r
-m <- outer(1:20,1:20,function(x,y) sin(sqrt(x*y)/3))
-cols <- rock_palette("gogo")
-Lab.palette <- colorRampPalette(cols,space = "Lab")
-filled.contour(m, col = Lab.palette(20))
-```
-
-![](man/figures/README-unnamed-chunk-6-2.png)<!-- -->
-
-``` r
 rock_palette("gunsnroses")
 ```
 
@@ -280,7 +271,7 @@ airquality %>%
     mutate(Month = as.factor(Month)) %>% 
     ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
     geom_line(size = 1.5) +
-    scale_color_maiden() +
+    scale_color_janelle() +
     theme_bw()
 ```
 
@@ -291,7 +282,7 @@ airquality %>%
     mutate(Month = as.factor(Month)) %>% 
     ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
     geom_line(size = 1.5) +
-    scale_color_metallica() +
+    scale_color_maiden() +
     theme_bw()
 ```
 
@@ -302,7 +293,7 @@ airquality %>%
     mutate(Month = as.factor(Month)) %>% 
     ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
     geom_line(size = 1.5) +
-    scale_color_miles() +
+    scale_color_metallica() +
     theme_bw()
 ```
 
@@ -313,7 +304,7 @@ airquality %>%
     mutate(Month = as.factor(Month)) %>% 
     ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
     geom_line(size = 1.5) +
-    scale_color_nevermind() +
+    scale_color_miles() +
     theme_bw()
 ```
 
@@ -324,7 +315,7 @@ airquality %>%
     mutate(Month = as.factor(Month)) %>% 
     ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
     geom_line(size = 1.5) +
-    scale_color_oasis() +
+    scale_color_nevermind() +
     theme_bw()
 ```
 
@@ -335,7 +326,7 @@ airquality %>%
     mutate(Month = as.factor(Month)) %>% 
     ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
     geom_line(size = 1.5) +
-    scale_color_real_thing() +
+    scale_color_oasis() +
     theme_bw()
 ```
 
@@ -346,7 +337,7 @@ airquality %>%
     mutate(Month = as.factor(Month)) %>% 
     ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
     geom_line(size = 1.5) +
-    scale_color_taylor() +
+    scale_color_real_thing() +
     theme_bw()
 ```
 
@@ -357,11 +348,22 @@ airquality %>%
     mutate(Month = as.factor(Month)) %>% 
     ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
     geom_line(size = 1.5) +
-    scale_color_tencc() +
+    scale_color_taylor() +
     theme_bw()
 ```
 
 ![](man/figures/README-unnamed-chunk-36-1.png)<!-- -->
+
+``` r
+airquality %>% 
+    mutate(Month = as.factor(Month)) %>% 
+    ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
+    geom_line(size = 1.5) +
+    scale_color_tencc() +
+    theme_bw()
+```
+
+![](man/figures/README-unnamed-chunk-37-1.png)<!-- -->
 
 ``` r
 data <- gapminder::gapminder %>% 
@@ -375,7 +377,7 @@ ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
     scale_fill_taylor()
 ```
 
-![](man/figures/README-unnamed-chunk-37-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-38-1.png)<!-- -->
 
 ``` r
     
@@ -386,7 +388,7 @@ ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
     scale_fill_tencc()
 ```
 
-![](man/figures/README-unnamed-chunk-37-2.png)<!-- -->
+![](man/figures/README-unnamed-chunk-38-2.png)<!-- -->
 
 ``` r
     
@@ -397,9 +399,22 @@ ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
     scale_fill_husker()
 ```
 
-![](man/figures/README-unnamed-chunk-37-3.png)<!-- -->
+![](man/figures/README-unnamed-chunk-38-3.png)<!-- -->
 
 ``` r
+    
+    
+    ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
+    geom_area(alpha = 0.8) +
+    scale_x_date(breaks = data$year, date_labels = "%Y") +
+    scale_y_continuous(expand = c(0, 0), labels = scales::dollar) +
+    scale_fill_janelle()
+```
+
+![](man/figures/README-unnamed-chunk-38-4.png)<!-- -->
+
+``` r
+    
     
     ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
     geom_area(alpha = 0.8) +
@@ -408,7 +423,7 @@ ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
     scale_fill_californication()
 ```
 
-![](man/figures/README-unnamed-chunk-37-4.png)<!-- -->
+![](man/figures/README-unnamed-chunk-38-5.png)<!-- -->
 
 ``` r
     
@@ -419,4 +434,4 @@ ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
     scale_fill_miles()
 ```
 
-![](man/figures/README-unnamed-chunk-37-5.png)<!-- -->
+![](man/figures/README-unnamed-chunk-38-6.png)<!-- -->

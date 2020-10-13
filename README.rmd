@@ -80,15 +80,10 @@ rock_palette("faithnomore")
 ```
 
 
-
 ```{r}
 rock_palette("gogo")
-m <- outer(1:20,1:20,function(x,y) sin(sqrt(x*y)/3))
-cols <- rock_palette("gogo")
-Lab.palette <- colorRampPalette(cols,space = "Lab")
-filled.contour(m, col = Lab.palette(20))
-```
 
+```
 
 
 ```{r}
@@ -243,6 +238,15 @@ airquality %>%
     theme_bw()
 ```
 
+```{r}
+airquality %>% 
+    mutate(Month = as.factor(Month)) %>% 
+    ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
+    geom_line(size = 1.5) +
+    scale_color_janelle() +
+    theme_bw()
+```
+
 
 ```{r}
 airquality %>% 
@@ -343,6 +347,14 @@ ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
     scale_x_date(breaks = data$year, date_labels = "%Y") +
     scale_y_continuous(expand = c(0, 0), labels = scales::dollar) +
     scale_fill_husker()
+    
+    
+    ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
+    geom_area(alpha = 0.8) +
+    scale_x_date(breaks = data$year, date_labels = "%Y") +
+    scale_y_continuous(expand = c(0, 0), labels = scales::dollar) +
+    scale_fill_janelle()
+    
     
     ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
     geom_area(alpha = 0.8) +
