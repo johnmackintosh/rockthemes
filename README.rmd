@@ -12,7 +12,7 @@ knitr::opts_chunk$set(
 ```
 
 
-# rockthemes <img src="man/figures/logo.png" width="160px" align="right" />
+# <img src="man/figures/logo.png" width="160px" align="right" />
 
 <!-- badges: start -->
   [![Build Status](https://travis-ci.com/johnmackintosh/rockthemes.svg?branch=main)](https://travis-ci.com/johnmackintosh/rockthemes)
@@ -49,13 +49,13 @@ This will not go to CRAN, so please install using the remotes package.
 library(rockthemes)
 library(ggplot2)
 library(dplyr)
+library(scales)
 library(gapminder)
 ```
 
-## Data Viz Friendly
+## Short Palettes
 
-These mini palettes are lush
-
+Only 4 colours, but very nice
 
 ```{r}
 rock_palette("californication")
@@ -151,9 +151,11 @@ rock_palette("swift")
 rock_palette("tencc")
 ```
 
-## ggplot2 use
+## 10 colour palettes for ggplot2 use
 
 ```{r}
+show_col(californication_pal()(10))
+
 airquality %>% 
     mutate(Month = as.factor(Month)) %>% 
     ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
@@ -163,6 +165,7 @@ airquality %>%
 ```
 
 ```{r}
+show_col(coltrane_pal()(10))
 airquality %>% 
     mutate(Month = as.factor(Month)) %>% 
     ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
@@ -172,6 +175,7 @@ airquality %>%
 ```
 
 ```{r}
+show_col(electric_pal()(10))
 airquality %>% 
     mutate(Month = as.factor(Month)) %>% 
     ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
@@ -182,6 +186,7 @@ airquality %>%
 
 
 ```{r}
+show_col(gogo_pal()(10))
 airquality %>% 
     mutate(Month = as.factor(Month)) %>% 
     ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
@@ -192,6 +197,7 @@ airquality %>%
 
 
 ```{r}
+show_col(gunsnroses_pal()(10))
 airquality %>% 
     mutate(Month = as.factor(Month)) %>% 
     ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
@@ -202,6 +208,7 @@ airquality %>%
 
 
 ```{r}
+show_col(harvey_pal()(10))
 airquality %>% 
     mutate(Month = as.factor(Month)) %>% 
     ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
@@ -211,6 +218,7 @@ airquality %>%
 ```
 
 ```{r}
+show_col(heap_pal()(10))
 airquality %>% 
     mutate(Month = as.factor(Month)) %>% 
     ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
@@ -221,6 +229,7 @@ airquality %>%
 
 
 ```{r}
+show_col(herb_pal()(10))
 airquality %>% 
     mutate(Month = as.factor(Month)) %>% 
     ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
@@ -230,6 +239,7 @@ airquality %>%
 ```
 
 ```{r}
+show_col(husker_pal()(10))
 airquality %>% 
     mutate(Month = as.factor(Month)) %>% 
     ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
@@ -239,6 +249,7 @@ airquality %>%
 ```
 
 ```{r}
+show_col(janelle_pal()(10))
 airquality %>% 
     mutate(Month = as.factor(Month)) %>% 
     ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
@@ -249,6 +260,7 @@ airquality %>%
 
 
 ```{r}
+show_col(maiden_pal()(10))
 airquality %>% 
     mutate(Month = as.factor(Month)) %>% 
     ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
@@ -259,6 +271,7 @@ airquality %>%
 
 
 ```{r}
+show_col(metallica_pal()(10))
 airquality %>% 
     mutate(Month = as.factor(Month)) %>% 
     ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
@@ -268,6 +281,7 @@ airquality %>%
 ```
 
 ```{r}
+show_col(miles_pal()(10))
 airquality %>% 
     mutate(Month = as.factor(Month)) %>% 
     ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
@@ -278,6 +292,7 @@ airquality %>%
 
 
 ```{r}
+show_col(nevermind_pal()(10))
 airquality %>% 
     mutate(Month = as.factor(Month)) %>% 
     ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
@@ -288,6 +303,7 @@ airquality %>%
 
 
 ```{r}
+show_col(oasis_pal()(10))
 airquality %>% 
     mutate(Month = as.factor(Month)) %>% 
     ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
@@ -297,6 +313,7 @@ airquality %>%
 ```
 
 ```{r}
+show_col(real_thing_pal()(10))
 airquality %>% 
     mutate(Month = as.factor(Month)) %>% 
     ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
@@ -306,6 +323,7 @@ airquality %>%
 ```
 
 ```{r}
+show_col(taylor_pal()(10))
 airquality %>% 
     mutate(Month = as.factor(Month)) %>% 
     ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
@@ -315,6 +333,7 @@ airquality %>%
 ```
 
 ```{r}
+show_col(tencc_pal()(10))
 airquality %>% 
     mutate(Month = as.factor(Month)) %>% 
     ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
