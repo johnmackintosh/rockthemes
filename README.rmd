@@ -40,7 +40,7 @@ Because [this repo of Metallica inspired palettes](https://github.com/johnmackin
 
 ## Installation
 
-This will not go to CRAN, so please install using the remotes package.
+This will probably not go to CRAN, so please install using the remotes package.
 
 ```{r}
 #library(remotes)
