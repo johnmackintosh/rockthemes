@@ -6,3 +6,4 @@ readme.rmd
 ^\.travis\.yml$
 ^README\.Rmd$
 ^README-.*\.png$
+^\.github$
