@@ -8,7 +8,7 @@ harvey_palette <- c(
     "#b76c41",
     "#49909c",
     "#8a211d",
-    "#8a211d"
+    "#712b1b"
 )
 
 #' @title harvey palette
