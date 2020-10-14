@@ -96,7 +96,7 @@
 <div id="installation" class="section level2">
 <h2 class="hasAnchor">
 <a href="#installation" class="anchor"></a>Installation</h2>
-<p>This will not go to CRAN, so please install using the remotes package.</p>
+<p>This will probably not go to CRAN, so please install using the remotes package.</p>
 <div class="sourceCode" id="cb1"><pre class="r"><span class="co">#library(remotes)</span>
 <span class="co">#remotes::install_github("johnmackintosh/rockthemes")</span>
 <span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">rockthemes</span>)
@@ -161,168 +161,41 @@
 <a href="#10-colour-palettes-for-ggplot2-use" class="anchor"></a>10 colour palettes for ggplot2 use</h2>
 <div class="sourceCode" id="cb20"><pre class="r"><span class="fu"><a href="https://scales.r-lib.org//reference/show_col.html">show_col</a></span>(<span class="fu"><a href="reference/californication_pal.html">californication_pal</a></span>()(<span class="fl">10</span>))</pre></div>
 <p><img src="reference/figures/README-unnamed-chunk-20-1.png"><!-- --></p>
-<div class="sourceCode" id="cb21"><pre class="r">
-<span class="no">airquality</span> <span class="kw">%&gt;%</span>
-    <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span>(<span class="kw">Month</span> <span class="kw">=</span> <span class="fu"><a href="https://rdrr.io/r/base/factor.html">as.factor</a></span>(<span class="no">Month</span>)) <span class="kw">%&gt;%</span>
-    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span>(<span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span>(<span class="kw">x</span> <span class="kw">=</span> <span class="no">Day</span>, <span class="kw">y</span> <span class="kw">=</span> <span class="no">Temp</span>, <span class="kw">group</span> <span class="kw">=</span> <span class="no">Month</span>, <span class="kw">color</span> <span class="kw">=</span> <span class="no">Month</span>)) +
-    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_path.html">geom_line</a></span>(<span class="kw">size</span> <span class="kw">=</span> <span class="fl">1.5</span>) +
-    <span class="fu"><a href="reference/californication_pal.html">scale_color_californication</a></span>() +
-    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggtheme.html">theme_bw</a></span>()</pre></div>
-<p><img src="reference/figures/README-unnamed-chunk-20-2.png"><!-- --></p>
-<div class="sourceCode" id="cb22"><pre class="r"><span class="fu"><a href="https://scales.r-lib.org//reference/show_col.html">show_col</a></span>(<span class="fu"><a href="reference/coltrane_pal.html">coltrane_pal</a></span>()(<span class="fl">10</span>))</pre></div>
+<div class="sourceCode" id="cb21"><pre class="r"><span class="fu"><a href="https://scales.r-lib.org//reference/show_col.html">show_col</a></span>(<span class="fu"><a href="reference/coltrane_pal.html">coltrane_pal</a></span>()(<span class="fl">10</span>))</pre></div>
 <p><img src="reference/figures/README-unnamed-chunk-21-1.png"><!-- --></p>
-<div class="sourceCode" id="cb23"><pre class="r"><span class="no">airquality</span> <span class="kw">%&gt;%</span>
-    <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span>(<span class="kw">Month</span> <span class="kw">=</span> <span class="fu"><a href="https://rdrr.io/r/base/factor.html">as.factor</a></span>(<span class="no">Month</span>)) <span class="kw">%&gt;%</span>
-    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span>(<span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span>(<span class="kw">x</span> <span class="kw">=</span> <span class="no">Day</span>, <span class="kw">y</span> <span class="kw">=</span> <span class="no">Temp</span>, <span class="kw">group</span> <span class="kw">=</span> <span class="no">Month</span>, <span class="kw">color</span> <span class="kw">=</span> <span class="no">Month</span>)) +
-    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_path.html">geom_line</a></span>(<span class="kw">size</span> <span class="kw">=</span> <span class="fl">1.5</span>) +
-    <span class="fu"><a href="reference/coltrane_pal.html">scale_color_coltrane</a></span>() +
-    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggtheme.html">theme_bw</a></span>()</pre></div>
-<p><img src="reference/figures/README-unnamed-chunk-21-2.png"><!-- --></p>
-<div class="sourceCode" id="cb24"><pre class="r"><span class="fu"><a href="https://scales.r-lib.org//reference/show_col.html">show_col</a></span>(<span class="fu"><a href="reference/electric_pal.html">electric_pal</a></span>()(<span class="fl">10</span>))</pre></div>
+<div class="sourceCode" id="cb22"><pre class="r"><span class="fu"><a href="https://scales.r-lib.org//reference/show_col.html">show_col</a></span>(<span class="fu"><a href="reference/electric_pal.html">electric_pal</a></span>()(<span class="fl">10</span>))</pre></div>
 <p><img src="reference/figures/README-unnamed-chunk-22-1.png"><!-- --></p>
-<div class="sourceCode" id="cb25"><pre class="r"><span class="no">airquality</span> <span class="kw">%&gt;%</span>
-    <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span>(<span class="kw">Month</span> <span class="kw">=</span> <span class="fu"><a href="https://rdrr.io/r/base/factor.html">as.factor</a></span>(<span class="no">Month</span>)) <span class="kw">%&gt;%</span>
-    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span>(<span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span>(<span class="kw">x</span> <span class="kw">=</span> <span class="no">Day</span>, <span class="kw">y</span> <span class="kw">=</span> <span class="no">Temp</span>, <span class="kw">group</span> <span class="kw">=</span> <span class="no">Month</span>, <span class="kw">color</span> <span class="kw">=</span> <span class="no">Month</span>)) +
-    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_path.html">geom_line</a></span>(<span class="kw">size</span> <span class="kw">=</span> <span class="fl">1.5</span>) +
-    <span class="fu"><a href="reference/electric_pal.html">scale_color_electric</a></span>() +
-    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggtheme.html">theme_bw</a></span>()</pre></div>
-<p><img src="reference/figures/README-unnamed-chunk-22-2.png"><!-- --></p>
-<div class="sourceCode" id="cb26"><pre class="r"><span class="fu"><a href="https://scales.r-lib.org//reference/show_col.html">show_col</a></span>(<span class="fu"><a href="reference/gogo_pal.html">gogo_pal</a></span>()(<span class="fl">10</span>))</pre></div>
+<div class="sourceCode" id="cb23"><pre class="r"><span class="fu"><a href="https://scales.r-lib.org//reference/show_col.html">show_col</a></span>(<span class="fu"><a href="reference/gogo_pal.html">gogo_pal</a></span>()(<span class="fl">10</span>))</pre></div>
 <p><img src="reference/figures/README-unnamed-chunk-23-1.png"><!-- --></p>
-<div class="sourceCode" id="cb27"><pre class="r"><span class="no">airquality</span> <span class="kw">%&gt;%</span>
-    <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span>(<span class="kw">Month</span> <span class="kw">=</span> <span class="fu"><a href="https://rdrr.io/r/base/factor.html">as.factor</a></span>(<span class="no">Month</span>)) <span class="kw">%&gt;%</span>
-    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span>(<span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span>(<span class="kw">x</span> <span class="kw">=</span> <span class="no">Day</span>, <span class="kw">y</span> <span class="kw">=</span> <span class="no">Temp</span>, <span class="kw">group</span> <span class="kw">=</span> <span class="no">Month</span>, <span class="kw">color</span> <span class="kw">=</span> <span class="no">Month</span>)) +
-    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_path.html">geom_line</a></span>(<span class="kw">size</span> <span class="kw">=</span> <span class="fl">1.5</span>) +
-    <span class="fu"><a href="reference/gogo_pal.html">scale_color_gogo</a></span>() +
-    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggtheme.html">theme_bw</a></span>()</pre></div>
-<p><img src="reference/figures/README-unnamed-chunk-23-2.png"><!-- --></p>
-<div class="sourceCode" id="cb28"><pre class="r"><span class="fu"><a href="https://scales.r-lib.org//reference/show_col.html">show_col</a></span>(<span class="fu"><a href="reference/gunsnroses_pal.html">gunsnroses_pal</a></span>()(<span class="fl">10</span>))</pre></div>
+<div class="sourceCode" id="cb24"><pre class="r"><span class="fu"><a href="https://scales.r-lib.org//reference/show_col.html">show_col</a></span>(<span class="fu"><a href="reference/gunsnroses_pal.html">gunsnroses_pal</a></span>()(<span class="fl">10</span>))</pre></div>
 <p><img src="reference/figures/README-unnamed-chunk-24-1.png"><!-- --></p>
-<div class="sourceCode" id="cb29"><pre class="r"><span class="no">airquality</span> <span class="kw">%&gt;%</span>
-    <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span>(<span class="kw">Month</span> <span class="kw">=</span> <span class="fu"><a href="https://rdrr.io/r/base/factor.html">as.factor</a></span>(<span class="no">Month</span>)) <span class="kw">%&gt;%</span>
-    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span>(<span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span>(<span class="kw">x</span> <span class="kw">=</span> <span class="no">Day</span>, <span class="kw">y</span> <span class="kw">=</span> <span class="no">Temp</span>, <span class="kw">group</span> <span class="kw">=</span> <span class="no">Month</span>, <span class="kw">color</span> <span class="kw">=</span> <span class="no">Month</span>)) +
-    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_path.html">geom_line</a></span>(<span class="kw">size</span> <span class="kw">=</span> <span class="fl">1.5</span>) +
-    <span class="fu"><a href="reference/gunsnroses_pal.html">scale_color_gunsnroses</a></span>() +
-    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggtheme.html">theme_bw</a></span>()</pre></div>
-<p><img src="reference/figures/README-unnamed-chunk-24-2.png"><!-- --></p>
-<div class="sourceCode" id="cb30"><pre class="r"><span class="fu"><a href="https://scales.r-lib.org//reference/show_col.html">show_col</a></span>(<span class="fu"><a href="reference/harvey_pal.html">harvey_pal</a></span>()(<span class="fl">10</span>))</pre></div>
+<div class="sourceCode" id="cb25"><pre class="r"><span class="fu"><a href="https://scales.r-lib.org//reference/show_col.html">show_col</a></span>(<span class="fu"><a href="reference/harvey_pal.html">harvey_pal</a></span>()(<span class="fl">10</span>))</pre></div>
 <p><img src="reference/figures/README-unnamed-chunk-25-1.png"><!-- --></p>
-<div class="sourceCode" id="cb31"><pre class="r"><span class="no">airquality</span> <span class="kw">%&gt;%</span>
-    <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span>(<span class="kw">Month</span> <span class="kw">=</span> <span class="fu"><a href="https://rdrr.io/r/base/factor.html">as.factor</a></span>(<span class="no">Month</span>)) <span class="kw">%&gt;%</span>
-    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span>(<span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span>(<span class="kw">x</span> <span class="kw">=</span> <span class="no">Day</span>, <span class="kw">y</span> <span class="kw">=</span> <span class="no">Temp</span>, <span class="kw">group</span> <span class="kw">=</span> <span class="no">Month</span>, <span class="kw">color</span> <span class="kw">=</span> <span class="no">Month</span>)) +
-    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_path.html">geom_line</a></span>(<span class="kw">size</span> <span class="kw">=</span> <span class="fl">1.5</span>) +
-    <span class="fu"><a href="reference/harvey_pal.html">scale_color_harvey</a></span>() +
-    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggtheme.html">theme_bw</a></span>()</pre></div>
-<p><img src="reference/figures/README-unnamed-chunk-25-2.png"><!-- --></p>
-<div class="sourceCode" id="cb32"><pre class="r"><span class="fu"><a href="https://scales.r-lib.org//reference/show_col.html">show_col</a></span>(<span class="fu"><a href="reference/heap_pal.html">heap_pal</a></span>()(<span class="fl">10</span>))</pre></div>
+<div class="sourceCode" id="cb26"><pre class="r"><span class="fu"><a href="https://scales.r-lib.org//reference/show_col.html">show_col</a></span>(<span class="fu"><a href="reference/heap_pal.html">heap_pal</a></span>()(<span class="fl">10</span>))</pre></div>
 <p><img src="reference/figures/README-unnamed-chunk-26-1.png"><!-- --></p>
-<div class="sourceCode" id="cb33"><pre class="r"><span class="no">airquality</span> <span class="kw">%&gt;%</span>
-    <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span>(<span class="kw">Month</span> <span class="kw">=</span> <span class="fu"><a href="https://rdrr.io/r/base/factor.html">as.factor</a></span>(<span class="no">Month</span>)) <span class="kw">%&gt;%</span>
-    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span>(<span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span>(<span class="kw">x</span> <span class="kw">=</span> <span class="no">Day</span>, <span class="kw">y</span> <span class="kw">=</span> <span class="no">Temp</span>, <span class="kw">group</span> <span class="kw">=</span> <span class="no">Month</span>, <span class="kw">color</span> <span class="kw">=</span> <span class="no">Month</span>)) +
-    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_path.html">geom_line</a></span>(<span class="kw">size</span> <span class="kw">=</span> <span class="fl">1.5</span>) +
-    <span class="fu"><a href="reference/heap_pal.html">scale_color_heap</a></span>() +
-    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggtheme.html">theme_bw</a></span>()</pre></div>
-<p><img src="reference/figures/README-unnamed-chunk-26-2.png"><!-- --></p>
-<div class="sourceCode" id="cb34"><pre class="r"><span class="fu"><a href="https://scales.r-lib.org//reference/show_col.html">show_col</a></span>(<span class="fu"><a href="reference/husker_pal.html">husker_pal</a></span>()(<span class="fl">10</span>))</pre></div>
+<div class="sourceCode" id="cb27"><pre class="r"><span class="fu"><a href="https://scales.r-lib.org//reference/show_col.html">show_col</a></span>(<span class="fu"><a href="reference/husker_pal.html">husker_pal</a></span>()(<span class="fl">10</span>))</pre></div>
 <p><img src="reference/figures/README-unnamed-chunk-27-1.png"><!-- --></p>
-<div class="sourceCode" id="cb35"><pre class="r"><span class="no">airquality</span> <span class="kw">%&gt;%</span>
-    <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span>(<span class="kw">Month</span> <span class="kw">=</span> <span class="fu"><a href="https://rdrr.io/r/base/factor.html">as.factor</a></span>(<span class="no">Month</span>)) <span class="kw">%&gt;%</span>
-    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span>(<span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span>(<span class="kw">x</span> <span class="kw">=</span> <span class="no">Day</span>, <span class="kw">y</span> <span class="kw">=</span> <span class="no">Temp</span>, <span class="kw">group</span> <span class="kw">=</span> <span class="no">Month</span>, <span class="kw">color</span> <span class="kw">=</span> <span class="no">Month</span>)) +
-    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_path.html">geom_line</a></span>(<span class="kw">size</span> <span class="kw">=</span> <span class="fl">1.5</span>) +
-    <span class="fu"><a href="reference/husker_pal.html">scale_color_husker</a></span>() +
-    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggtheme.html">theme_bw</a></span>()</pre></div>
-<p><img src="reference/figures/README-unnamed-chunk-27-2.png"><!-- --></p>
-<div class="sourceCode" id="cb36"><pre class="r"><span class="fu"><a href="https://scales.r-lib.org//reference/show_col.html">show_col</a></span>(<span class="fu"><a href="reference/janelle_pal.html">janelle_pal</a></span>()(<span class="fl">10</span>))</pre></div>
+<div class="sourceCode" id="cb28"><pre class="r"><span class="fu"><a href="https://scales.r-lib.org//reference/show_col.html">show_col</a></span>(<span class="fu"><a href="reference/janelle_pal.html">janelle_pal</a></span>()(<span class="fl">10</span>))</pre></div>
 <p><img src="reference/figures/README-unnamed-chunk-28-1.png"><!-- --></p>
-<div class="sourceCode" id="cb37"><pre class="r"><span class="no">airquality</span> <span class="kw">%&gt;%</span>
-    <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span>(<span class="kw">Month</span> <span class="kw">=</span> <span class="fu"><a href="https://rdrr.io/r/base/factor.html">as.factor</a></span>(<span class="no">Month</span>)) <span class="kw">%&gt;%</span>
-    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span>(<span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span>(<span class="kw">x</span> <span class="kw">=</span> <span class="no">Day</span>, <span class="kw">y</span> <span class="kw">=</span> <span class="no">Temp</span>, <span class="kw">group</span> <span class="kw">=</span> <span class="no">Month</span>, <span class="kw">color</span> <span class="kw">=</span> <span class="no">Month</span>)) +
-    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_path.html">geom_line</a></span>(<span class="kw">size</span> <span class="kw">=</span> <span class="fl">1.5</span>) +
-    <span class="fu"><a href="reference/janelle_pal.html">scale_color_janelle</a></span>() +
-    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggtheme.html">theme_bw</a></span>()</pre></div>
-<p><img src="reference/figures/README-unnamed-chunk-28-2.png"><!-- --></p>
-<div class="sourceCode" id="cb38"><pre class="r"><span class="fu"><a href="https://scales.r-lib.org//reference/show_col.html">show_col</a></span>(<span class="fu"><a href="reference/maiden_pal.html">maiden_pal</a></span>()(<span class="fl">10</span>))</pre></div>
+<div class="sourceCode" id="cb29"><pre class="r"><span class="fu"><a href="https://scales.r-lib.org//reference/show_col.html">show_col</a></span>(<span class="fu"><a href="reference/maiden_pal.html">maiden_pal</a></span>()(<span class="fl">10</span>))</pre></div>
 <p><img src="reference/figures/README-unnamed-chunk-29-1.png"><!-- --></p>
-<div class="sourceCode" id="cb39"><pre class="r"><span class="no">airquality</span> <span class="kw">%&gt;%</span>
-    <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span>(<span class="kw">Month</span> <span class="kw">=</span> <span class="fu"><a href="https://rdrr.io/r/base/factor.html">as.factor</a></span>(<span class="no">Month</span>)) <span class="kw">%&gt;%</span>
-    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span>(<span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span>(<span class="kw">x</span> <span class="kw">=</span> <span class="no">Day</span>, <span class="kw">y</span> <span class="kw">=</span> <span class="no">Temp</span>, <span class="kw">group</span> <span class="kw">=</span> <span class="no">Month</span>, <span class="kw">color</span> <span class="kw">=</span> <span class="no">Month</span>)) +
-    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_path.html">geom_line</a></span>(<span class="kw">size</span> <span class="kw">=</span> <span class="fl">1.5</span>) +
-    <span class="fu"><a href="reference/maiden_pal.html">scale_color_maiden</a></span>() +
-    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggtheme.html">theme_bw</a></span>()</pre></div>
-<p><img src="reference/figures/README-unnamed-chunk-29-2.png"><!-- --></p>
-<div class="sourceCode" id="cb40"><pre class="r"><span class="fu"><a href="https://scales.r-lib.org//reference/show_col.html">show_col</a></span>(<span class="fu"><a href="reference/metallica_pal.html">metallica_pal</a></span>()(<span class="fl">10</span>))</pre></div>
+<div class="sourceCode" id="cb30"><pre class="r"><span class="fu"><a href="https://scales.r-lib.org//reference/show_col.html">show_col</a></span>(<span class="fu"><a href="reference/metallica_pal.html">metallica_pal</a></span>()(<span class="fl">10</span>))</pre></div>
 <p><img src="reference/figures/README-unnamed-chunk-30-1.png"><!-- --></p>
-<div class="sourceCode" id="cb41"><pre class="r"><span class="no">airquality</span> <span class="kw">%&gt;%</span>
-    <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span>(<span class="kw">Month</span> <span class="kw">=</span> <span class="fu"><a href="https://rdrr.io/r/base/factor.html">as.factor</a></span>(<span class="no">Month</span>)) <span class="kw">%&gt;%</span>
-    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span>(<span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span>(<span class="kw">x</span> <span class="kw">=</span> <span class="no">Day</span>, <span class="kw">y</span> <span class="kw">=</span> <span class="no">Temp</span>, <span class="kw">group</span> <span class="kw">=</span> <span class="no">Month</span>, <span class="kw">color</span> <span class="kw">=</span> <span class="no">Month</span>)) +
-    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_path.html">geom_line</a></span>(<span class="kw">size</span> <span class="kw">=</span> <span class="fl">1.5</span>) +
-    <span class="fu"><a href="reference/metallica_pal.html">scale_color_metallica</a></span>() +
-    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggtheme.html">theme_bw</a></span>()</pre></div>
-<p><img src="reference/figures/README-unnamed-chunk-30-2.png"><!-- --></p>
-<div class="sourceCode" id="cb42"><pre class="r"><span class="fu"><a href="https://scales.r-lib.org//reference/show_col.html">show_col</a></span>(<span class="fu"><a href="reference/miles_pal.html">miles_pal</a></span>()(<span class="fl">10</span>))</pre></div>
+<div class="sourceCode" id="cb31"><pre class="r"><span class="fu"><a href="https://scales.r-lib.org//reference/show_col.html">show_col</a></span>(<span class="fu"><a href="reference/miles_pal.html">miles_pal</a></span>()(<span class="fl">10</span>))</pre></div>
 <p><img src="reference/figures/README-unnamed-chunk-31-1.png"><!-- --></p>
-<div class="sourceCode" id="cb43"><pre class="r"><span class="no">airquality</span> <span class="kw">%&gt;%</span>
-    <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span>(<span class="kw">Month</span> <span class="kw">=</span> <span class="fu"><a href="https://rdrr.io/r/base/factor.html">as.factor</a></span>(<span class="no">Month</span>)) <span class="kw">%&gt;%</span>
-    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span>(<span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span>(<span class="kw">x</span> <span class="kw">=</span> <span class="no">Day</span>, <span class="kw">y</span> <span class="kw">=</span> <span class="no">Temp</span>, <span class="kw">group</span> <span class="kw">=</span> <span class="no">Month</span>, <span class="kw">color</span> <span class="kw">=</span> <span class="no">Month</span>)) +
-    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_path.html">geom_line</a></span>(<span class="kw">size</span> <span class="kw">=</span> <span class="fl">1.5</span>) +
-    <span class="fu"><a href="reference/miles_pal.html">scale_color_miles</a></span>() +
-    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggtheme.html">theme_bw</a></span>()</pre></div>
-<p><img src="reference/figures/README-unnamed-chunk-31-2.png"><!-- --></p>
-<div class="sourceCode" id="cb44"><pre class="r"><span class="fu"><a href="https://scales.r-lib.org//reference/show_col.html">show_col</a></span>(<span class="fu"><a href="reference/muse_pal.html">muse_pal</a></span>()(<span class="fl">10</span>))</pre></div>
+<div class="sourceCode" id="cb32"><pre class="r"><span class="fu"><a href="https://scales.r-lib.org//reference/show_col.html">show_col</a></span>(<span class="fu"><a href="reference/muse_pal.html">muse_pal</a></span>()(<span class="fl">10</span>))</pre></div>
 <p><img src="reference/figures/README-unnamed-chunk-32-1.png"><!-- --></p>
-<div class="sourceCode" id="cb45"><pre class="r"><span class="no">airquality</span> <span class="kw">%&gt;%</span>
-    <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span>(<span class="kw">Month</span> <span class="kw">=</span> <span class="fu"><a href="https://rdrr.io/r/base/factor.html">as.factor</a></span>(<span class="no">Month</span>)) <span class="kw">%&gt;%</span>
-    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span>(<span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span>(<span class="kw">x</span> <span class="kw">=</span> <span class="no">Day</span>, <span class="kw">y</span> <span class="kw">=</span> <span class="no">Temp</span>, <span class="kw">group</span> <span class="kw">=</span> <span class="no">Month</span>, <span class="kw">color</span> <span class="kw">=</span> <span class="no">Month</span>)) +
-    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_path.html">geom_line</a></span>(<span class="kw">size</span> <span class="kw">=</span> <span class="fl">1.5</span>) +
-    <span class="fu"><a href="reference/muse_pal.html">scale_color_muse</a></span>() +
-    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggtheme.html">theme_bw</a></span>()</pre></div>
-<p><img src="reference/figures/README-unnamed-chunk-32-2.png"><!-- --></p>
-<div class="sourceCode" id="cb46"><pre class="r"><span class="fu"><a href="https://scales.r-lib.org//reference/show_col.html">show_col</a></span>(<span class="fu"><a href="reference/nevermind_pal.html">nevermind_pal</a></span>()(<span class="fl">10</span>))</pre></div>
+<div class="sourceCode" id="cb33"><pre class="r"><span class="fu"><a href="https://scales.r-lib.org//reference/show_col.html">show_col</a></span>(<span class="fu"><a href="reference/nevermind_pal.html">nevermind_pal</a></span>()(<span class="fl">10</span>))</pre></div>
 <p><img src="reference/figures/README-unnamed-chunk-33-1.png"><!-- --></p>
-<div class="sourceCode" id="cb47"><pre class="r"><span class="no">airquality</span> <span class="kw">%&gt;%</span>
-    <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span>(<span class="kw">Month</span> <span class="kw">=</span> <span class="fu"><a href="https://rdrr.io/r/base/factor.html">as.factor</a></span>(<span class="no">Month</span>)) <span class="kw">%&gt;%</span>
-    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span>(<span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span>(<span class="kw">x</span> <span class="kw">=</span> <span class="no">Day</span>, <span class="kw">y</span> <span class="kw">=</span> <span class="no">Temp</span>, <span class="kw">group</span> <span class="kw">=</span> <span class="no">Month</span>, <span class="kw">color</span> <span class="kw">=</span> <span class="no">Month</span>)) +
-    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_path.html">geom_line</a></span>(<span class="kw">size</span> <span class="kw">=</span> <span class="fl">1.5</span>) +
-    <span class="fu"><a href="reference/nevermind_pal.html">scale_color_nevermind</a></span>() +
-    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggtheme.html">theme_bw</a></span>()</pre></div>
-<p><img src="reference/figures/README-unnamed-chunk-33-2.png"><!-- --></p>
-<div class="sourceCode" id="cb48"><pre class="r"><span class="fu"><a href="https://scales.r-lib.org//reference/show_col.html">show_col</a></span>(<span class="fu"><a href="reference/oasis_pal.html">oasis_pal</a></span>()(<span class="fl">10</span>))</pre></div>
+<div class="sourceCode" id="cb34"><pre class="r"><span class="fu"><a href="https://scales.r-lib.org//reference/show_col.html">show_col</a></span>(<span class="fu"><a href="reference/oasis_pal.html">oasis_pal</a></span>()(<span class="fl">10</span>))</pre></div>
 <p><img src="reference/figures/README-unnamed-chunk-34-1.png"><!-- --></p>
-<div class="sourceCode" id="cb49"><pre class="r"><span class="no">airquality</span> <span class="kw">%&gt;%</span>
-    <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span>(<span class="kw">Month</span> <span class="kw">=</span> <span class="fu"><a href="https://rdrr.io/r/base/factor.html">as.factor</a></span>(<span class="no">Month</span>)) <span class="kw">%&gt;%</span>
-    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span>(<span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span>(<span class="kw">x</span> <span class="kw">=</span> <span class="no">Day</span>, <span class="kw">y</span> <span class="kw">=</span> <span class="no">Temp</span>, <span class="kw">group</span> <span class="kw">=</span> <span class="no">Month</span>, <span class="kw">color</span> <span class="kw">=</span> <span class="no">Month</span>)) +
-    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_path.html">geom_line</a></span>(<span class="kw">size</span> <span class="kw">=</span> <span class="fl">1.5</span>) +
-    <span class="fu"><a href="reference/oasis_pal.html">scale_color_oasis</a></span>() +
-    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggtheme.html">theme_bw</a></span>()</pre></div>
-<p><img src="reference/figures/README-unnamed-chunk-34-2.png"><!-- --></p>
-<div class="sourceCode" id="cb50"><pre class="r"><span class="fu"><a href="https://scales.r-lib.org//reference/show_col.html">show_col</a></span>(<span class="fu"><a href="reference/real_thing_pal.html">real_thing_pal</a></span>()(<span class="fl">10</span>))</pre></div>
+<div class="sourceCode" id="cb35"><pre class="r"><span class="fu"><a href="https://scales.r-lib.org//reference/show_col.html">show_col</a></span>(<span class="fu"><a href="reference/real_thing_pal.html">real_thing_pal</a></span>()(<span class="fl">10</span>))</pre></div>
 <p><img src="reference/figures/README-unnamed-chunk-35-1.png"><!-- --></p>
-<div class="sourceCode" id="cb51"><pre class="r"><span class="no">airquality</span> <span class="kw">%&gt;%</span>
-    <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span>(<span class="kw">Month</span> <span class="kw">=</span> <span class="fu"><a href="https://rdrr.io/r/base/factor.html">as.factor</a></span>(<span class="no">Month</span>)) <span class="kw">%&gt;%</span>
-    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span>(<span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span>(<span class="kw">x</span> <span class="kw">=</span> <span class="no">Day</span>, <span class="kw">y</span> <span class="kw">=</span> <span class="no">Temp</span>, <span class="kw">group</span> <span class="kw">=</span> <span class="no">Month</span>, <span class="kw">color</span> <span class="kw">=</span> <span class="no">Month</span>)) +
-    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_path.html">geom_line</a></span>(<span class="kw">size</span> <span class="kw">=</span> <span class="fl">1.5</span>) +
-    <span class="fu"><a href="reference/real_thing_pal.html">scale_color_real_thing</a></span>() +
-    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggtheme.html">theme_bw</a></span>()</pre></div>
-<p><img src="reference/figures/README-unnamed-chunk-35-2.png"><!-- --></p>
-<div class="sourceCode" id="cb52"><pre class="r"><span class="fu"><a href="https://scales.r-lib.org//reference/show_col.html">show_col</a></span>(<span class="fu"><a href="reference/taylor_pal.html">taylor_pal</a></span>()(<span class="fl">10</span>))</pre></div>
+<div class="sourceCode" id="cb36"><pre class="r"><span class="fu"><a href="https://scales.r-lib.org//reference/show_col.html">show_col</a></span>(<span class="fu"><a href="reference/taylor_pal.html">taylor_pal</a></span>()(<span class="fl">10</span>))</pre></div>
 <p><img src="reference/figures/README-unnamed-chunk-36-1.png"><!-- --></p>
-<div class="sourceCode" id="cb53"><pre class="r"><span class="no">airquality</span> <span class="kw">%&gt;%</span>
-    <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span>(<span class="kw">Month</span> <span class="kw">=</span> <span class="fu"><a href="https://rdrr.io/r/base/factor.html">as.factor</a></span>(<span class="no">Month</span>)) <span class="kw">%&gt;%</span>
-    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span>(<span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span>(<span class="kw">x</span> <span class="kw">=</span> <span class="no">Day</span>, <span class="kw">y</span> <span class="kw">=</span> <span class="no">Temp</span>, <span class="kw">group</span> <span class="kw">=</span> <span class="no">Month</span>, <span class="kw">color</span> <span class="kw">=</span> <span class="no">Month</span>)) +
-    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_path.html">geom_line</a></span>(<span class="kw">size</span> <span class="kw">=</span> <span class="fl">1.5</span>) +
-    <span class="fu"><a href="reference/taylor_pal.html">scale_color_taylor</a></span>() +
-    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggtheme.html">theme_bw</a></span>()</pre></div>
-<p><img src="reference/figures/README-unnamed-chunk-36-2.png"><!-- --></p>
-<div class="sourceCode" id="cb54"><pre class="r"><span class="fu"><a href="https://scales.r-lib.org//reference/show_col.html">show_col</a></span>(<span class="fu"><a href="reference/tencc_pal.html">tencc_pal</a></span>()(<span class="fl">10</span>))</pre></div>
+<div class="sourceCode" id="cb37"><pre class="r"><span class="fu"><a href="https://scales.r-lib.org//reference/show_col.html">show_col</a></span>(<span class="fu"><a href="reference/tencc_pal.html">tencc_pal</a></span>()(<span class="fl">10</span>))</pre></div>
 <p><img src="reference/figures/README-unnamed-chunk-37-1.png"><!-- --></p>
-<div class="sourceCode" id="cb55"><pre class="r"><span class="no">airquality</span> <span class="kw">%&gt;%</span>
-    <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span>(<span class="kw">Month</span> <span class="kw">=</span> <span class="fu"><a href="https://rdrr.io/r/base/factor.html">as.factor</a></span>(<span class="no">Month</span>)) <span class="kw">%&gt;%</span>
-    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span>(<span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span>(<span class="kw">x</span> <span class="kw">=</span> <span class="no">Day</span>, <span class="kw">y</span> <span class="kw">=</span> <span class="no">Temp</span>, <span class="kw">group</span> <span class="kw">=</span> <span class="no">Month</span>, <span class="kw">color</span> <span class="kw">=</span> <span class="no">Month</span>)) +
-    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_path.html">geom_line</a></span>(<span class="kw">size</span> <span class="kw">=</span> <span class="fl">1.5</span>) +
-    <span class="fu"><a href="reference/tencc_pal.html">scale_color_tencc</a></span>() +
-    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggtheme.html">theme_bw</a></span>()</pre></div>
-<p><img src="reference/figures/README-unnamed-chunk-37-2.png"><!-- --></p>
-<div class="sourceCode" id="cb56"><pre class="r"><span class="no">data</span> <span class="kw">&lt;-</span> <span class="kw pkg">gapminder</span><span class="kw ns">::</span><span class="no"><a href="https://rdrr.io/pkg/gapminder/man/gapminder.html">gapminder</a></span> <span class="kw">%&gt;%</span>
+<div class="sourceCode" id="cb38"><pre class="r"><span class="no">data</span> <span class="kw">&lt;-</span> <span class="kw pkg">gapminder</span><span class="kw ns">::</span><span class="no"><a href="https://rdrr.io/pkg/gapminder/man/gapminder.html">gapminder</a></span> <span class="kw">%&gt;%</span>
     <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html">filter</a></span>(<span class="no">country</span> <span class="kw">%in%</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="st">"France"</span>, <span class="st">"Germany"</span>, <span class="st">"Ireland"</span>, <span class="st">"Italy"</span>, <span class="st">"Japan"</span>)) <span class="kw">%&gt;%</span>
     <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span>(<span class="kw">year</span> <span class="kw">=</span> <span class="fu"><a href="https://rdrr.io/r/base/as.Date.html">as.Date</a></span>(<span class="fu"><a href="https://rdrr.io/r/base/paste.html">paste</a></span>(<span class="no">year</span>, <span class="st">"-01-01"</span>, <span class="kw">sep</span> <span class="kw">=</span> <span class="st">""</span>, <span class="kw">format</span> <span class="kw">=</span> <span class="st">'%Y-%b-%d'</span>)))
 
@@ -332,21 +205,21 @@
     <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_continuous.html">scale_y_continuous</a></span>(<span class="kw">expand</span> <span class="kw">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="fl">0</span>, <span class="fl">0</span>), <span class="kw">labels</span> <span class="kw">=</span> <span class="kw pkg">scales</span><span class="kw ns">::</span><span class="no"><a href="https://scales.r-lib.org//reference/label_dollar.html">dollar</a></span>) +
     <span class="fu"><a href="reference/taylor_pal.html">scale_fill_taylor</a></span>()</pre></div>
 <p><img src="reference/figures/README-unnamed-chunk-38-1.png"><!-- --></p>
-<div class="sourceCode" id="cb57"><pre class="r">
+<div class="sourceCode" id="cb39"><pre class="r">
 <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span>(<span class="kw">data</span> <span class="kw">=</span> <span class="no">data</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span>(<span class="kw">x</span> <span class="kw">=</span> <span class="no">year</span>, <span class="kw">y</span> <span class="kw">=</span> <span class="no">gdpPercap</span>, <span class="kw">fill</span> <span class="kw">=</span> <span class="no">country</span>)) +
     <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_ribbon.html">geom_area</a></span>(<span class="kw">alpha</span> <span class="kw">=</span> <span class="fl">0.8</span>) +
     <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_date.html">scale_x_date</a></span>(<span class="kw">breaks</span> <span class="kw">=</span> <span class="no">data</span>$<span class="no">year</span>, <span class="kw">date_labels</span> <span class="kw">=</span> <span class="st">"%Y"</span>) +
     <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_continuous.html">scale_y_continuous</a></span>(<span class="kw">expand</span> <span class="kw">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="fl">0</span>, <span class="fl">0</span>), <span class="kw">labels</span> <span class="kw">=</span> <span class="kw pkg">scales</span><span class="kw ns">::</span><span class="no"><a href="https://scales.r-lib.org//reference/label_dollar.html">dollar</a></span>) +
     <span class="fu"><a href="reference/tencc_pal.html">scale_fill_tencc</a></span>()</pre></div>
 <p><img src="reference/figures/README-unnamed-chunk-38-2.png"><!-- --></p>
-<div class="sourceCode" id="cb58"><pre class="r">
+<div class="sourceCode" id="cb40"><pre class="r">
     <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span>(<span class="kw">data</span> <span class="kw">=</span> <span class="no">data</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span>(<span class="kw">x</span> <span class="kw">=</span> <span class="no">year</span>, <span class="kw">y</span> <span class="kw">=</span> <span class="no">gdpPercap</span>, <span class="kw">fill</span> <span class="kw">=</span> <span class="no">country</span>)) +
     <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_ribbon.html">geom_area</a></span>(<span class="kw">alpha</span> <span class="kw">=</span> <span class="fl">0.8</span>) +
     <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_date.html">scale_x_date</a></span>(<span class="kw">breaks</span> <span class="kw">=</span> <span class="no">data</span>$<span class="no">year</span>, <span class="kw">date_labels</span> <span class="kw">=</span> <span class="st">"%Y"</span>) +
     <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_continuous.html">scale_y_continuous</a></span>(<span class="kw">expand</span> <span class="kw">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="fl">0</span>, <span class="fl">0</span>), <span class="kw">labels</span> <span class="kw">=</span> <span class="kw pkg">scales</span><span class="kw ns">::</span><span class="no"><a href="https://scales.r-lib.org//reference/label_dollar.html">dollar</a></span>) +
     <span class="fu"><a href="reference/husker_pal.html">scale_fill_husker</a></span>()</pre></div>
 <p><img src="reference/figures/README-unnamed-chunk-38-3.png"><!-- --></p>
-<div class="sourceCode" id="cb59"><pre class="r">
+<div class="sourceCode" id="cb41"><pre class="r">
 
     <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span>(<span class="kw">data</span> <span class="kw">=</span> <span class="no">data</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span>(<span class="kw">x</span> <span class="kw">=</span> <span class="no">year</span>, <span class="kw">y</span> <span class="kw">=</span> <span class="no">gdpPercap</span>, <span class="kw">fill</span> <span class="kw">=</span> <span class="no">country</span>)) +
     <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_ribbon.html">geom_area</a></span>(<span class="kw">alpha</span> <span class="kw">=</span> <span class="fl">0.8</span>) +
@@ -354,7 +227,7 @@
     <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_continuous.html">scale_y_continuous</a></span>(<span class="kw">expand</span> <span class="kw">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="fl">0</span>, <span class="fl">0</span>), <span class="kw">labels</span> <span class="kw">=</span> <span class="kw pkg">scales</span><span class="kw ns">::</span><span class="no"><a href="https://scales.r-lib.org//reference/label_dollar.html">dollar</a></span>) +
     <span class="fu"><a href="reference/janelle_pal.html">scale_fill_janelle</a></span>()</pre></div>
 <p><img src="reference/figures/README-unnamed-chunk-38-4.png"><!-- --></p>
-<div class="sourceCode" id="cb60"><pre class="r">
+<div class="sourceCode" id="cb42"><pre class="r">
 
     <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span>(<span class="kw">data</span> <span class="kw">=</span> <span class="no">data</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span>(<span class="kw">x</span> <span class="kw">=</span> <span class="no">year</span>, <span class="kw">y</span> <span class="kw">=</span> <span class="no">gdpPercap</span>, <span class="kw">fill</span> <span class="kw">=</span> <span class="no">country</span>)) +
     <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_ribbon.html">geom_area</a></span>(<span class="kw">alpha</span> <span class="kw">=</span> <span class="fl">0.8</span>) +
@@ -362,14 +235,14 @@
     <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_continuous.html">scale_y_continuous</a></span>(<span class="kw">expand</span> <span class="kw">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="fl">0</span>, <span class="fl">0</span>), <span class="kw">labels</span> <span class="kw">=</span> <span class="kw pkg">scales</span><span class="kw ns">::</span><span class="no"><a href="https://scales.r-lib.org//reference/label_dollar.html">dollar</a></span>) +
     <span class="fu"><a href="reference/californication_pal.html">scale_fill_californication</a></span>()</pre></div>
 <p><img src="reference/figures/README-unnamed-chunk-38-5.png"><!-- --></p>
-<div class="sourceCode" id="cb61"><pre class="r">
+<div class="sourceCode" id="cb43"><pre class="r">
     <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span>(<span class="kw">data</span> <span class="kw">=</span> <span class="no">data</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span>(<span class="kw">x</span> <span class="kw">=</span> <span class="no">year</span>, <span class="kw">y</span> <span class="kw">=</span> <span class="no">gdpPercap</span>, <span class="kw">fill</span> <span class="kw">=</span> <span class="no">country</span>)) +
     <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_ribbon.html">geom_area</a></span>(<span class="kw">alpha</span> <span class="kw">=</span> <span class="fl">0.8</span>) +
     <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_date.html">scale_x_date</a></span>(<span class="kw">breaks</span> <span class="kw">=</span> <span class="no">data</span>$<span class="no">year</span>, <span class="kw">date_labels</span> <span class="kw">=</span> <span class="st">"%Y"</span>) +
     <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_continuous.html">scale_y_continuous</a></span>(<span class="kw">expand</span> <span class="kw">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="fl">0</span>, <span class="fl">0</span>), <span class="kw">labels</span> <span class="kw">=</span> <span class="kw pkg">scales</span><span class="kw ns">::</span><span class="no"><a href="https://scales.r-lib.org//reference/label_dollar.html">dollar</a></span>) +
     <span class="fu"><a href="reference/miles_pal.html">scale_fill_miles</a></span>()</pre></div>
 <p><img src="reference/figures/README-unnamed-chunk-38-6.png"><!-- --></p>
-<div class="sourceCode" id="cb62"><pre class="r">
+<div class="sourceCode" id="cb44"><pre class="r">
 
     <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span>(<span class="kw">data</span> <span class="kw">=</span> <span class="no">data</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span>(<span class="kw">x</span> <span class="kw">=</span> <span class="no">year</span>, <span class="kw">y</span> <span class="kw">=</span> <span class="no">gdpPercap</span>, <span class="kw">fill</span> <span class="kw">=</span> <span class="no">country</span>)) +
     <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_ribbon.html">geom_area</a></span>(<span class="kw">alpha</span> <span class="kw">=</span> <span class="fl">0.8</span>) +
