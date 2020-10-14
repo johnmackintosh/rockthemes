@@ -155,192 +155,101 @@ rock_palette("tencc")
 ```{r}
 show_col(californication_pal()(10))
 
-airquality %>% 
-    mutate(Month = as.factor(Month)) %>% 
-    ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
-    geom_line(size = 1.5) +
-    scale_color_californication() +
-    theme_bw()
 ```
 
 ```{r}
 show_col(coltrane_pal()(10))
-airquality %>% 
-    mutate(Month = as.factor(Month)) %>% 
-    ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
-    geom_line(size = 1.5) +
-    scale_color_coltrane() +
-    theme_bw()
+
 ```
 
 ```{r}
 show_col(electric_pal()(10))
-airquality %>% 
-    mutate(Month = as.factor(Month)) %>% 
-    ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
-    geom_line(size = 1.5) +
-    scale_color_electric() +
-    theme_bw()
+
 ```
 
 
 ```{r}
 show_col(gogo_pal()(10))
-airquality %>% 
-    mutate(Month = as.factor(Month)) %>% 
-    ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
-    geom_line(size = 1.5) +
-    scale_color_gogo() +
-    theme_bw()
+
 ```
 
 
 ```{r}
 show_col(gunsnroses_pal()(10))
-airquality %>% 
-    mutate(Month = as.factor(Month)) %>% 
-    ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
-    geom_line(size = 1.5) +
-    scale_color_gunsnroses() +
-    theme_bw()
+
 ```
 
 
 ```{r}
 show_col(harvey_pal()(10))
-airquality %>% 
-    mutate(Month = as.factor(Month)) %>% 
-    ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
-    geom_line(size = 1.5) +
-    scale_color_harvey() +
-    theme_bw()
+
 ```
 
 ```{r}
 show_col(heap_pal()(10))
-airquality %>% 
-    mutate(Month = as.factor(Month)) %>% 
-    ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
-    geom_line(size = 1.5) +
-    scale_color_heap() +
-    theme_bw()
+
 ```
 
 
 ```{r}
 show_col(husker_pal()(10))
-airquality %>% 
-    mutate(Month = as.factor(Month)) %>% 
-    ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
-    geom_line(size = 1.5) +
-    scale_color_husker() +
-    theme_bw()
+
 ```
 
 ```{r}
 show_col(janelle_pal()(10))
-airquality %>% 
-    mutate(Month = as.factor(Month)) %>% 
-    ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
-    geom_line(size = 1.5) +
-    scale_color_janelle() +
-    theme_bw()
+
 ```
 
 
 ```{r}
 show_col(maiden_pal()(10))
-airquality %>% 
-    mutate(Month = as.factor(Month)) %>% 
-    ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
-    geom_line(size = 1.5) +
-    scale_color_maiden() +
-    theme_bw()
+
 ```
 
 
 ```{r}
 show_col(metallica_pal()(10))
-airquality %>% 
-    mutate(Month = as.factor(Month)) %>% 
-    ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
-    geom_line(size = 1.5) +
-    scale_color_metallica() +
-    theme_bw()
+
 ```
 
 ```{r}
 show_col(miles_pal()(10))
-airquality %>% 
-    mutate(Month = as.factor(Month)) %>% 
-    ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
-    geom_line(size = 1.5) +
-    scale_color_miles() +
-    theme_bw()
+
 ```
 
 
 ```{r}
 show_col(muse_pal()(10))
-airquality %>% 
-    mutate(Month = as.factor(Month)) %>% 
-    ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
-    geom_line(size = 1.5) +
-    scale_color_muse() +
-    theme_bw()
+
 ```
 
 
 
 ```{r}
 show_col(nevermind_pal()(10))
-airquality %>% 
-    mutate(Month = as.factor(Month)) %>% 
-    ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
-    geom_line(size = 1.5) +
-    scale_color_nevermind() +
-    theme_bw()
+
 ```
 
 
 ```{r}
 show_col(oasis_pal()(10))
-airquality %>% 
-    mutate(Month = as.factor(Month)) %>% 
-    ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
-    geom_line(size = 1.5) +
-    scale_color_oasis() +
-    theme_bw()
+
 ```
 
 ```{r}
 show_col(real_thing_pal()(10))
-airquality %>% 
-    mutate(Month = as.factor(Month)) %>% 
-    ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
-    geom_line(size = 1.5) +
-    scale_color_real_thing() +
-    theme_bw()
+
 ```
 
 ```{r}
 show_col(taylor_pal()(10))
-airquality %>% 
-    mutate(Month = as.factor(Month)) %>% 
-    ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
-    geom_line(size = 1.5) +
-    scale_color_taylor() +
-    theme_bw()
+
 ```
 
 ```{r}
 show_col(tencc_pal()(10))
-airquality %>% 
-    mutate(Month = as.factor(Month)) %>% 
-    ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
-    geom_line(size = 1.5) +
-    scale_color_tencc() +
-    theme_bw()
+
 ```
 
 
