@@ -102,11 +102,6 @@ rock_palette("heap")
 
 
 ```{r}
-rock_palette("herb")
-```
-
-
-```{r}
 rock_palette("husker")
 ```
 
@@ -231,16 +226,6 @@ airquality %>%
     theme_bw()
 ```
 
-
-```{r}
-show_col(herb_pal()(10))
-airquality %>% 
-    mutate(Month = as.factor(Month)) %>% 
-    ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
-    geom_line(size = 1.5) +
-    scale_color_herb() +
-    theme_bw()
-```
 
 ```{r}
 show_col(husker_pal()(10))

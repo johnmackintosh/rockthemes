@@ -7,7 +7,6 @@ rock_palettes <- list(
     gunsnroses = c("#100F12", "#C28B68", "#6877A7", "#729094"),
     harvey = c("#C6D4D6", "#274C4F", "#A4432D", "#B17C51"),
     heap = c("#466E9A", "#E84D45", "#21201C", "#A1BAAC"),
-    herb = c("#5A5621", "#DAD2B8", "#7EC634", "#A4A897"),
     husker = c("#422537", "#D58078","#86A556", "#624FB0"),
     janelle = c("#916364","#E2D6BF", "#21121B", "#B3ACC7"),
     maiden = c("#8FBBCE", "#265F8A", "#78704B", "#4A5372"),
@@ -31,9 +30,9 @@ rock_palettes <- list(
 #' @param name Name of palette. Select one:
 #' \code{californication}, \code{coltrane}, \code{electric}, \code{faithnomore}, 
 #' \code{gogo}, \code{gunsnroses},\code{harvey}, \code{heap},
-#' \code{herb}, \code{husker}, \code{janelle}, \code{maiden},
-#' \code{metallica}, \code{miles}, \code{muse},\code{nevermind},  
-#'  \code{oasis}, \code{swift}, \code{tencc}
+#' \code{husker}, \code{janelle}, \code{maiden},\code{metallica},
+#'  \code{miles}, \code{muse},\code{nevermind}, \code{oasis}, 
+#'  \code{swift}, \code{tencc}
 #'
 #' @param n Number of colors desired. 
 #' 
