@@ -13,6 +13,7 @@ rock_palettes <- list(
     maiden = c("#8FBBCE", "#265F8A", "#78704B", "#4A5372"),
     metallica = c("#652113", "#D8CABC","#D77021", "#9E8C99"),
     miles = c("#C1C6CF", "#180C18", "#933450", "#D99755"),
+    muse = c("#3B1A35","#D27F9A","#885EA5","#9D94B3"),
     nevermind = c("#B5BECE","#4DB8DA","#286B9F","#121725"),
     oasis = c("#B5AF93", "#293845", "#5B4E4D", "#685F41"),
     swift = c("#CDC1B1","#444550","#865242", "#A26847"),
@@ -31,8 +32,8 @@ rock_palettes <- list(
 #' \code{californication}, \code{coltrane}, \code{electric}, \code{faithnomore}, 
 #' \code{gogo}, \code{gunsnroses},\code{harvey}, \code{heap},
 #' \code{herb}, \code{husker}, \code{janelle}, \code{maiden},
-#' \code{metallica}, \code{miles}, \code{nevermind}, \code{oasis}, 
-#'  \code{swift}, \code{tencc}
+#' \code{metallica}, \code{miles}, \code{muse},\code{nevermind},  
+#'  \code{oasis}, \code{swift}, \code{tencc}
 #'
 #' @param n Number of colors desired. 
 #' 
