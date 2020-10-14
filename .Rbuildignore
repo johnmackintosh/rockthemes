@@ -7,3 +7,6 @@ readme.rmd
 ^README\.Rmd$
 ^README-.*\.png$
 ^\.github$
+^_pkgdown\.yml$
+^docs$
+^pkgdown$
