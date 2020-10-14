@@ -38,9 +38,8 @@ Because [this repo of Metallica inspired palettes](https://github.com/johnmackin
 [Thanks to Ryo for the tvthemes package](https://github.com/Ryo-N7/tvthemes) which helped me get this off the ground quickly
 
 
-## I want this
+## Installation
 
-Of course you do. 
 This will not go to CRAN, so please install using the remotes package.
 
 ```{r}
@@ -129,6 +128,11 @@ rock_palette("metallica")
 
 ```{r}
 rock_palette("miles")
+```
+
+
+```{r}
+rock_palette("muse")
 ```
 
 
@@ -292,6 +296,18 @@ airquality %>%
 
 
 ```{r}
+show_col(muse_pal()(10))
+airquality %>% 
+    mutate(Month = as.factor(Month)) %>% 
+    ggplot(aes(x = Day, y = Temp, group = Month, color = Month)) +
+    geom_line(size = 1.5) +
+    scale_color_muse() +
+    theme_bw()
+```
+
+
+
+```{r}
 show_col(nevermind_pal()(10))
 airquality %>% 
     mutate(Month = as.factor(Month)) %>% 
@@ -387,6 +403,12 @@ ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
     scale_y_continuous(expand = c(0, 0), labels = scales::dollar) +
     scale_fill_miles()
     
+    
+    ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
+    geom_area(alpha = 0.8) +
+    scale_x_date(breaks = data$year, date_labels = "%Y") +
+    scale_y_continuous(expand = c(0, 0), labels = scales::dollar) +
+    scale_fill_muse()
     
     
     
