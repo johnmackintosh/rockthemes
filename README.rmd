@@ -59,7 +59,7 @@ library(gapminder)
 
 Inspiration
 
-# <img src="docs/covers/californication.jpg" width="160px" align="left" />
+# <img src="man/figures/californication.jpg" width="160px" align="left" />
 
 ```{r}
 rock_palette("californication")
@@ -71,7 +71,7 @@ rock_palette("californication")
 
 Inspiration
 
-# <img src="docs/covers/coltrane.jpg" width="160px" align="left" />
+# <img src="man/figures/coltrane.jpg" width="160px" align="left" />
 
 ```{r}
 rock_palette("coltrane")
