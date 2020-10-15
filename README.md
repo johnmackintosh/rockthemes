@@ -14,8 +14,13 @@ Status](https://travis-ci.com/johnmackintosh/rockthemes.svg?branch=main)](https:
 This is a collection of colour palettes based on classic rock album
 covers.
 
-Although ‘rock’ may be a stretch in some cases, the albums were chosen
-for their appealing covers
+Not all of the artists are ‘rock’, but they appeared in lists of classic
+rock album covers and the internet is never wrong.
+
+The albums were chosen either for their striking covers (in terms of
+colour), or simply, because they are bona fide rock classics.
+
+Your job is to guess which is which.
 
 ## Why?
 
@@ -54,9 +59,11 @@ library(scales)
 library(gapminder)
 ```
 
-## Short Palettes
+## Californication
 
-Only 4 colours, but very nice
+Inspiration
+
+# <img src="docs/covers/californication.jpg" width="160px" align="left" />
 
 ``` r
 rock_palette("californication")
@@ -64,11 +71,23 @@ rock_palette("californication")
 
 ![](man/figures/README-unnamed-chunk-2-1.png)<!-- -->
 
+## Coltrane
+
+Inspiration
+
+# <img src="docs/covers/coltrane.jpg" width="160px" align="left" />
+
 ``` r
 rock_palette("coltrane")
 ```
 
 ![](man/figures/README-unnamed-chunk-3-1.png)<!-- -->
+
+## Electric
+
+Inspiration
+
+# <img src="docs/covers/electric.png" width="160px" align="left" />
 
 ``` r
 rock_palette("electric")
@@ -76,11 +95,23 @@ rock_palette("electric")
 
 ![](man/figures/README-unnamed-chunk-4-1.png)<!-- -->
 
+## Faith No More
+
+Inspiration
+
+# <img src="docs/covers/realthing.jpg" width="160px" align="left" />
+
 ``` r
 rock_palette("faithnomore")
 ```
 
 ![](man/figures/README-unnamed-chunk-5-1.png)<!-- -->
+
+## Go Gos
+
+Inspiration
+
+# <img src="docs/covers/gogos.jpg" width="160px" align="left" />
 
 ``` r
 rock_palette("gogo")
@@ -88,11 +119,23 @@ rock_palette("gogo")
 
 ![](man/figures/README-unnamed-chunk-6-1.png)<!-- -->
 
+## Guns N’ Roses
+
+Inspiration
+
+# <img src="docs/covers/gunsnroses.jpg" width="160px" align="left" />
+
 ``` r
 rock_palette("gunsnroses")
 ```
 
 ![](man/figures/README-unnamed-chunk-7-1.png)<!-- -->
+
+## PJ Harvey
+
+Inspiration
+
+# <img src="docs/covers/harvey.jpg" width="160px" align="left" />
 
 ``` r
 rock_palette("harvey")
@@ -100,11 +143,23 @@ rock_palette("harvey")
 
 ![](man/figures/README-unnamed-chunk-8-1.png)<!-- -->
 
+## Uria Heap
+
+Inspiration
+
+# <img src="docs/covers/heep.jpg" width="160px" align="left" />
+
 ``` r
 rock_palette("heap")
 ```
 
 ![](man/figures/README-unnamed-chunk-9-1.png)<!-- -->
+
+## Husker Du
+
+Inspiration
+
+# <img src="docs/covers/husker.jpg" width="160px" align="left" />
 
 ``` r
 rock_palette("husker")
@@ -112,11 +167,23 @@ rock_palette("husker")
 
 ![](man/figures/README-unnamed-chunk-10-1.png)<!-- -->
 
+## Janelle Monae
+
+Inspiration
+
+# <img src="docs/covers/janelle.jpg" width="160px" align="left" />
+
 ``` r
 rock_palette("janelle")
 ```
 
 ![](man/figures/README-unnamed-chunk-11-1.png)<!-- -->
+
+## Iron Maiden
+
+Inspiration
+
+# <img src="docs/covers/maiden.jpg" width="160px" align="left" />
 
 ``` r
 rock_palette("maiden")
@@ -124,11 +191,23 @@ rock_palette("maiden")
 
 ![](man/figures/README-unnamed-chunk-12-1.png)<!-- -->
 
+## Metallica
+
+Inspiration
+
+# <img src="docs/covers/metallica.jpg" width="160px" align="left" />
+
 ``` r
 rock_palette("metallica")
 ```
 
 ![](man/figures/README-unnamed-chunk-13-1.png)<!-- -->
+
+## Miles Davis
+
+Inspiration
+
+# <img src="docs/covers/miles.jpg" width="160px" align="left" />
 
 ``` r
 rock_palette("miles")
@@ -136,11 +215,23 @@ rock_palette("miles")
 
 ![](man/figures/README-unnamed-chunk-14-1.png)<!-- -->
 
+## Muse
+
+Inspiration
+
+# <img src="docs/covers/muse.jpg" width="160px" align="left" />
+
 ``` r
 rock_palette("muse")
 ```
 
 ![](man/figures/README-unnamed-chunk-15-1.png)<!-- -->
+
+## Nirvana
+
+Inspiration
+
+# <img src="docs/covers/nirvana.jpg" width="160px" align="left" />
 
 ``` r
 rock_palette("nevermind")
@@ -148,11 +239,23 @@ rock_palette("nevermind")
 
 ![](man/figures/README-unnamed-chunk-16-1.png)<!-- -->
 
+## Oasis
+
+Inspiration
+
+# <img src="docs/covers/oasis.jpg" width="160px" align="left" />
+
 ``` r
 rock_palette("oasis")
 ```
 
 ![](man/figures/README-unnamed-chunk-17-1.png)<!-- -->
+
+## Taylor Swift
+
+Inspiration
+
+# <img src="docs/covers/taylor.jpg" width="160px" align="left" />
 
 ``` r
 rock_palette("swift")
@@ -160,13 +263,22 @@ rock_palette("swift")
 
 ![](man/figures/README-unnamed-chunk-18-1.png)<!-- -->
 
+## 10CC
+
+Inspiration
+
+# <img src="docs/covers/tencc.jpg" width="160px" align="left" />
+
 ``` r
 rock_palette("tencc")
 ```
 
 ![](man/figures/README-unnamed-chunk-19-1.png)<!-- -->
 
-## 10 colour palettes for ggplot2 use
+## Longer colour palettes, more suited for ggplot2 use
+
+The following palettes share the same inspirations, but there are more
+colours, which hopefully increases their utility for data visualisation.
 
 ``` r
 show_col(californication_pal()(10))
