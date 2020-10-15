@@ -20,7 +20,7 @@ heap_palette <- c(
 #' @rdname heap_pal
 #' @examples
 #' library(scales)
-#' show_col(heap_pal()(5))
+#' show_col(heap_pal()(10))
 #' @export
 #' @importFrom scales manual_pal
 #' @importFrom glue glue

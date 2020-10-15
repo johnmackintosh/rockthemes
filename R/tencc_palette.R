@@ -20,7 +20,7 @@ tencc_palette <- c(
 #' @rdname tencc_pal
 #' @examples
 #' library(scales)
-#' show_col(tencc_pal()(5))
+#' show_col(tencc_pal()(10))
 #' @export
 #' @importFrom scales manual_pal
 #' @importFrom glue glue

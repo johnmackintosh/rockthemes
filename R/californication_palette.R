@@ -20,7 +20,7 @@ californication_palette <- c(
 #' @rdname californication_pal
 #' @examples
 #' library(scales)
-#' show_col(californication_pal()(5))
+#' show_col(californication_pal()(10))
 #' @export
 #' @importFrom scales manual_pal
 #' @importFrom glue glue

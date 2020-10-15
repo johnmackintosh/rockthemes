@@ -87,7 +87,7 @@ metallica palette
 }
 \examples{
 library(scales)
-show_col(metallica_pal()(5))
+show_col(metallica_pal()(10))
 
 library(ggplot2)
 ggplot(airquality, aes(x = Day, y = Temp,

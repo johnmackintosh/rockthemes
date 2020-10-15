@@ -87,7 +87,7 @@ gogo palette
 }
 \examples{
 library(scales)
-show_col(gogo_pal()(5))
+show_col(gogo_pal()(10))
 
 library(ggplot2)
 ggplot(airquality, aes(x = Day, y = Temp,

@@ -20,7 +20,7 @@ janelle_palette <- c(
 #' @rdname janelle_pal
 #' @examples
 #' library(scales)
-#' show_col(janelle_pal()(5))
+#' show_col(janelle_pal()(10))
 #' @export
 #' @importFrom scales manual_pal
 #' @importFrom glue glue

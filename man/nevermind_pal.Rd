@@ -87,7 +87,7 @@ Nevermind palette
 }
 \examples{
 library(scales)
-show_col(nevermind_pal()(5))
+show_col(nevermind_pal()(10))
 
 library(ggplot2)
 ggplot(airquality, aes(x = Day, y = Temp,

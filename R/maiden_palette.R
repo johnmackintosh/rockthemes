@@ -12,7 +12,7 @@ maiden_palette <- c(
 #' @rdname maiden_pal
 #' @examples
 #' library(scales)
-#' show_col(maiden_pal()(5))
+#' show_col(maiden_pal()(10))
 #' @export
 #' @importFrom scales manual_pal
 #' @importFrom glue glue

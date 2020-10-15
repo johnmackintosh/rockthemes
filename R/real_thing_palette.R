@@ -12,7 +12,7 @@ real_thing_palette <- c(
 #' @rdname real_thing_pal
 #' @examples
 #' library(scales)
-#' show_col(real_thing_pal()(5))
+#' show_col(real_thing_pal()(10))
 #' @export
 #' @importFrom scales manual_pal
 #' @importFrom glue glue

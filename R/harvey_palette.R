@@ -20,7 +20,7 @@ harvey_palette <- c(
 #' @rdname harvey_pal
 #' @examples
 #' library(scales)
-#' show_col(harvey_pal()(5))
+#' show_col(harvey_pal()(10))
 #' @export
 #' @importFrom scales manual_pal
 #' @importFrom glue glue

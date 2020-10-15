@@ -20,7 +20,7 @@ husker_palette <- c(
 #' @rdname husker_pal
 #' @examples
 #' library(scales)
-#' show_col(husker_pal()(5))
+#' show_col(husker_pal()(10))
 #' @export
 #' @importFrom scales manual_pal
 #' @importFrom glue glue

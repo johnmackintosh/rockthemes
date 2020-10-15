@@ -20,7 +20,7 @@ oasis_palette <- c(
 #' @rdname oasis_pal
 #' @examples
 #' library(scales)
-#' show_col(oasis_pal()(5))
+#' show_col(oasis_pal()(10))
 #' @export
 #' @importFrom scales manual_pal
 #' @importFrom glue glue

@@ -20,7 +20,7 @@ muse_palette <- c(
 #' @rdname muse_pal
 #' @examples
 #' library(scales)
-#' show_col(muse_pal()(5))
+#' show_col(muse_pal()(10))
 #' @export
 #' @importFrom scales manual_pal
 #' @importFrom glue glue

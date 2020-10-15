@@ -20,7 +20,7 @@ coltrane_palette <- c(
 #' @rdname coltrane_pal
 #' @examples
 #' library(scales)
-#' show_col(coltrane_pal()(5))
+#' show_col(coltrane_pal()(10))
 #' @export
 #' @importFrom scales manual_pal
 #' @importFrom glue glue

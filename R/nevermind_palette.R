@@ -20,7 +20,7 @@ nevermind_palette <- c(
 #' @rdname nevermind_pal
 #' @examples
 #' library(scales)
-#' show_col(nevermind_pal()(5))
+#' show_col(nevermind_pal()(10))
 #' @export
 #' @importFrom scales manual_pal
 #' @importFrom glue glue

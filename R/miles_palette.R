@@ -20,7 +20,7 @@ miles_palette <- c(
 #' @rdname miles_pal
 #' @examples
 #' library(scales)
-#' show_col(miles_pal()(5))
+#' show_col(miles_pal()(10))
 #' @export
 #' @importFrom scales manual_pal
 #' @importFrom glue glue

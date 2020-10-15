@@ -21,7 +21,7 @@ gunsnroses_palette <- c(
 #' @rdname gunsnroses_pal
 #' @examples
 #' library(scales)
-#' show_col(gunsnroses_pal()(5))
+#' show_col(gunsnroses_pal()(10))
 #' @export
 #' @importFrom scales manual_pal
 #' @importFrom glue glue

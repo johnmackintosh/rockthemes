@@ -20,7 +20,7 @@ metallica_palette <- c(
 #' @rdname metallica_pal
 #' @examples
 #' library(scales)
-#' show_col(metallica_pal()(5))
+#' show_col(metallica_pal()(10))
 #' @export
 #' @importFrom scales manual_pal
 #' @importFrom glue glue

@@ -20,7 +20,7 @@ taylor_palette <- c(
 #' @rdname taylor_pal
 #' @examples
 #' library(scales)
-#' show_col(taylor_pal()(5))
+#' show_col(taylor_pal()(10))
 #' @export
 #' @importFrom scales manual_pal
 #' @importFrom glue glue

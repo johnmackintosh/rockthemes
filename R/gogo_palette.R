@@ -20,7 +20,7 @@ gogo_palette <- c(
 #' @rdname gogo_pal
 #' @examples
 #' library(scales)
-#' show_col(gogo_pal()(5))
+#' show_col(gogo_pal()(10))
 #' @export
 #' @importFrom scales manual_pal
 #' @importFrom glue glue
