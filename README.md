@@ -63,7 +63,7 @@ library(gapminder)
 
 Inspiration
 
-# <img src="docs/covers/californication.jpg" width="160px" align="left" />
+# <img src="man/figures/californication.jpg" width="160px" align="left" />
 
 ``` r
 rock_palette("californication")
@@ -75,7 +75,7 @@ rock_palette("californication")
 
 Inspiration
 
-# <img src="docs/covers/coltrane.jpg" width="160px" align="left" />
+# <img src="man/figures/coltrane.jpg" width="160px" align="left" />
 
 ``` r
 rock_palette("coltrane")
@@ -87,7 +87,7 @@ rock_palette("coltrane")
 
 Inspiration
 
-# <img src="docs/covers/electric.png" width="160px" align="left" />
+# <img src="man/figures/electric.png" width="160px" align="left" />
 
 ``` r
 rock_palette("electric")
@@ -99,7 +99,7 @@ rock_palette("electric")
 
 Inspiration
 
-# <img src="docs/covers/realthing.jpg" width="160px" align="left" />
+# <img src="man/figures/realthing.jpg" width="160px" align="left" />
 
 ``` r
 rock_palette("faithnomore")
@@ -111,7 +111,7 @@ rock_palette("faithnomore")
 
 Inspiration
 
-# <img src="docs/covers/gogos.jpg" width="160px" align="left" />
+# <img src="man/figures/gogos.jpg" width="160px" align="left" />
 
 ``` r
 rock_palette("gogo")
@@ -123,7 +123,7 @@ rock_palette("gogo")
 
 Inspiration
 
-# <img src="docs/covers/gunsnroses.jpg" width="160px" align="left" />
+# <img src="man/figures/gunsnroses.jpg" width="160px" align="left" />
 
 ``` r
 rock_palette("gunsnroses")
@@ -135,7 +135,7 @@ rock_palette("gunsnroses")
 
 Inspiration
 
-# <img src="docs/covers/harvey.jpg" width="160px" align="left" />
+# <img src="man/figures/harvey.jpg" width="160px" align="left" />
 
 ``` r
 rock_palette("harvey")
@@ -147,7 +147,7 @@ rock_palette("harvey")
 
 Inspiration
 
-# <img src="docs/covers/heep.jpg" width="160px" align="left" />
+# <img src="man/figures/heep.jpg" width="160px" align="left" />
 
 ``` r
 rock_palette("heap")
@@ -159,7 +159,7 @@ rock_palette("heap")
 
 Inspiration
 
-# <img src="docs/covers/husker.jpg" width="160px" align="left" />
+# <img src="man/figures/husker.jpg" width="160px" align="left" />
 
 ``` r
 rock_palette("husker")
@@ -171,7 +171,7 @@ rock_palette("husker")
 
 Inspiration
 
-# <img src="docs/covers/janelle.jpg" width="160px" align="left" />
+# <img src="man/figures/janelle.jpg" width="160px" align="left" />
 
 ``` r
 rock_palette("janelle")
@@ -183,7 +183,7 @@ rock_palette("janelle")
 
 Inspiration
 
-# <img src="docs/covers/maiden.jpg" width="160px" align="left" />
+# <img src="man/figures/maiden.jpg" width="160px" align="left" />
 
 ``` r
 rock_palette("maiden")
@@ -195,7 +195,7 @@ rock_palette("maiden")
 
 Inspiration
 
-# <img src="docs/covers/metallica.jpg" width="160px" align="left" />
+# <img src="man/figures/metallica.jpg" width="160px" align="left" />
 
 ``` r
 rock_palette("metallica")
@@ -207,7 +207,7 @@ rock_palette("metallica")
 
 Inspiration
 
-# <img src="docs/covers/miles.jpg" width="160px" align="left" />
+# <img src="man/figures/miles.jpg" width="160px" align="left" />
 
 ``` r
 rock_palette("miles")
@@ -219,7 +219,7 @@ rock_palette("miles")
 
 Inspiration
 
-# <img src="docs/covers/muse.jpg" width="160px" align="left" />
+# <img src="man/figures/muse.jpg" width="160px" align="left" />
 
 ``` r
 rock_palette("muse")
@@ -231,7 +231,7 @@ rock_palette("muse")
 
 Inspiration
 
-# <img src="docs/covers/nirvana.jpg" width="160px" align="left" />
+# <img src="man/figures/nirvana.jpg" width="160px" align="left" />
 
 ``` r
 rock_palette("nevermind")
@@ -243,7 +243,7 @@ rock_palette("nevermind")
 
 Inspiration
 
-# <img src="docs/covers/oasis.jpg" width="160px" align="left" />
+# <img src="man/figures/oasis.jpg" width="160px" align="left" />
 
 ``` r
 rock_palette("oasis")
@@ -255,7 +255,7 @@ rock_palette("oasis")
 
 Inspiration
 
-# <img src="docs/covers/taylor.jpg" width="160px" align="left" />
+# <img src="man/figures/taylor.jpg" width="160px" align="left" />
 
 ``` r
 rock_palette("swift")
@@ -267,7 +267,7 @@ rock_palette("swift")
 
 Inspiration
 
-# <img src="docs/covers/tencc.jpg" width="160px" align="left" />
+# <img src="man/figures/tencc.jpg" width="160px" align="left" />
 
 ``` r
 rock_palette("tencc")
