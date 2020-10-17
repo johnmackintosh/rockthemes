@@ -7,6 +7,8 @@ rockthemes
 
 [![Build
 Status](https://travis-ci.com/johnmackintosh/rockthemes.svg?branch=main)](https://travis-ci.com/johnmackintosh/rockthemes)
+
+![R-CMD-check](https://github.com/johnmackintosh/rockthemes/workflows/R-CMD-check/badge.svg)
 <!-- badges: end -->
 
 ## Installation
