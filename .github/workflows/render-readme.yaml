@@ -22,7 +22,7 @@ jobs:
         run: Rscript -e 'rmarkdown::render("README.Rmd", output_format = "md_document")'
       - name: Commit results
         run: |
-           git add README.md man/figures/README-*
+          git add README.md man/figures/README-*
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
           git commit README.md -m 'Re-build README.Rmd' || echo "No changes to commit"
