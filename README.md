@@ -51,8 +51,7 @@ Your job is to guess which is which.
 
 ## Why?
 
-Because [this repo of Metallica inspired
-palettes](https://github.com/johnmackintosh/metallicaRt) has been
+Because [metallicaRt](https://github.com/johnmackintosh/metallicaRt) has been
 received quite well on various social media platforms
 
 ## Credit
