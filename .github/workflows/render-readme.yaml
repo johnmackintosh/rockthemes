@@ -17,6 +17,11 @@ jobs:
           install.packages("remotes")
           remotes::install_local(".")
           remotes::install_cran("rmarkdown")
+          remotes::install_cran("ggplot2")
+          remotes::install_cran("scales")
+          remotes::install_cran("glue")
+          remotes::install_cran("dplyr")
+          remotes::install_cran("gapminder")
         shell: Rscript {0}
       - name: Render README
         run: Rscript -e 'rmarkdown::render("README.Rmd", output_format = "md_document")'
