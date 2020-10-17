@@ -20,7 +20,7 @@ nodoubt_palette <- c(
 #' @rdname nodoubt_pal
 #' @examples
 #' library(scales)
-#' show_col(nodoubt_pal()(13))
+#' show_col(nodoubt_pal()(10))
 #' @export
 #' @importFrom scales manual_pal
 #' @importFrom glue glue

@@ -87,7 +87,7 @@ nodoubt palette
 }
 \examples{
 library(scales)
-show_col(nodoubt_pal()(13))
+show_col(nodoubt_pal()(10))
 
 library(ggplot2)
 ggplot(airquality, aes(x = Day, y = Temp,
