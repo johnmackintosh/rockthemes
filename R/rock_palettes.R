@@ -32,8 +32,8 @@ rock_palettes <- list(
 #' \code{californication}, \code{coltrane}, \code{electric}, \code{faithnomore}, 
 #' \code{gogo}, \code{gunsnroses},\code{harvey}, \code{heap},
 #' \code{husker}, \code{janelle}, \code{maiden},\code{metallica},
-#'  \code{miles}, \code{muse},\code{nevermind}, \code{oasis}, 
-#'  \code{swift}, \code{tencc}
+#'  \code{miles}, \code{muse},\code{nevermind}, \code{nodoubt}, 
+#'  \code{oasis}, \code{swift}, \code{tencc}
 #'
 #' @param n Number of colors desired. 
 #' 

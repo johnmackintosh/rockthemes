@@ -70,6 +70,8 @@ Please include an image of the album cover, relevant code.
 
 Please try to keep artists / albums in chronological order in the readme.
 
+Don't forget to update the name param of the \code{rock_palette} function
+
 
 ## Californication
 
@@ -242,7 +244,6 @@ rock_palette("nevermind")
 
 
 ## No Doubt
-
 
 Inspiration
 
