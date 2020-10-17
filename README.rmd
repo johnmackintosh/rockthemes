@@ -258,7 +258,7 @@ Inspiration
 rock_palette("tencc")
 ```
 
-##  No Doubt
+## No Doubt
 
 
 Inspiration
