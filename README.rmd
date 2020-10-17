@@ -19,6 +19,20 @@ knitr::opts_chunk$set(
   <!-- badges: end -->
 
 
+## Installation
+
+This will probably not go to CRAN, so please install using the remotes package.
+
+```{r}
+#library(remotes)
+#remotes::install_github("johnmackintosh/rockthemes")
+library(rockthemes)
+library(ggplot2)
+library(dplyr)
+library(scales)
+library(gapminder)
+```
+
 ## What?
 
 This is a collection of colour palettes based on classic rock album covers.
@@ -41,19 +55,21 @@ Because [this repo of Metallica inspired palettes](https://github.com/johnmackin
 [Thanks to Ryo for the tvthemes package](https://github.com/Ryo-N7/tvthemes) which helped me get this off the ground quickly
 
 
-## Installation
+## Code of Conduct
 
-This will probably not go to CRAN, so please install using the remotes package.
+Please note that the rockthemes project is released with a [Contributor Code of Conduct](https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html). 
 
-```{r}
-#library(remotes)
-#remotes::install_github("johnmackintosh/rockthemes")
-library(rockthemes)
-library(ggplot2)
-library(dplyr)
-library(scales)
-library(gapminder)
-```
+By contributing to this project, you agree to abide by its terms.
+
+
+## Contributing
+
+PR's are welcome, if you feel there is a glaring omission.
+
+Please include an image of the album cover, relevant code. 
+
+Please try to keep artists / albums in chronological order in the readme.
+
 
 ## Californication
 
@@ -137,7 +153,7 @@ rock_palette("harvey")
 ```
 
 
-## Uria Heap
+## Uria Heep
 
 Inspiration
 
@@ -225,6 +241,18 @@ rock_palette("nevermind")
 ```
 
 
+## No Doubt
+
+
+Inspiration
+
+# <img src="man/figures/nodoubt.jpg" width="160px" align="left" />
+
+```{r}
+rock_palette("nodoubt")
+```
+
+
 ## Oasis
 
 Inspiration
@@ -258,16 +286,6 @@ Inspiration
 rock_palette("tencc")
 ```
 
-## No Doubt
-
-
-Inspiration
-
-# <img src="man/figures/nodoubt.jpg" width="160px" align="left" />
-
-```{r}
-rock_palette("nodoubt")
-```
 
 ## Longer colour palettes, more suited for ggplot2 use
 
@@ -345,13 +363,15 @@ show_col(muse_pal()(10))
 
 ```
 
-
-
 ```{r}
 show_col(nevermind_pal()(10))
 
 ```
 
+```{r}
+show_col(nodoubt_pal()(10))
+
+```
 
 ```{r}
 show_col(oasis_pal()(10))
@@ -373,10 +393,6 @@ show_col(tencc_pal()(10))
 
 ```
 
-```{r}
-show_col(nodoubt_pal()(10))
-
-```
 
 
 ```{r}
