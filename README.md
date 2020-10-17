@@ -43,8 +43,6 @@ package.
 #library(remotes)
 #remotes::install_github("johnmackintosh/rockthemes")
 library(rockthemes)
-#> Warning: replacing previous import 'vctrs::data_frame' by 'tibble::data_frame'
-#> when loading 'dplyr'
 library(ggplot2)
 library(dplyr)
 #> 
@@ -275,6 +273,18 @@ rock_palette("tencc")
 
 ![](man/figures/README-unnamed-chunk-19-1.png)<!-- -->
 
+## No Doubt
+
+Inspiration
+
+# <img src="man/figures/nodoubt.jpg" width="160px" align="left" />
+
+``` r
+rock_palette("nodoubt")
+```
+
+![](man/figures/README-unnamed-chunk-20-1.png)<!-- -->
+
 ## Longer colour palettes, more suited for ggplot2 use
 
 The following palettes share the same inspirations, but there are more
@@ -284,109 +294,115 @@ colours, which hopefully increases their utility for data visualisation.
 show_col(californication_pal()(10))
 ```
 
-![](man/figures/README-unnamed-chunk-20-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-21-1.png)<!-- -->
 
 ``` r
 show_col(coltrane_pal()(10))
 ```
 
-![](man/figures/README-unnamed-chunk-21-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-22-1.png)<!-- -->
 
 ``` r
 show_col(electric_pal()(10))
 ```
 
-![](man/figures/README-unnamed-chunk-22-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-23-1.png)<!-- -->
 
 ``` r
 show_col(gogo_pal()(10))
 ```
 
-![](man/figures/README-unnamed-chunk-23-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-24-1.png)<!-- -->
 
 ``` r
 show_col(gunsnroses_pal()(10))
 ```
 
-![](man/figures/README-unnamed-chunk-24-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-25-1.png)<!-- -->
 
 ``` r
 show_col(harvey_pal()(10))
 ```
 
-![](man/figures/README-unnamed-chunk-25-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-26-1.png)<!-- -->
 
 ``` r
 show_col(heap_pal()(10))
 ```
 
-![](man/figures/README-unnamed-chunk-26-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-27-1.png)<!-- -->
 
 ``` r
 show_col(husker_pal()(10))
 ```
 
-![](man/figures/README-unnamed-chunk-27-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-28-1.png)<!-- -->
 
 ``` r
 show_col(janelle_pal()(10))
 ```
 
-![](man/figures/README-unnamed-chunk-28-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-29-1.png)<!-- -->
 
 ``` r
 show_col(maiden_pal()(10))
 ```
 
-![](man/figures/README-unnamed-chunk-29-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-30-1.png)<!-- -->
 
 ``` r
 show_col(metallica_pal()(10))
 ```
 
-![](man/figures/README-unnamed-chunk-30-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-31-1.png)<!-- -->
 
 ``` r
 show_col(miles_pal()(10))
 ```
 
-![](man/figures/README-unnamed-chunk-31-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-32-1.png)<!-- -->
 
 ``` r
 show_col(muse_pal()(10))
 ```
 
-![](man/figures/README-unnamed-chunk-32-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-33-1.png)<!-- -->
 
 ``` r
 show_col(nevermind_pal()(10))
 ```
 
-![](man/figures/README-unnamed-chunk-33-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-34-1.png)<!-- -->
 
 ``` r
 show_col(oasis_pal()(10))
 ```
 
-![](man/figures/README-unnamed-chunk-34-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-35-1.png)<!-- -->
 
 ``` r
 show_col(real_thing_pal()(10))
 ```
 
-![](man/figures/README-unnamed-chunk-35-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-36-1.png)<!-- -->
 
 ``` r
 show_col(taylor_pal()(10))
 ```
 
-![](man/figures/README-unnamed-chunk-36-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-37-1.png)<!-- -->
 
 ``` r
 show_col(tencc_pal()(10))
 ```
 
-![](man/figures/README-unnamed-chunk-37-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-38-1.png)<!-- -->
+
+``` r
+show_col(nodoubt_pal()(10))
+```
+
+![](man/figures/README-unnamed-chunk-39-1.png)<!-- -->
 
 ``` r
 data <- gapminder::gapminder %>% 
@@ -400,7 +416,7 @@ ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
     scale_fill_taylor()
 ```
 
-![](man/figures/README-unnamed-chunk-38-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-40-1.png)<!-- -->
 
 ``` r
     
@@ -411,7 +427,7 @@ ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
     scale_fill_tencc()
 ```
 
-![](man/figures/README-unnamed-chunk-38-2.png)<!-- -->
+![](man/figures/README-unnamed-chunk-40-2.png)<!-- -->
 
 ``` r
     
@@ -422,7 +438,7 @@ ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
     scale_fill_husker()
 ```
 
-![](man/figures/README-unnamed-chunk-38-3.png)<!-- -->
+![](man/figures/README-unnamed-chunk-40-3.png)<!-- -->
 
 ``` r
     
@@ -434,7 +450,7 @@ ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
     scale_fill_janelle()
 ```
 
-![](man/figures/README-unnamed-chunk-38-4.png)<!-- -->
+![](man/figures/README-unnamed-chunk-40-4.png)<!-- -->
 
 ``` r
     
@@ -446,7 +462,7 @@ ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
     scale_fill_californication()
 ```
 
-![](man/figures/README-unnamed-chunk-38-5.png)<!-- -->
+![](man/figures/README-unnamed-chunk-40-5.png)<!-- -->
 
 ``` r
     
@@ -457,7 +473,7 @@ ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
     scale_fill_miles()
 ```
 
-![](man/figures/README-unnamed-chunk-38-6.png)<!-- -->
+![](man/figures/README-unnamed-chunk-40-6.png)<!-- -->
 
 ``` r
     
@@ -469,4 +485,15 @@ ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
     scale_fill_muse()
 ```
 
-![](man/figures/README-unnamed-chunk-38-7.png)<!-- -->
+![](man/figures/README-unnamed-chunk-40-7.png)<!-- -->
+
+``` r
+    
+    ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
+    geom_area(alpha = 0.8) +
+    scale_x_date(breaks = data$year, date_labels = "%Y") +
+    scale_y_continuous(expand = c(0, 0), labels = scales::dollar) +
+    scale_fill_nodoubt()
+```
+
+![](man/figures/README-unnamed-chunk-40-8.png)<!-- -->
