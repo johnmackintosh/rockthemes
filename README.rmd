@@ -258,6 +258,17 @@ Inspiration
 rock_palette("tencc")
 ```
 
+##  No Doubt
+
+
+Inspiration
+
+# <img src="man/figures/nodoubt.jpg" width="160px" align="left" />
+
+```{r}
+rock_palette("nodoubt")
+```
+
 ## Longer colour palettes, more suited for ggplot2 use
 
 The following palettes share the same inspirations, but there are more colours, which hopefully increases their utility for data visualisation.
@@ -362,6 +373,10 @@ show_col(tencc_pal()(10))
 
 ```
 
+```{r}
+show_col(nodoubt_pal()(10))
+
+```
 
 
 ```{r}
@@ -414,7 +429,11 @@ ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
     scale_y_continuous(expand = c(0, 0), labels = scales::dollar) +
     scale_fill_muse()
     
-    
+    ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
+    geom_area(alpha = 0.8) +
+    scale_x_date(breaks = data$year, date_labels = "%Y") +
+    scale_y_continuous(expand = c(0, 0), labels = scales::dollar) +
+    scale_fill_nodoubt()
     
 
 
