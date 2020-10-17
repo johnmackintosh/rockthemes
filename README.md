@@ -9,6 +9,31 @@ rockthemes
 Status](https://travis-ci.com/johnmackintosh/rockthemes.svg?branch=main)](https://travis-ci.com/johnmackintosh/rockthemes)
 <!-- badges: end -->
 
+## Installation
+
+This will probably not go to CRAN, so please install using the remotes
+package.
+
+``` r
+#library(remotes)
+#remotes::install_github("johnmackintosh/rockthemes")
+library(rockthemes)
+#> Warning: replacing previous import 'vctrs::data_frame' by 'tibble::data_frame'
+#> when loading 'dplyr'
+library(ggplot2)
+library(dplyr)
+#> 
+#> Attaching package: 'dplyr'
+#> The following objects are masked from 'package:stats':
+#> 
+#>     filter, lag
+#> The following objects are masked from 'package:base':
+#> 
+#>     intersect, setdiff, setequal, union
+library(scales)
+library(gapminder)
+```
+
 ## What?
 
 This is a collection of colour palettes based on classic rock album
@@ -34,28 +59,24 @@ received quite well on various social media platforms
 package](https://github.com/Ryo-N7/tvthemes) which helped me get this
 off the ground quickly
 
-## Installation
+## Code of Conduct
 
-This will probably not go to CRAN, so please install using the remotes
-package.
+Please note that the rockthemes project is released with a [Contributor
+Code of
+Conduct](https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html).
 
-``` r
-#library(remotes)
-#remotes::install_github("johnmackintosh/rockthemes")
-library(rockthemes)
-library(ggplot2)
-library(dplyr)
-#> 
-#> Attaching package: 'dplyr'
-#> The following objects are masked from 'package:stats':
-#> 
-#>     filter, lag
-#> The following objects are masked from 'package:base':
-#> 
-#>     intersect, setdiff, setequal, union
-library(scales)
-library(gapminder)
-```
+By contributing to this project, you agree to abide by its terms.
+
+## Contributing
+
+PR’s are welcome, if you feel there is a glaring omission.
+
+Please include an image of the album cover, relevant code.
+
+Please try to keep artists / albums in chronological order in the
+readme.
+
+Don’t forget to update the name param of the  function
 
 ## Californication
 
@@ -141,7 +162,7 @@ rock_palette("harvey")
 
 ![](man/figures/README-unnamed-chunk-8-1.png)<!-- -->
 
-## Uria Heap
+## Uria Heep
 
 Inspiration
 
@@ -237,6 +258,18 @@ rock_palette("nevermind")
 
 ![](man/figures/README-unnamed-chunk-16-1.png)<!-- -->
 
+## No Doubt
+
+Inspiration
+
+# <img src="man/figures/nodoubt.jpg" width="160px" align="left" />
+
+``` r
+rock_palette("nodoubt")
+```
+
+![](man/figures/README-unnamed-chunk-17-1.png)<!-- -->
+
 ## Oasis
 
 Inspiration
@@ -247,7 +280,7 @@ Inspiration
 rock_palette("oasis")
 ```
 
-![](man/figures/README-unnamed-chunk-17-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-18-1.png)<!-- -->
 
 ## Taylor Swift
 
@@ -259,7 +292,7 @@ Inspiration
 rock_palette("swift")
 ```
 
-![](man/figures/README-unnamed-chunk-18-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-19-1.png)<!-- -->
 
 ## 10CC
 
@@ -269,18 +302,6 @@ Inspiration
 
 ``` r
 rock_palette("tencc")
-```
-
-![](man/figures/README-unnamed-chunk-19-1.png)<!-- -->
-
-## No Doubt
-
-Inspiration
-
-# <img src="man/figures/nodoubt.jpg" width="160px" align="left" />
-
-``` r
-rock_palette("nodoubt")
 ```
 
 ![](man/figures/README-unnamed-chunk-20-1.png)<!-- -->
@@ -375,31 +396,31 @@ show_col(nevermind_pal()(10))
 ![](man/figures/README-unnamed-chunk-34-1.png)<!-- -->
 
 ``` r
-show_col(oasis_pal()(10))
+show_col(nodoubt_pal()(10))
 ```
 
 ![](man/figures/README-unnamed-chunk-35-1.png)<!-- -->
 
 ``` r
-show_col(real_thing_pal()(10))
+show_col(oasis_pal()(10))
 ```
 
 ![](man/figures/README-unnamed-chunk-36-1.png)<!-- -->
 
 ``` r
-show_col(taylor_pal()(10))
+show_col(real_thing_pal()(10))
 ```
 
 ![](man/figures/README-unnamed-chunk-37-1.png)<!-- -->
 
 ``` r
-show_col(tencc_pal()(10))
+show_col(taylor_pal()(10))
 ```
 
 ![](man/figures/README-unnamed-chunk-38-1.png)<!-- -->
 
 ``` r
-show_col(nodoubt_pal()(10))
+show_col(tencc_pal()(10))
 ```
 
 ![](man/figures/README-unnamed-chunk-39-1.png)<!-- -->
