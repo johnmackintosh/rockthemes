@@ -94,7 +94,7 @@ Inspiration
 rock_palette("californication")
 ```
 
-![](man/figures/unnamed-chunk-2-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-2-1.png)<!-- -->
 
 ## Coltrane
 
@@ -106,7 +106,7 @@ Inspiration
 rock_palette("coltrane")
 ```
 
-![](man/figures/unnamed-chunk-3-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-3-1.png)<!-- -->
 
 ## Electric
 
@@ -118,7 +118,7 @@ Inspiration
 rock_palette("electric")
 ```
 
-![](man/figures/unnamed-chunk-4-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-4-1.png)<!-- -->
 
 ## Faith No More
 
@@ -130,7 +130,7 @@ Inspiration
 rock_palette("faithnomore")
 ```
 
-![](man/figures/unnamed-chunk-5-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-5-1.png)<!-- -->
 
 ## Go Gos
 
@@ -142,7 +142,7 @@ Inspiration
 rock_palette("gogo")
 ```
 
-![](man/figures/unnamed-chunk-6-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-6-1.png)<!-- -->
 
 ## Guns N’ Roses
 
@@ -154,7 +154,7 @@ Inspiration
 rock_palette("gunsnroses")
 ```
 
-![](man/figures/unnamed-chunk-7-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-7-1.png)<!-- -->
 
 ## PJ Harvey
 
@@ -166,7 +166,7 @@ Inspiration
 rock_palette("harvey")
 ```
 
-![](man/figures/unnamed-chunk-8-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-8-1.png)<!-- -->
 
 ## Uria Heep
 
@@ -178,7 +178,7 @@ Inspiration
 rock_palette("heap")
 ```
 
-![](man/figures/unnamed-chunk-9-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-9-1.png)<!-- -->
 
 ## Husker Du
 
@@ -190,7 +190,7 @@ Inspiration
 rock_palette("husker")
 ```
 
-![](man/figures/unnamed-chunk-10-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-10-1.png)<!-- -->
 
 ## Janelle Monae
 
@@ -202,7 +202,7 @@ Inspiration
 rock_palette("janelle")
 ```
 
-![](man/figures/unnamed-chunk-11-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-11-1.png)<!-- -->
 
 ## Iron Maiden
 
@@ -214,7 +214,7 @@ Inspiration
 rock_palette("maiden")
 ```
 
-![](man/figures/unnamed-chunk-12-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-12-1.png)<!-- -->
 
 ## Metallica
 
@@ -226,7 +226,7 @@ Inspiration
 rock_palette("metallica")
 ```
 
-![](man/figures/unnamed-chunk-13-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-13-1.png)<!-- -->
 
 ## Miles Davis
 
@@ -238,7 +238,7 @@ Inspiration
 rock_palette("miles")
 ```
 
-![](man/figures/unnamed-chunk-14-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-14-1.png)<!-- -->
 
 ## Muse
 
@@ -250,7 +250,7 @@ Inspiration
 rock_palette("muse")
 ```
 
-![](man/figures/unnamed-chunk-15-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-15-1.png)<!-- -->
 
 ## Nirvana
 
@@ -262,7 +262,7 @@ Inspiration
 rock_palette("nevermind")
 ```
 
-![](man/figures/unnamed-chunk-16-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-16-1.png)<!-- -->
 
 ## No Doubt
 
@@ -274,7 +274,7 @@ Inspiration
 rock_palette("nodoubt")
 ```
 
-![](man/figures/unnamed-chunk-17-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-17-1.png)<!-- -->
 
 ## Oasis
 
@@ -286,7 +286,7 @@ Inspiration
 rock_palette("oasis")
 ```
 
-![](man/figures/unnamed-chunk-18-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-18-1.png)<!-- -->
 
 ## Taylor Swift
 
@@ -298,7 +298,7 @@ Inspiration
 rock_palette("swift")
 ```
 
-![](man/figures/unnamed-chunk-19-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-19-1.png)<!-- -->
 
 ## 10CC
 
@@ -310,7 +310,7 @@ Inspiration
 rock_palette("tencc")
 ```
 
-![](man/figures/unnamed-chunk-20-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-20-1.png)<!-- -->
 
 ## Longer colour palettes, more suited for ggplot2 use
 
@@ -321,115 +321,115 @@ colours, which hopefully increases their utility for data visualisation.
 show_col(californication_pal()(10))
 ```
 
-![](man/figures/unnamed-chunk-21-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-21-1.png)<!-- -->
 
 ``` r
 show_col(coltrane_pal()(10))
 ```
 
-![](man/figures/unnamed-chunk-22-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-22-1.png)<!-- -->
 
 ``` r
 show_col(electric_pal()(10))
 ```
 
-![](man/figures/unnamed-chunk-23-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-23-1.png)<!-- -->
 
 ``` r
 show_col(gogo_pal()(10))
 ```
 
-![](man/figures/unnamed-chunk-24-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-24-1.png)<!-- -->
 
 ``` r
 show_col(gunsnroses_pal()(10))
 ```
 
-![](man/figures/unnamed-chunk-25-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-25-1.png)<!-- -->
 
 ``` r
 show_col(harvey_pal()(10))
 ```
 
-![](man/figures/unnamed-chunk-26-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-26-1.png)<!-- -->
 
 ``` r
 show_col(heap_pal()(10))
 ```
 
-![](man/figures/unnamed-chunk-27-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-27-1.png)<!-- -->
 
 ``` r
 show_col(husker_pal()(10))
 ```
 
-![](man/figures/unnamed-chunk-28-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-28-1.png)<!-- -->
 
 ``` r
 show_col(janelle_pal()(10))
 ```
 
-![](man/figures/unnamed-chunk-29-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-29-1.png)<!-- -->
 
 ``` r
 show_col(maiden_pal()(10))
 ```
 
-![](man/figures/unnamed-chunk-30-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-30-1.png)<!-- -->
 
 ``` r
 show_col(metallica_pal()(10))
 ```
 
-![](man/figures/unnamed-chunk-31-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-31-1.png)<!-- -->
 
 ``` r
 show_col(miles_pal()(10))
 ```
 
-![](man/figures/unnamed-chunk-32-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-32-1.png)<!-- -->
 
 ``` r
 show_col(muse_pal()(10))
 ```
 
-![](man/figures/unnamed-chunk-33-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-33-1.png)<!-- -->
 
 ``` r
 show_col(nevermind_pal()(10))
 ```
 
-![](man/figures/unnamed-chunk-34-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-34-1.png)<!-- -->
 
 ``` r
 show_col(nodoubt_pal()(10))
 ```
 
-![](man/figures/unnamed-chunk-35-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-35-1.png)<!-- -->
 
 ``` r
 show_col(oasis_pal()(10))
 ```
 
-![](man/figures/unnamed-chunk-36-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-36-1.png)<!-- -->
 
 ``` r
 show_col(real_thing_pal()(10))
 ```
 
-![](man/figures/unnamed-chunk-37-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-37-1.png)<!-- -->
 
 ``` r
 show_col(taylor_pal()(10))
 ```
 
-![](man/figures/unnamed-chunk-38-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-38-1.png)<!-- -->
 
 ``` r
 show_col(tencc_pal()(10))
 ```
 
-![](man/figures/unnamed-chunk-39-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-39-1.png)<!-- -->
 
 ``` r
 data <- gapminder::gapminder %>% 
@@ -443,7 +443,7 @@ ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
     scale_fill_taylor()
 ```
 
-![](man/figures/unnamed-chunk-40-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-40-1.png)<!-- -->
 
 ``` r
     
@@ -454,7 +454,7 @@ ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
     scale_fill_tencc()
 ```
 
-![](man/figures/unnamed-chunk-40-2.png)<!-- -->
+![](man/figures/README-unnamed-chunk-40-2.png)<!-- -->
 
 ``` r
     
@@ -465,7 +465,7 @@ ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
     scale_fill_husker()
 ```
 
-![](man/figures/unnamed-chunk-40-3.png)<!-- -->
+![](man/figures/README-unnamed-chunk-40-3.png)<!-- -->
 
 ``` r
     
@@ -477,7 +477,7 @@ ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
     scale_fill_janelle()
 ```
 
-![](man/figures/unnamed-chunk-40-4.png)<!-- -->
+![](man/figures/README-unnamed-chunk-40-4.png)<!-- -->
 
 ``` r
     
@@ -489,7 +489,7 @@ ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
     scale_fill_californication()
 ```
 
-![](man/figures/unnamed-chunk-40-5.png)<!-- -->
+![](man/figures/README-unnamed-chunk-40-5.png)<!-- -->
 
 ``` r
     
@@ -500,7 +500,7 @@ ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
     scale_fill_miles()
 ```
 
-![](man/figures/unnamed-chunk-40-6.png)<!-- -->
+![](man/figures/README-unnamed-chunk-40-6.png)<!-- -->
 
 ``` r
     
@@ -512,7 +512,7 @@ ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
     scale_fill_muse()
 ```
 
-![](man/figures/unnamed-chunk-40-7.png)<!-- -->
+![](man/figures/README-unnamed-chunk-40-7.png)<!-- -->
 
 ``` r
     
@@ -523,4 +523,4 @@ ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
     scale_fill_nodoubt()
 ```
 
-![](man/figures/unnamed-chunk-40-8.png)<!-- -->
+![](man/figures/README-unnamed-chunk-40-8.png)<!-- -->
