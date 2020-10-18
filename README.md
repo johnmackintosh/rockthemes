@@ -26,6 +26,8 @@ package.
 #library(remotes)
 #remotes::install_github("johnmackintosh/rockthemes")
 library(rockthemes)
+#> Warning: replacing previous import 'vctrs::data_frame' by 'tibble::data_frame'
+#> when loading 'dplyr'
 library(ggplot2)
 library(dplyr)
 #> 
@@ -88,7 +90,7 @@ Don’t forget to update the name param of the  function
 
 Inspiration
 
-# <img src="man/figures/californication.jpg" width="160px" align="left" />
+# <img src="man/figures/californication.png" width="160px" align="left" />
 
 ``` r
 rock_palette("californication")
@@ -100,7 +102,7 @@ rock_palette("californication")
 
 Inspiration
 
-# <img src="man/figures/coltrane.jpg" width="160px" align="left" />
+# <img src="man/figures/coltrane.png" width="160px" align="left" />
 
 ``` r
 rock_palette("coltrane")
@@ -124,7 +126,7 @@ rock_palette("electric")
 
 Inspiration
 
-# <img src="man/figures/realthing.jpg" width="160px" align="left" />
+# <img src="man/figures/realthing.png" width="160px" align="left" />
 
 ``` r
 rock_palette("faithnomore")
@@ -136,7 +138,7 @@ rock_palette("faithnomore")
 
 Inspiration
 
-# <img src="man/figures/gogos.jpg" width="160px" align="left" />
+# <img src="man/figures/gogos.png" width="160px" align="left" />
 
 ``` r
 rock_palette("gogo")
@@ -148,7 +150,7 @@ rock_palette("gogo")
 
 Inspiration
 
-# <img src="man/figures/gunsnroses.jpg" width="160px" align="left" />
+# <img src="man/figures/gunsnroses.png" width="160px" align="left" />
 
 ``` r
 rock_palette("gunsnroses")
@@ -160,7 +162,7 @@ rock_palette("gunsnroses")
 
 Inspiration
 
-# <img src="man/figures/harvey.jpg" width="160px" align="left" />
+# <img src="man/figures/harvey.png" width="160px" align="left" />
 
 ``` r
 rock_palette("harvey")
@@ -172,7 +174,7 @@ rock_palette("harvey")
 
 Inspiration
 
-# <img src="man/figures/heep.jpg" width="160px" align="left" />
+# <img src="man/figures/heep.png" width="160px" align="left" />
 
 ``` r
 rock_palette("heap")
@@ -184,7 +186,7 @@ rock_palette("heap")
 
 Inspiration
 
-# <img src="man/figures/husker.jpg" width="160px" align="left" />
+# <img src="man/figures/husker.png" width="160px" align="left" />
 
 ``` r
 rock_palette("husker")
@@ -196,7 +198,7 @@ rock_palette("husker")
 
 Inspiration
 
-# <img src="man/figures/janelle.jpg" width="160px" align="left" />
+# <img src="man/figures/janelle.png" width="160px" align="left" />
 
 ``` r
 rock_palette("janelle")
@@ -208,7 +210,7 @@ rock_palette("janelle")
 
 Inspiration
 
-# <img src="man/figures/maiden.jpg" width="160px" align="left" />
+# <img src="man/figures/maiden.png" width="160px" align="left" />
 
 ``` r
 rock_palette("maiden")
@@ -220,7 +222,7 @@ rock_palette("maiden")
 
 Inspiration
 
-# <img src="man/figures/metallica.jpg" width="160px" align="left" />
+# <img src="man/figures/metallica.png" width="160px" align="left" />
 
 ``` r
 rock_palette("metallica")
@@ -232,7 +234,7 @@ rock_palette("metallica")
 
 Inspiration
 
-# <img src="man/figures/miles.jpg" width="160px" align="left" />
+# <img src="man/figures/miles.png" width="160px" align="left" />
 
 ``` r
 rock_palette("miles")
@@ -244,7 +246,7 @@ rock_palette("miles")
 
 Inspiration
 
-# <img src="man/figures/muse.jpg" width="160px" align="left" />
+# <img src="man/figures/muse.png" width="160px" align="left" />
 
 ``` r
 rock_palette("muse")
@@ -256,7 +258,7 @@ rock_palette("muse")
 
 Inspiration
 
-# <img src="man/figures/nirvana.jpg" width="160px" align="left" />
+# <img src="man/figures/nirvana.png" width="160px" align="left" />
 
 ``` r
 rock_palette("nevermind")
@@ -268,7 +270,7 @@ rock_palette("nevermind")
 
 Inspiration
 
-# <img src="man/figures/nodoubt.jpg" width="160px" align="left" />
+# <img src="man/figures/nodoubt.png" width="160px" align="left" />
 
 ``` r
 rock_palette("nodoubt")
@@ -280,7 +282,7 @@ rock_palette("nodoubt")
 
 Inspiration
 
-# <img src="man/figures/oasis.jpg" width="160px" align="left" />
+# <img src="man/figures/oasis.png" width="160px" align="left" />
 
 ``` r
 rock_palette("oasis")
@@ -292,7 +294,7 @@ rock_palette("oasis")
 
 Inspiration
 
-# <img src="man/figures/taylor.jpg" width="160px" align="left" />
+# <img src="man/figures/taylor.png" width="160px" align="left" />
 
 ``` r
 rock_palette("swift")
@@ -304,7 +306,7 @@ rock_palette("swift")
 
 Inspiration
 
-# <img src="man/figures/tencc.jpg" width="160px" align="left" />
+# <img src="man/figures/tencc.png" width="160px" align="left" />
 
 ``` r
 rock_palette("tencc")
