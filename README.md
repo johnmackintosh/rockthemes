@@ -17,6 +17,27 @@ README](https://github.com/johnmackintosh/rockthemes/workflows/Render%20README/b
 
 <!-- badges: end -->
 
+## What?
+
+This is a collection of colour palettes based on classic rock album
+covers.
+
+Not all of the artists are ‘rock’, but they appeared in lists of classic
+rock album covers and the internet is never wrong.
+
+The albums were chosen either for their striking covers (in terms of
+colour), or simply, because they are bona fide rock classics.
+
+Your job is to guess which is which.
+
+## Why?
+
+Because [this repo of Metallica inspired
+palettes](https://github.com/johnmackintosh/metallicaRt) has been
+received quite well on various social media platforms, and I figured
+that there were other albums with interesting covers that might provide
+more scope for data visualisation purposes.
+
 ## Installation
 
 This will probably not go to CRAN, so please install using the remotes
@@ -42,49 +63,7 @@ library(scales)
 library(gapminder)
 ```
 
-## What?
-
-This is a collection of colour palettes based on classic rock album
-covers.
-
-Not all of the artists are ‘rock’, but they appeared in lists of classic
-rock album covers and the internet is never wrong.
-
-The albums were chosen either for their striking covers (in terms of
-colour), or simply, because they are bona fide rock classics.
-
-Your job is to guess which is which.
-
-## Why?
-
-Because [this repo of Metallica inspired
-palettes](https://github.com/johnmackintosh/metallicaRt) has been
-received quite well on various social media platforms
-
-## Credit
-
-[Thanks to Ryo for the tvthemes
-package](https://github.com/Ryo-N7/tvthemes) which helped me get this
-off the ground quickly
-
-## Code of Conduct
-
-Please note that the rockthemes project is released with a [Contributor
-Code of
-Conduct](https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html).
-
-By contributing to this project, you agree to abide by its terms.
-
-## Contributing
-
-PR’s are welcome, if you feel there is a glaring omission.
-
-Please include an image of the album cover, relevant code.
-
-Please try to keep artists / albums in chronological order in the
-readme.
-
-Don’t forget to update the name param of the  function
+# Palettes and Themes
 
 ## Californication
 
@@ -433,21 +412,37 @@ show_col(tencc_pal()(10))
 
 ![](man/figures/README-unnamed-chunk-39-1.png)<!-- -->
 
+## Credit
+
+[Thanks to Ryo for the tvthemes
+package](https://github.com/Ryo-N7/tvthemes) which helped me get this
+off the ground quickly
+
+## Code of Conduct
+
+Please note that the rockthemes project is released with a [Contributor
+Code of
+Conduct](https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html).
+
+By contributing to this project, you agree to abide by its terms.
+
+## Contributing
+
+PR’s are welcome, if you feel there is a glaring omission.
+
+Please include an image of the album cover, relevant code.
+
+Please try to keep artists / albums in chronological order in the
+readme.
+
+Don’t forget to update the name param of the rock\_palette function
+
+## More ggplot2 examples
+
 ``` r
 data <- gapminder::gapminder %>% 
     filter(country %in% c("France", "Germany", "Ireland", "Italy", "Japan")) %>% 
     mutate(year = as.Date(paste(year, "-01-01", sep = "", format = '%Y-%b-%d')))
-
-ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
-    geom_area(alpha = 0.8) +
-    scale_x_date(breaks = data$year, date_labels = "%Y") +
-    scale_y_continuous(expand = c(0, 0), labels = scales::dollar) +
-    scale_fill_taylor()
-```
-
-![](man/figures/README-unnamed-chunk-40-1.png)<!-- -->
-
-``` r
     
 ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
     geom_area(alpha = 0.8) +
@@ -456,7 +451,7 @@ ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
     scale_fill_tencc()
 ```
 
-![](man/figures/README-unnamed-chunk-40-2.png)<!-- -->
+![](man/figures/README-unnamed-chunk-40-1.png)<!-- -->
 
 ``` r
     
@@ -467,7 +462,7 @@ ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
     scale_fill_husker()
 ```
 
-![](man/figures/README-unnamed-chunk-40-3.png)<!-- -->
+![](man/figures/README-unnamed-chunk-40-2.png)<!-- -->
 
 ``` r
     
@@ -479,34 +474,10 @@ ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
     scale_fill_janelle()
 ```
 
-![](man/figures/README-unnamed-chunk-40-4.png)<!-- -->
+![](man/figures/README-unnamed-chunk-40-3.png)<!-- -->
 
 ``` r
-    
-    
-    ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
-    geom_area(alpha = 0.8) +
-    scale_x_date(breaks = data$year, date_labels = "%Y") +
-    scale_y_continuous(expand = c(0, 0), labels = scales::dollar) +
-    scale_fill_californication()
-```
-
-![](man/figures/README-unnamed-chunk-40-5.png)<!-- -->
-
-``` r
-    
-    ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
-    geom_area(alpha = 0.8) +
-    scale_x_date(breaks = data$year, date_labels = "%Y") +
-    scale_y_continuous(expand = c(0, 0), labels = scales::dollar) +
-    scale_fill_miles()
-```
-
-![](man/figures/README-unnamed-chunk-40-6.png)<!-- -->
-
-``` r
-    
-    
+  
     ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
     geom_area(alpha = 0.8) +
     scale_x_date(breaks = data$year, date_labels = "%Y") +
@@ -514,7 +485,7 @@ ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
     scale_fill_muse()
 ```
 
-![](man/figures/README-unnamed-chunk-40-7.png)<!-- -->
+![](man/figures/README-unnamed-chunk-40-4.png)<!-- -->
 
 ``` r
     
@@ -525,4 +496,4 @@ ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
     scale_fill_nodoubt()
 ```
 
-![](man/figures/README-unnamed-chunk-40-8.png)<!-- -->
+![](man/figures/README-unnamed-chunk-40-5.png)<!-- -->
