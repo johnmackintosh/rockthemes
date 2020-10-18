@@ -81,6 +81,19 @@
 
 
 <!-- badges: end -->
+<div id="what" class="section level2">
+<h2 class="hasAnchor">
+<a href="#what" class="anchor"></a>What?</h2>
+<p>This is a collection of colour palettes based on classic rock album covers.</p>
+<p>Not all of the artists are ‘rock’, but they appeared in lists of classic rock album covers and the internet is never wrong.</p>
+<p>The albums were chosen either for their striking covers (in terms of colour), or simply, because they are bona fide rock classics.</p>
+<p>Your job is to guess which is which.</p>
+</div>
+<div id="why" class="section level2">
+<h2 class="hasAnchor">
+<a href="#why" class="anchor"></a>Why?</h2>
+<p>Because <a href="https://github.com/johnmackintosh/metallicaRt">this repo of Metallica inspired palettes</a> has been received quite well on various social media platforms, and I figured that there were other albums with interesting covers that might provide more scope for data visualisation purposes.</p>
+</div>
 <div id="installation" class="section level2">
 <h2 class="hasAnchor">
 <a href="#installation" class="anchor"></a>Installation</h2>
@@ -88,8 +101,6 @@
 <div class="sourceCode" id="cb1"><pre class="r"><span class="co">#library(remotes)</span>
 <span class="co">#remotes::install_github("johnmackintosh/rockthemes")</span>
 <span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">rockthemes</span>)
-<span class="co">#&gt; Warning: replacing previous import 'vctrs::data_frame' by 'tibble::data_frame'</span>
-<span class="co">#&gt; when loading 'dplyr'</span>
 <span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">ggplot2</span>)
 <span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">dplyr</span>)
 <span class="co">#&gt; </span>
@@ -103,38 +114,10 @@
 <span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">scales</span>)
 <span class="fu"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="no">gapminder</span>)</pre></div>
 </div>
-<div id="what" class="section level2">
-<h2 class="hasAnchor">
-<a href="#what" class="anchor"></a>What?</h2>
-<p>This is a collection of colour palettes based on classic rock album covers.</p>
-<p>Not all of the artists are ‘rock’, but they appeared in lists of classic rock album covers and the internet is never wrong.</p>
-<p>The albums were chosen either for their striking covers (in terms of colour), or simply, because they are bona fide rock classics.</p>
-<p>Your job is to guess which is which.</p>
 </div>
-<div id="why" class="section level2">
-<h2 class="hasAnchor">
-<a href="#why" class="anchor"></a>Why?</h2>
-<p>Because <a href="https://github.com/johnmackintosh/metallicaRt">this repo of Metallica inspired palettes</a> has been received quite well on various social media platforms</p>
-</div>
-<div id="credit" class="section level2">
-<h2 class="hasAnchor">
-<a href="#credit" class="anchor"></a>Credit</h2>
-<p><a href="https://github.com/Ryo-N7/tvthemes">Thanks to Ryo for the tvthemes package</a> which helped me get this off the ground quickly</p>
-</div>
-<div id="code-of-conduct" class="section level2">
-<h2 class="hasAnchor">
-<a href="#code-of-conduct" class="anchor"></a>Code of Conduct</h2>
-<p>Please note that the rockthemes project is released with a <a href="https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html">Contributor Code of Conduct</a>.</p>
-<p>By contributing to this project, you agree to abide by its terms.</p>
-</div>
-<div id="contributing" class="section level2">
-<h2 class="hasAnchor">
-<a href="#contributing" class="anchor"></a>Contributing</h2>
-<p>PR’s are welcome, if you feel there is a glaring omission.</p>
-<p>Please include an image of the album cover, relevant code.</p>
-<p>Please try to keep artists / albums in chronological order in the readme.</p>
-<p>Don’t forget to update the name param of the function</p>
-</div>
+<div id="palettes-and-themes" class="section level1">
+<h1 class="hasAnchor">
+<a href="#palettes-and-themes" class="anchor"></a>Palettes and Themes</h1>
 <div id="californication" class="section level2">
 <h2 class="hasAnchor">
 <a href="#californication" class="anchor"></a>Californication</h2>
@@ -405,6 +388,29 @@
 <p><img src="reference/figures/README-unnamed-chunk-38-1.png"><!-- --></p>
 <div class="sourceCode" id="cb39"><pre class="r"><span class="fu"><a href="https://scales.r-lib.org//reference/show_col.html">show_col</a></span>(<span class="fu"><a href="reference/tencc_pal.html">tencc_pal</a></span>()(<span class="fl">10</span>))</pre></div>
 <p><img src="reference/figures/README-unnamed-chunk-39-1.png"><!-- --></p>
+</div>
+<div id="credit" class="section level2">
+<h2 class="hasAnchor">
+<a href="#credit" class="anchor"></a>Credit</h2>
+<p><a href="https://github.com/Ryo-N7/tvthemes">Thanks to Ryo for the tvthemes package</a> which helped me get this off the ground quickly</p>
+</div>
+<div id="code-of-conduct" class="section level2">
+<h2 class="hasAnchor">
+<a href="#code-of-conduct" class="anchor"></a>Code of Conduct</h2>
+<p>Please note that the rockthemes project is released with a <a href="https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html">Contributor Code of Conduct</a>.</p>
+<p>By contributing to this project, you agree to abide by its terms.</p>
+</div>
+<div id="contributing" class="section level2">
+<h2 class="hasAnchor">
+<a href="#contributing" class="anchor"></a>Contributing</h2>
+<p>PR’s are welcome, if you feel there is a glaring omission.</p>
+<p>Please include an image of the album cover, relevant code.</p>
+<p>Please try to keep artists / albums in chronological order in the readme.</p>
+<p>Don’t forget to update the name param of the rock_palette function</p>
+</div>
+<div id="more-ggplot2-examples" class="section level2">
+<h2 class="hasAnchor">
+<a href="#more-ggplot2-examples" class="anchor"></a>More ggplot2 examples</h2>
 <div class="sourceCode" id="cb40"><pre class="r"><span class="no">data</span> <span class="kw">&lt;-</span> <span class="kw pkg">gapminder</span><span class="kw ns">::</span><span class="no"><a href="https://rdrr.io/pkg/gapminder/man/gapminder.html">gapminder</a></span> <span class="kw">%&gt;%</span>
     <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html">filter</a></span>(<span class="no">country</span> <span class="kw">%in%</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="st">"France"</span>, <span class="st">"Germany"</span>, <span class="st">"Ireland"</span>, <span class="st">"Italy"</span>, <span class="st">"Japan"</span>)) <span class="kw">%&gt;%</span>
     <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span>(<span class="kw">year</span> <span class="kw">=</span> <span class="fu"><a href="https://rdrr.io/r/base/as.Date.html">as.Date</a></span>(<span class="fu"><a href="https://rdrr.io/r/base/paste.html">paste</a></span>(<span class="no">year</span>, <span class="st">"-01-01"</span>, <span class="kw">sep</span> <span class="kw">=</span> <span class="st">""</span>, <span class="kw">format</span> <span class="kw">=</span> <span class="st">'%Y-%b-%d'</span>)))
@@ -413,60 +419,37 @@
     <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_ribbon.html">geom_area</a></span>(<span class="kw">alpha</span> <span class="kw">=</span> <span class="fl">0.8</span>) +
     <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_date.html">scale_x_date</a></span>(<span class="kw">breaks</span> <span class="kw">=</span> <span class="no">data</span>$<span class="no">year</span>, <span class="kw">date_labels</span> <span class="kw">=</span> <span class="st">"%Y"</span>) +
     <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_continuous.html">scale_y_continuous</a></span>(<span class="kw">expand</span> <span class="kw">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="fl">0</span>, <span class="fl">0</span>), <span class="kw">labels</span> <span class="kw">=</span> <span class="kw pkg">scales</span><span class="kw ns">::</span><span class="no"><a href="https://scales.r-lib.org//reference/label_dollar.html">dollar</a></span>) +
-    <span class="fu"><a href="reference/taylor_pal.html">scale_fill_taylor</a></span>()</pre></div>
+    <span class="fu"><a href="reference/tencc_pal.html">scale_fill_tencc</a></span>()</pre></div>
 <p><img src="reference/figures/README-unnamed-chunk-40-1.png"><!-- --></p>
 <div class="sourceCode" id="cb41"><pre class="r">
-<span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span>(<span class="kw">data</span> <span class="kw">=</span> <span class="no">data</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span>(<span class="kw">x</span> <span class="kw">=</span> <span class="no">year</span>, <span class="kw">y</span> <span class="kw">=</span> <span class="no">gdpPercap</span>, <span class="kw">fill</span> <span class="kw">=</span> <span class="no">country</span>)) +
-    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_ribbon.html">geom_area</a></span>(<span class="kw">alpha</span> <span class="kw">=</span> <span class="fl">0.8</span>) +
-    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_date.html">scale_x_date</a></span>(<span class="kw">breaks</span> <span class="kw">=</span> <span class="no">data</span>$<span class="no">year</span>, <span class="kw">date_labels</span> <span class="kw">=</span> <span class="st">"%Y"</span>) +
-    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_continuous.html">scale_y_continuous</a></span>(<span class="kw">expand</span> <span class="kw">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="fl">0</span>, <span class="fl">0</span>), <span class="kw">labels</span> <span class="kw">=</span> <span class="kw pkg">scales</span><span class="kw ns">::</span><span class="no"><a href="https://scales.r-lib.org//reference/label_dollar.html">dollar</a></span>) +
-    <span class="fu"><a href="reference/tencc_pal.html">scale_fill_tencc</a></span>()</pre></div>
-<p><img src="reference/figures/README-unnamed-chunk-40-2.png"><!-- --></p>
-<div class="sourceCode" id="cb42"><pre class="r">
     <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span>(<span class="kw">data</span> <span class="kw">=</span> <span class="no">data</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span>(<span class="kw">x</span> <span class="kw">=</span> <span class="no">year</span>, <span class="kw">y</span> <span class="kw">=</span> <span class="no">gdpPercap</span>, <span class="kw">fill</span> <span class="kw">=</span> <span class="no">country</span>)) +
     <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_ribbon.html">geom_area</a></span>(<span class="kw">alpha</span> <span class="kw">=</span> <span class="fl">0.8</span>) +
     <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_date.html">scale_x_date</a></span>(<span class="kw">breaks</span> <span class="kw">=</span> <span class="no">data</span>$<span class="no">year</span>, <span class="kw">date_labels</span> <span class="kw">=</span> <span class="st">"%Y"</span>) +
     <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_continuous.html">scale_y_continuous</a></span>(<span class="kw">expand</span> <span class="kw">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="fl">0</span>, <span class="fl">0</span>), <span class="kw">labels</span> <span class="kw">=</span> <span class="kw pkg">scales</span><span class="kw ns">::</span><span class="no"><a href="https://scales.r-lib.org//reference/label_dollar.html">dollar</a></span>) +
     <span class="fu"><a href="reference/husker_pal.html">scale_fill_husker</a></span>()</pre></div>
-<p><img src="reference/figures/README-unnamed-chunk-40-3.png"><!-- --></p>
-<div class="sourceCode" id="cb43"><pre class="r">
+<p><img src="reference/figures/README-unnamed-chunk-40-2.png"><!-- --></p>
+<div class="sourceCode" id="cb42"><pre class="r">
 
     <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span>(<span class="kw">data</span> <span class="kw">=</span> <span class="no">data</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span>(<span class="kw">x</span> <span class="kw">=</span> <span class="no">year</span>, <span class="kw">y</span> <span class="kw">=</span> <span class="no">gdpPercap</span>, <span class="kw">fill</span> <span class="kw">=</span> <span class="no">country</span>)) +
     <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_ribbon.html">geom_area</a></span>(<span class="kw">alpha</span> <span class="kw">=</span> <span class="fl">0.8</span>) +
     <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_date.html">scale_x_date</a></span>(<span class="kw">breaks</span> <span class="kw">=</span> <span class="no">data</span>$<span class="no">year</span>, <span class="kw">date_labels</span> <span class="kw">=</span> <span class="st">"%Y"</span>) +
     <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_continuous.html">scale_y_continuous</a></span>(<span class="kw">expand</span> <span class="kw">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="fl">0</span>, <span class="fl">0</span>), <span class="kw">labels</span> <span class="kw">=</span> <span class="kw pkg">scales</span><span class="kw ns">::</span><span class="no"><a href="https://scales.r-lib.org//reference/label_dollar.html">dollar</a></span>) +
     <span class="fu"><a href="reference/janelle_pal.html">scale_fill_janelle</a></span>()</pre></div>
-<p><img src="reference/figures/README-unnamed-chunk-40-4.png"><!-- --></p>
-<div class="sourceCode" id="cb44"><pre class="r">
-
-    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span>(<span class="kw">data</span> <span class="kw">=</span> <span class="no">data</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span>(<span class="kw">x</span> <span class="kw">=</span> <span class="no">year</span>, <span class="kw">y</span> <span class="kw">=</span> <span class="no">gdpPercap</span>, <span class="kw">fill</span> <span class="kw">=</span> <span class="no">country</span>)) +
-    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_ribbon.html">geom_area</a></span>(<span class="kw">alpha</span> <span class="kw">=</span> <span class="fl">0.8</span>) +
-    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_date.html">scale_x_date</a></span>(<span class="kw">breaks</span> <span class="kw">=</span> <span class="no">data</span>$<span class="no">year</span>, <span class="kw">date_labels</span> <span class="kw">=</span> <span class="st">"%Y"</span>) +
-    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_continuous.html">scale_y_continuous</a></span>(<span class="kw">expand</span> <span class="kw">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="fl">0</span>, <span class="fl">0</span>), <span class="kw">labels</span> <span class="kw">=</span> <span class="kw pkg">scales</span><span class="kw ns">::</span><span class="no"><a href="https://scales.r-lib.org//reference/label_dollar.html">dollar</a></span>) +
-    <span class="fu"><a href="reference/californication_pal.html">scale_fill_californication</a></span>()</pre></div>
-<p><img src="reference/figures/README-unnamed-chunk-40-5.png"><!-- --></p>
-<div class="sourceCode" id="cb45"><pre class="r">
-    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span>(<span class="kw">data</span> <span class="kw">=</span> <span class="no">data</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span>(<span class="kw">x</span> <span class="kw">=</span> <span class="no">year</span>, <span class="kw">y</span> <span class="kw">=</span> <span class="no">gdpPercap</span>, <span class="kw">fill</span> <span class="kw">=</span> <span class="no">country</span>)) +
-    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_ribbon.html">geom_area</a></span>(<span class="kw">alpha</span> <span class="kw">=</span> <span class="fl">0.8</span>) +
-    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_date.html">scale_x_date</a></span>(<span class="kw">breaks</span> <span class="kw">=</span> <span class="no">data</span>$<span class="no">year</span>, <span class="kw">date_labels</span> <span class="kw">=</span> <span class="st">"%Y"</span>) +
-    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_continuous.html">scale_y_continuous</a></span>(<span class="kw">expand</span> <span class="kw">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="fl">0</span>, <span class="fl">0</span>), <span class="kw">labels</span> <span class="kw">=</span> <span class="kw pkg">scales</span><span class="kw ns">::</span><span class="no"><a href="https://scales.r-lib.org//reference/label_dollar.html">dollar</a></span>) +
-    <span class="fu"><a href="reference/miles_pal.html">scale_fill_miles</a></span>()</pre></div>
-<p><img src="reference/figures/README-unnamed-chunk-40-6.png"><!-- --></p>
-<div class="sourceCode" id="cb46"><pre class="r">
-
+<p><img src="reference/figures/README-unnamed-chunk-40-3.png"><!-- --></p>
+<div class="sourceCode" id="cb43"><pre class="r">
     <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span>(<span class="kw">data</span> <span class="kw">=</span> <span class="no">data</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span>(<span class="kw">x</span> <span class="kw">=</span> <span class="no">year</span>, <span class="kw">y</span> <span class="kw">=</span> <span class="no">gdpPercap</span>, <span class="kw">fill</span> <span class="kw">=</span> <span class="no">country</span>)) +
     <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_ribbon.html">geom_area</a></span>(<span class="kw">alpha</span> <span class="kw">=</span> <span class="fl">0.8</span>) +
     <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_date.html">scale_x_date</a></span>(<span class="kw">breaks</span> <span class="kw">=</span> <span class="no">data</span>$<span class="no">year</span>, <span class="kw">date_labels</span> <span class="kw">=</span> <span class="st">"%Y"</span>) +
     <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_continuous.html">scale_y_continuous</a></span>(<span class="kw">expand</span> <span class="kw">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="fl">0</span>, <span class="fl">0</span>), <span class="kw">labels</span> <span class="kw">=</span> <span class="kw pkg">scales</span><span class="kw ns">::</span><span class="no"><a href="https://scales.r-lib.org//reference/label_dollar.html">dollar</a></span>) +
     <span class="fu"><a href="reference/muse_pal.html">scale_fill_muse</a></span>()</pre></div>
-<p><img src="reference/figures/README-unnamed-chunk-40-7.png"><!-- --></p>
-<div class="sourceCode" id="cb47"><pre class="r">
+<p><img src="reference/figures/README-unnamed-chunk-40-4.png"><!-- --></p>
+<div class="sourceCode" id="cb44"><pre class="r">
     <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span>(<span class="kw">data</span> <span class="kw">=</span> <span class="no">data</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span>(<span class="kw">x</span> <span class="kw">=</span> <span class="no">year</span>, <span class="kw">y</span> <span class="kw">=</span> <span class="no">gdpPercap</span>, <span class="kw">fill</span> <span class="kw">=</span> <span class="no">country</span>)) +
     <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_ribbon.html">geom_area</a></span>(<span class="kw">alpha</span> <span class="kw">=</span> <span class="fl">0.8</span>) +
     <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_date.html">scale_x_date</a></span>(<span class="kw">breaks</span> <span class="kw">=</span> <span class="no">data</span>$<span class="no">year</span>, <span class="kw">date_labels</span> <span class="kw">=</span> <span class="st">"%Y"</span>) +
     <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_continuous.html">scale_y_continuous</a></span>(<span class="kw">expand</span> <span class="kw">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span>(<span class="fl">0</span>, <span class="fl">0</span>), <span class="kw">labels</span> <span class="kw">=</span> <span class="kw pkg">scales</span><span class="kw ns">::</span><span class="no"><a href="https://scales.r-lib.org//reference/label_dollar.html">dollar</a></span>) +
     <span class="fu"><a href="reference/nodoubt_pal.html">scale_fill_nodoubt</a></span>()</pre></div>
-<p><img src="reference/figures/README-unnamed-chunk-40-8.png"><!-- --></p>
+<p><img src="reference/figures/README-unnamed-chunk-40-5.png"><!-- --></p>
 </div>
 </div>
 
