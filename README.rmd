@@ -422,20 +422,15 @@ show_col(tencc_pal()(10))
 
 ## Code of Conduct
 
-Please note that the rockthemes project is released with a [Contributor Code of Conduct](https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html). 
+Please note that the rockthemes project is released with a
+[Contributor Code of Conduct](CODE_OF_CONDUCT.md). By contributing to this
+project you agree to abide by its terms. 
 
-By contributing to this project, you agree to abide by its terms.
 
 
 ## Contributing
 
-PR's are welcome, if you feel there is a glaring omission.
-
-Please include an image of the album cover, relevant code. 
-
-Please try to keep artists / albums in chronological order in the readme.
-
-Don't forget to update the name param of the rock_palette function
+See the [Contribution guide](.github/CONTRIBUTING.md)
 
 
 ## More ggplot2 examples
