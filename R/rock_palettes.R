@@ -6,7 +6,8 @@ rock_palettes <- list(
     gogo = c("#C4C9C8", "#259BDA", "#B26E47", "#87492F"),
     gunsnroses = c("#100F12", "#C28B68", "#6877A7", "#729094"),
     harvey = c("#C6D4D6", "#274C4F", "#A4432D", "#B17C51"),
-    heap = c("#466E9A", "#E84D45", "#21201C", "#A1BAAC"),
+    heep = c("#466E9A", "#E84D45", "#21201C", "#A1BAAC"),
+    hellawaits = c("#995026", "#281D13", "#D7C698", "#AC9D9A"),
     husker = c("#422537", "#D58078","#86A556", "#624FB0"),
     janelle = c("#916364","#E2D6BF", "#21121B", "#B3ACC7"),
     maiden = c("#8FBBCE", "#265F8A", "#78704B", "#4A5372"),
@@ -14,12 +15,11 @@ rock_palettes <- list(
     miles = c("#C1C6CF", "#180C18", "#933450", "#D99755"),
     muse = c("#3B1A35","#D27F9A","#885EA5","#9D94B3"),
     nevermind = c("#B5BECE","#4DB8DA","#286B9F","#121725"),
-    oasis = c("#B5AF93", "#293845", "#5B4E4D", "#685F41"),
-    swift = c("#CDC1B1","#444550","#865242", "#A26847"),
-    tencc = c("#FADB75", "#BDA2A8", "#AB6749", "#211710"), 
     nodoubt = c("#385581", "#6dbac6", "#dac190", "#c9052c"),
-    hellawaits = c("#995026", "#281D13", "#D7C698", "#AC9D9A"),
-    peacesells = c("#9A5155", "#483943", "#ECC463", "#A497B2")
+    oasis = c("#B5AF93", "#293845", "#5B4E4D", "#685F41"),
+    peacesells = c("#9A5155", "#483943", "#ECC463", "#A497B2"),
+    swift = c("#CDC1B1","#444550","#865242", "#A26847"),
+    tencc = c("#FADB75", "#BDA2A8", "#AB6749", "#211710")
 )
 
 
@@ -32,11 +32,11 @@ rock_palettes <- list(
 #'
 #' @param name Name of palette. Select one:
 #' \code{californication}, \code{coltrane}, \code{electric}, \code{faithnomore}, 
-#' \code{gogo}, \code{gunsnroses},\code{harvey}, \code{heap},
-#' \code{husker}, \code{janelle}, \code{maiden},\code{metallica},
-#' \code{miles}, \code{muse},\code{nevermind}, \code{nodoubt}, 
-#' \code{oasis}, \code{swift}, \code{tencc}, \code{hellawaits}, 
-#' \code{peacesells}
+#' \code{gogo}, \code{gunsnroses},\code{harvey}, \code{heep},
+#' \code{hellawaits}, \code{husker}, \code{janelle}, \code{maiden},
+#' \code{metallica}, \code{miles}, \code{muse},\code{nevermind},  
+#' \code{nodoubt}, \code{oasis}, \code{peacesells}, \code{swift},  
+#' \code{tencc}
 #'
 #' @param n Number of colors desired. 
 #' 
