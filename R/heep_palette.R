@@ -1,4 +1,4 @@
-heap_palette <- c(
+heep_palette <- c(
     "#e7e4e3",
     "#e1959e",
     "#90b2a1",
@@ -11,50 +11,50 @@ heap_palette <- c(
     "#353225"
 )
 
-#' @title heap palette
-#' @description heap palette
+#' @title heep palette
+#' @description heep palette
 #' @inheritDotParams ggplot2::discrete_scale
 #' @param n number of colors
 #' @param type discrete or continuous
 #' @param reverse reverse order, Default: FALSE
-#' @rdname heap_pal
+#' @rdname heep_pal
 #' @examples
 #' library(scales)
-#' show_col(heap_pal()(10))
+#' show_col(heep_pal()(10))
 #' @export
 #' @importFrom scales manual_pal
 #' @importFrom glue glue
 #' @importFrom grDevices colorRampPalette
 
-heap_pal <- function(n, type = c("discrete", "continuous"),
+heep_pal <- function(n, type = c("discrete", "continuous"),
                        reverse = FALSE){
-    heap <- heap_palette
+    heep <- heep_palette
     
     if (reverse == TRUE) {
-        heap <- rev(heap)
+        heep <- rev(heep)
     }
     
     if (missing(n)) {
-        n <- length(heap)
+        n <- length(heep)
     }
     
     type <- match.arg(type)
     
-    if (type == "discrete" && n > length(heap)) {
-        stop(glue::glue("Palette does not have {n} colors, maximum is {length(heap)}!"))
+    if (type == "discrete" && n > length(heep)) {
+        stop(glue::glue("Palette does not have {n} colors, maximum is {length(heep)}!"))
     }
     
-    heap <- switch(type,
-                     continuous = grDevices::colorRampPalette(heap)(n),
-                     discrete = heap[1:n])
+    heep <- switch(type,
+                     continuous = grDevices::colorRampPalette(heep)(n),
+                     discrete = heep[1:n])
     
-    heap <- scales::manual_pal(heap)
+    heep <- scales::manual_pal(heep)
     
-    return(heap)
+    return(heep)
 }
 
-#' @title scale_color_heap
-#' @rdname heap_pal
+#' @title scale_color_heep
+#' @rdname heep_pal
 #' @export
 #' @examples
 #'
@@ -62,53 +62,53 @@ heap_pal <- function(n, type = c("discrete", "continuous"),
 #' ggplot(airquality, aes(x = Day, y = Temp,
 #'      group = as.factor(Month), color = as.factor(Month))) +
 #'      geom_point(size = 2.5) +
-#'      scale_color_heap()
+#'      scale_color_heep()
 #' @importFrom ggplot2 discrete_scale scale_color_gradientn
 
-scale_color_heap <- function(n, type = "discrete",
+scale_color_heep <- function(n, type = "discrete",
                                reverse = FALSE, ...){
     if (type == "discrete") {
-        ggplot2::discrete_scale("color", "heap",
-                                heap_pal(n = n, type = type,
+        ggplot2::discrete_scale("color", "heep",
+                                heep_pal(n = n, type = type,
                                            reverse = reverse), ...)
     } else {
-        ggplot2::scale_color_gradientn(colors = heap_pal(n = n, type = type,
+        ggplot2::scale_color_gradientn(colors = heep_pal(n = n, type = type,
                                                            reverse = reverse)(8))
     }
 }
 
-#' @title scale_colour_heap
-#' @rdname heap_pal
+#' @title scale_colour_heep
+#' @rdname heep_pal
 #' @export
 #' @examples
 #'
 #' ggplot(airquality, aes(x = Day, y = Temp,
 #'      group = as.factor(Month), color = as.factor(Month))) +
 #'      geom_point(size = 2.5) +
-#'      scale_colour_heap()
+#'      scale_colour_heep()
 #' @importFrom ggplot2 discrete_scale scale_color_gradientn
 
-scale_colour_heap <- scale_color_heap
+scale_colour_heep <- scale_color_heep
 
-#' @title scale_fill_heap
-#' @rdname heap_pal
+#' @title scale_fill_heep
+#' @rdname heep_pal
 #' @export
 #' @examples
 #'
 #' ggplot(mpg, aes(displ)) +
 #'     geom_histogram(aes(fill = class),
 #'                    col = "black", size = 0.1) +
-#'     scale_fill_heap()
+#'     scale_fill_heep()
 #' @importFrom ggplot2 discrete_scale scale_fill_gradientn
 
-scale_fill_heap <- function(n, type = "discrete",
+scale_fill_heep <- function(n, type = "discrete",
                               reverse = FALSE, ...){
     if (type == "discrete") {
-        ggplot2::discrete_scale("fill", "heap",
-                                heap_pal(n = n, type = type,
+        ggplot2::discrete_scale("fill", "heep",
+                                heep_pal(n = n, type = type,
                                            reverse = reverse), ...)
     } else {
-        ggplot2::scale_fill_gradientn(colors = heap_pal(n = n, type = type,
+        ggplot2::scale_fill_gradientn(colors = heep_pal(n = n, type = type,
                                                           reverse = reverse)(8))
     }
 }
