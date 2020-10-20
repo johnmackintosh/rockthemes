@@ -30,7 +30,7 @@ knitr::opts_chunk$set(
 
 This is a collection of colour palettes based on classic rock album covers.
 
-Not all of the artists are 'rock', but they appeared in lists of classic rock album covers and the internet is never wrong.
+Not all of the artists are 'rock', but they appeared in lists of classic rock album covers and the internet is never wrong, is it ;)
 
 The albums were chosen  either for their striking covers (in terms of colour), or simply, because
 they are bona fide rock classics. 
@@ -66,7 +66,7 @@ Inspiration
 
 # <img src="man/figures/californication.png" width="160px" align="left" />
 
-```{r}
+```{r californication}
 rock_palette("californication")
 
 ```
@@ -78,7 +78,7 @@ Inspiration
 
 # <img src="man/figures/coltrane.png" width="160px" align="left" />
 
-```{r}
+```{r coltrane}
 rock_palette("coltrane")
 
 ```
@@ -90,7 +90,7 @@ Inspiration
 
 # <img src="man/figures/electric.png" width="160px" align="left" />
 
-```{r}
+```{r electric}
 rock_palette("electric")
 ```
 
@@ -101,7 +101,7 @@ Inspiration
 
 # <img src="man/figures/realthing.png" width="160px" align="left" />
 
-```{r}
+```{r faithnomore}
 rock_palette("faithnomore")
 
 ```
@@ -113,7 +113,7 @@ Inspiration
 
 # <img src="man/figures/gogos.png" width="160px" align="left" />
 
-```{r}
+```{r gogo}
 rock_palette("gogo")
 
 ```
@@ -126,30 +126,10 @@ Inspiration
 
 # <img src="man/figures/gunsnroses.png" width="160px" align="left" />
 
-```{r}
+```{r gnr}
 rock_palette("gunsnroses")
 ```
 
-
-## Slayer
-
-Inspiration
-
-# <img src="man/figures/hellawaits.png" width="160px" align="left" />
-
-```{r}
-rock_palette("hellawaits")
-```
-
-## Meagdeth
-
-Inspiration
-
-# <img src="man/figures/peacesells.png" width="160px" align="left" />
-
-```{r}
-rock_palette("peacesells")
-```
 
 ## PJ Harvey
 
@@ -157,7 +137,7 @@ Inspiration
 
 # <img src="man/figures/harvey.png" width="160px" align="left" />
 
-```{r}
+```{r harvey}
 rock_palette("harvey")
 ```
 
@@ -168,10 +148,20 @@ Inspiration
 
 # <img src="man/figures/heep.png" width="160px" align="left" />
 
-```{r}
-rock_palette("heap")
+```{r heep}
+rock_palette("heep")
 ```
 
+
+## Hell Awaits - Slayer
+
+Inspiration
+
+# <img src="man/figures/hellawaits.png" width="160px" align="left" />
+
+```{r slayer}
+rock_palette("hellawaits")
+```
 
 ## Husker Du
 
@@ -179,7 +169,7 @@ Inspiration
 
 # <img src="man/figures/husker.png" width="160px" align="left" />
 
-```{r}
+```{r husker}
 rock_palette("husker")
 ```
 
@@ -191,7 +181,7 @@ Inspiration
 
 # <img src="man/figures/janelle.png" width="160px" align="left" />
 
-```{r}
+```{r janelle}
 rock_palette("janelle")
 ```
 
@@ -202,7 +192,7 @@ Inspiration
 
 # <img src="man/figures/maiden.png" width="160px" align="left" />
 
-```{r}
+```{r maiden}
 rock_palette("maiden")
 ```
 
@@ -213,7 +203,7 @@ Inspiration
 
 # <img src="man/figures/metallica.png" width="160px" align="left" />
 
-```{r}
+```{r metallica}
 rock_palette("metallica")
 ```
 
@@ -223,7 +213,7 @@ Inspiration
 
 # <img src="man/figures/miles.png" width="160px" align="left" />
 
-```{r}
+```{r miles}
 rock_palette("miles")
 ```
 
@@ -234,7 +224,7 @@ Inspiration
 
 # <img src="man/figures/muse.png" width="160px" align="left" />
 
-```{r}
+```{r muse}
 rock_palette("muse")
 ```
 
@@ -245,7 +235,7 @@ Inspiration
 
 # <img src="man/figures/nirvana.png" width="160px" align="left" />
 
-```{r}
+```{r nirvana}
 rock_palette("nevermind")
 ```
 
@@ -256,7 +246,7 @@ Inspiration
 
 # <img src="man/figures/nodoubt.png" width="160px" align="left" />
 
-```{r}
+```{r nodoubt}
 rock_palette("nodoubt")
 ```
 
@@ -267,10 +257,20 @@ Inspiration
 
 # <img src="man/figures/oasis.png" width="160px" align="left" />
 
-```{r}
+```{r oasis}
 rock_palette("oasis")
 ```
 
+
+## Peace Sells - Megadeth
+
+Inspiration
+
+# <img src="man/figures/peacesells.png" width="160px" align="left" />
+
+```{r peacesells}
+rock_palette("peacesells")
+```
 
 ## Taylor Swift
 
@@ -278,7 +278,7 @@ Inspiration
 
 # <img src="man/figures/taylor.png" width="160px" align="left" />
 
-```{r}
+```{r swift}
 rock_palette("swift")
 ```
 
@@ -290,7 +290,7 @@ Inspiration
 
 # <img src="man/figures/tencc.png" width="160px" align="left" />
 
-```{r}
+```{r tencc}
 rock_palette("tencc")
 ```
 
@@ -299,114 +299,117 @@ rock_palette("tencc")
 
 The following palettes share the same inspirations, but there are more colours, which hopefully increases their utility for data visualisation.
 
-```{r}
+```{r cal10}
 show_col(californication_pal()(10))
 
 ```
 
-```{r}
+```{r coltrane10}
 show_col(coltrane_pal()(10))
 
 ```
 
-```{r}
+```{r electric10}
 show_col(electric_pal()(10))
 
 ```
 
 
-```{r}
+```{r gogo10}
 show_col(gogo_pal()(10))
 
 ```
 
 
-```{r}
+```{r gnr10}
 show_col(gunsnroses_pal()(10))
 
 ```
 
-```{r}
-show_col(hellawaits_pal()(10))
 
-```
-
-```{r}
-show_col(peacesells_pal()(10))
-
-```
-
-
-```{r}
+```{r harvey10}
 show_col(harvey_pal()(10))
 
 ```
 
-```{r}
-show_col(heap_pal()(10))
+```{r heep10}
+show_col(heep_pal()(10))
 
 ```
 
 
-```{r}
+```{r slayer10}
+show_col(hellawaits_pal()(10))
+
+```
+
+
+```{r husker10}
 show_col(husker_pal()(10))
 
 ```
 
-```{r}
+```{r janell10}
 show_col(janelle_pal()(10))
 
 ```
 
 
-```{r}
+```{r maiden10}
 show_col(maiden_pal()(10))
 
 ```
 
 
-```{r}
+```{r metallica10}
 show_col(metallica_pal()(10))
 
 ```
 
-```{r}
+```{r miles10}
 show_col(miles_pal()(10))
 
 ```
 
 
-```{r}
+```{r muse10}
 show_col(muse_pal()(10))
 
 ```
 
-```{r}
+```{r nevermind10}
 show_col(nevermind_pal()(10))
 
 ```
 
-```{r}
+```{r nodoubt10}
 show_col(nodoubt_pal()(10))
 
 ```
 
-```{r}
+```{r oasis10}
 show_col(oasis_pal()(10))
 
 ```
 
-```{r}
+
+```{r megadeth10}
+show_col(peacesells_pal()(10))
+
+```
+
+
+```{r faithnomore10}
 show_col(real_thing_pal()(10))
 
 ```
 
-```{r}
+```{r taylor10}
 show_col(taylor_pal()(10))
 
 ```
 
-```{r}
+```{r tencc10}
 show_col(tencc_pal()(10))
 
 ```

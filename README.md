@@ -23,7 +23,7 @@ This is a collection of colour palettes based on classic rock album
 covers.
 
 Not all of the artists are ‘rock’, but they appeared in lists of classic
-rock album covers and the internet is never wrong.
+rock album covers and the internet is never wrong, is it ;)
 
 The albums were chosen either for their striking covers (in terms of
 colour), or simply, because they are bona fide rock classics.
@@ -47,6 +47,8 @@ package.
 #library(remotes)
 #remotes::install_github("johnmackintosh/rockthemes")
 library(rockthemes)
+#> Warning: replacing previous import 'vctrs::data_frame' by 'tibble::data_frame'
+#> when loading 'dplyr'
 library(ggplot2)
 library(dplyr)
 #> 
@@ -73,7 +75,7 @@ Inspiration
 rock_palette("californication")
 ```
 
-![](man/figures/README-unnamed-chunk-2-1.png)<!-- -->
+![](man/figures/README-californication-1.png)<!-- -->
 
 ## Coltrane
 
@@ -85,7 +87,7 @@ Inspiration
 rock_palette("coltrane")
 ```
 
-![](man/figures/README-unnamed-chunk-3-1.png)<!-- -->
+![](man/figures/README-coltrane-1.png)<!-- -->
 
 ## Electric
 
@@ -97,7 +99,7 @@ Inspiration
 rock_palette("electric")
 ```
 
-![](man/figures/README-unnamed-chunk-4-1.png)<!-- -->
+![](man/figures/README-electric-1.png)<!-- -->
 
 ## Faith No More
 
@@ -109,7 +111,7 @@ Inspiration
 rock_palette("faithnomore")
 ```
 
-![](man/figures/README-unnamed-chunk-5-1.png)<!-- -->
+![](man/figures/README-faithnomore-1.png)<!-- -->
 
 ## Go Gos
 
@@ -121,7 +123,7 @@ Inspiration
 rock_palette("gogo")
 ```
 
-![](man/figures/README-unnamed-chunk-6-1.png)<!-- -->
+![](man/figures/README-gogo-1.png)<!-- -->
 
 ## Guns N’ Roses
 
@@ -133,31 +135,7 @@ Inspiration
 rock_palette("gunsnroses")
 ```
 
-![](man/figures/README-unnamed-chunk-7-1.png)<!-- -->
-
-## Slayer
-
-Inspiration
-
-# <img src="man/figures/hellawaits.png" width="160px" align="left" />
-
-``` r
-rock_palette("hellawaits")
-```
-
-![](man/figures/README-unnamed-chunk-8-1.png)<!-- -->
-
-## Meagdeth
-
-Inspiration
-
-# <img src="man/figures/peacesells.png" width="160px" align="left" />
-
-``` r
-rock_palette("peacesells")
-```
-
-![](man/figures/README-unnamed-chunk-9-1.png)<!-- -->
+![](man/figures/README-gnr-1.png)<!-- -->
 
 ## PJ Harvey
 
@@ -169,7 +147,7 @@ Inspiration
 rock_palette("harvey")
 ```
 
-![](man/figures/README-unnamed-chunk-10-1.png)<!-- -->
+![](man/figures/README-harvey-1.png)<!-- -->
 
 ## Uria Heep
 
@@ -178,10 +156,22 @@ Inspiration
 # <img src="man/figures/heep.png" width="160px" align="left" />
 
 ``` r
-rock_palette("heap")
+rock_palette("heep")
 ```
 
-![](man/figures/README-unnamed-chunk-11-1.png)<!-- -->
+![](man/figures/README-heep-1.png)<!-- -->
+
+## Hell Awaits - Slayer
+
+Inspiration
+
+# <img src="man/figures/hellawaits.png" width="160px" align="left" />
+
+``` r
+rock_palette("hellawaits")
+```
+
+![](man/figures/README-slayer-1.png)<!-- -->
 
 ## Husker Du
 
@@ -193,7 +183,7 @@ Inspiration
 rock_palette("husker")
 ```
 
-![](man/figures/README-unnamed-chunk-12-1.png)<!-- -->
+![](man/figures/README-husker-1.png)<!-- -->
 
 ## Janelle Monae
 
@@ -205,7 +195,7 @@ Inspiration
 rock_palette("janelle")
 ```
 
-![](man/figures/README-unnamed-chunk-13-1.png)<!-- -->
+![](man/figures/README-janelle-1.png)<!-- -->
 
 ## Iron Maiden
 
@@ -217,7 +207,7 @@ Inspiration
 rock_palette("maiden")
 ```
 
-![](man/figures/README-unnamed-chunk-14-1.png)<!-- -->
+![](man/figures/README-maiden-1.png)<!-- -->
 
 ## Metallica
 
@@ -229,7 +219,7 @@ Inspiration
 rock_palette("metallica")
 ```
 
-![](man/figures/README-unnamed-chunk-15-1.png)<!-- -->
+![](man/figures/README-metallica-1.png)<!-- -->
 
 ## Miles Davis
 
@@ -241,7 +231,7 @@ Inspiration
 rock_palette("miles")
 ```
 
-![](man/figures/README-unnamed-chunk-16-1.png)<!-- -->
+![](man/figures/README-miles-1.png)<!-- -->
 
 ## Muse
 
@@ -253,7 +243,7 @@ Inspiration
 rock_palette("muse")
 ```
 
-![](man/figures/README-unnamed-chunk-17-1.png)<!-- -->
+![](man/figures/README-muse-1.png)<!-- -->
 
 ## Nirvana
 
@@ -265,7 +255,7 @@ Inspiration
 rock_palette("nevermind")
 ```
 
-![](man/figures/README-unnamed-chunk-18-1.png)<!-- -->
+![](man/figures/README-nirvana-1.png)<!-- -->
 
 ## No Doubt
 
@@ -277,7 +267,7 @@ Inspiration
 rock_palette("nodoubt")
 ```
 
-![](man/figures/README-unnamed-chunk-19-1.png)<!-- -->
+![](man/figures/README-nodoubt-1.png)<!-- -->
 
 ## Oasis
 
@@ -289,7 +279,19 @@ Inspiration
 rock_palette("oasis")
 ```
 
-![](man/figures/README-unnamed-chunk-20-1.png)<!-- -->
+![](man/figures/README-oasis-1.png)<!-- -->
+
+## Peace Sells - Megadeth
+
+Inspiration
+
+# <img src="man/figures/peacesells.png" width="160px" align="left" />
+
+``` r
+rock_palette("peacesells")
+```
+
+![](man/figures/README-peacesells-1.png)<!-- -->
 
 ## Taylor Swift
 
@@ -301,7 +303,7 @@ Inspiration
 rock_palette("swift")
 ```
 
-![](man/figures/README-unnamed-chunk-21-1.png)<!-- -->
+![](man/figures/README-swift-1.png)<!-- -->
 
 ## 10CC
 
@@ -313,7 +315,7 @@ Inspiration
 rock_palette("tencc")
 ```
 
-![](man/figures/README-unnamed-chunk-22-1.png)<!-- -->
+![](man/figures/README-tencc-1.png)<!-- -->
 
 ## Longer colour palettes, more suited for ggplot2 use
 
@@ -324,127 +326,127 @@ colours, which hopefully increases their utility for data visualisation.
 show_col(californication_pal()(10))
 ```
 
-![](man/figures/README-unnamed-chunk-23-1.png)<!-- -->
+![](man/figures/README-cal10-1.png)<!-- -->
 
 ``` r
 show_col(coltrane_pal()(10))
 ```
 
-![](man/figures/README-unnamed-chunk-24-1.png)<!-- -->
+![](man/figures/README-coltrane10-1.png)<!-- -->
 
 ``` r
 show_col(electric_pal()(10))
 ```
 
-![](man/figures/README-unnamed-chunk-25-1.png)<!-- -->
+![](man/figures/README-electric10-1.png)<!-- -->
 
 ``` r
 show_col(gogo_pal()(10))
 ```
 
-![](man/figures/README-unnamed-chunk-26-1.png)<!-- -->
+![](man/figures/README-gogo10-1.png)<!-- -->
 
 ``` r
 show_col(gunsnroses_pal()(10))
 ```
 
-![](man/figures/README-unnamed-chunk-27-1.png)<!-- -->
-
-``` r
-show_col(hellawaits_pal()(10))
-```
-
-![](man/figures/README-unnamed-chunk-28-1.png)<!-- -->
-
-``` r
-show_col(peacesells_pal()(10))
-```
-
-![](man/figures/README-unnamed-chunk-29-1.png)<!-- -->
+![](man/figures/README-gnr10-1.png)<!-- -->
 
 ``` r
 show_col(harvey_pal()(10))
 ```
 
-![](man/figures/README-unnamed-chunk-30-1.png)<!-- -->
+![](man/figures/README-harvey10-1.png)<!-- -->
 
 ``` r
-show_col(heap_pal()(10))
+show_col(heep_pal()(10))
 ```
 
-![](man/figures/README-unnamed-chunk-31-1.png)<!-- -->
+![](man/figures/README-heep10-1.png)<!-- -->
+
+``` r
+show_col(hellawaits_pal()(10))
+```
+
+![](man/figures/README-slayer10-1.png)<!-- -->
 
 ``` r
 show_col(husker_pal()(10))
 ```
 
-![](man/figures/README-unnamed-chunk-32-1.png)<!-- -->
+![](man/figures/README-husker10-1.png)<!-- -->
 
 ``` r
 show_col(janelle_pal()(10))
 ```
 
-![](man/figures/README-unnamed-chunk-33-1.png)<!-- -->
+![](man/figures/README-janell10-1.png)<!-- -->
 
 ``` r
 show_col(maiden_pal()(10))
 ```
 
-![](man/figures/README-unnamed-chunk-34-1.png)<!-- -->
+![](man/figures/README-maiden10-1.png)<!-- -->
 
 ``` r
 show_col(metallica_pal()(10))
 ```
 
-![](man/figures/README-unnamed-chunk-35-1.png)<!-- -->
+![](man/figures/README-metallica10-1.png)<!-- -->
 
 ``` r
 show_col(miles_pal()(10))
 ```
 
-![](man/figures/README-unnamed-chunk-36-1.png)<!-- -->
+![](man/figures/README-miles10-1.png)<!-- -->
 
 ``` r
 show_col(muse_pal()(10))
 ```
 
-![](man/figures/README-unnamed-chunk-37-1.png)<!-- -->
+![](man/figures/README-muse10-1.png)<!-- -->
 
 ``` r
 show_col(nevermind_pal()(10))
 ```
 
-![](man/figures/README-unnamed-chunk-38-1.png)<!-- -->
+![](man/figures/README-nevermind10-1.png)<!-- -->
 
 ``` r
 show_col(nodoubt_pal()(10))
 ```
 
-![](man/figures/README-unnamed-chunk-39-1.png)<!-- -->
+![](man/figures/README-nodoubt10-1.png)<!-- -->
 
 ``` r
 show_col(oasis_pal()(10))
 ```
 
-![](man/figures/README-unnamed-chunk-40-1.png)<!-- -->
+![](man/figures/README-oasis10-1.png)<!-- -->
+
+``` r
+show_col(peacesells_pal()(10))
+```
+
+![](man/figures/README-megadeth10-1.png)<!-- -->
 
 ``` r
 show_col(real_thing_pal()(10))
 ```
 
-![](man/figures/README-unnamed-chunk-41-1.png)<!-- -->
+![](man/figures/README-faithnomore10-1.png)<!-- -->
 
 ``` r
 show_col(taylor_pal()(10))
 ```
 
-![](man/figures/README-unnamed-chunk-42-1.png)<!-- -->
+![](man/figures/README-taylor10-1.png)<!-- -->
 
 ``` r
 show_col(tencc_pal()(10))
 ```
 
-![](man/figures/README-unnamed-chunk-43-1.png)<!-- -->
+![](man/figures/README-tencc10-1.png)<!-- -->
 
 ## Credit
 
@@ -485,7 +487,7 @@ ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
     scale_fill_tencc()
 ```
 
-![](man/figures/README-unnamed-chunk-44-1.png)<!-- -->
+![](man/figures/README-unnamed-chunk-2-1.png)<!-- -->
 
 ``` r
     
@@ -496,7 +498,7 @@ ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
     scale_fill_husker()
 ```
 
-![](man/figures/README-unnamed-chunk-44-2.png)<!-- -->
+![](man/figures/README-unnamed-chunk-2-2.png)<!-- -->
 
 ``` r
     
@@ -508,7 +510,7 @@ ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
     scale_fill_janelle()
 ```
 
-![](man/figures/README-unnamed-chunk-44-3.png)<!-- -->
+![](man/figures/README-unnamed-chunk-2-3.png)<!-- -->
 
 ``` r
   
@@ -519,7 +521,7 @@ ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
     scale_fill_muse()
 ```
 
-![](man/figures/README-unnamed-chunk-44-4.png)<!-- -->
+![](man/figures/README-unnamed-chunk-2-4.png)<!-- -->
 
 ``` r
     
@@ -530,4 +532,4 @@ ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
     scale_fill_nodoubt()
 ```
 
-![](man/figures/README-unnamed-chunk-44-5.png)<!-- -->
+![](man/figures/README-unnamed-chunk-2-5.png)<!-- -->
