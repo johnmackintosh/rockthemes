@@ -17,7 +17,9 @@ rock_palettes <- list(
     oasis = c("#B5AF93", "#293845", "#5B4E4D", "#685F41"),
     swift = c("#CDC1B1","#444550","#865242", "#A26847"),
     tencc = c("#FADB75", "#BDA2A8", "#AB6749", "#211710"), 
-    nodoubt = c("#385581", "#6dbac6", "#dac190", "#c9052c")
+    nodoubt = c("#385581", "#6dbac6", "#dac190", "#c9052c"),
+    hellawaits = c("#995026", "#281D13", "#D7C698", "#AC9D9A"),
+    peacesells = c("#9A5155", "#483943", "#ECC463", "#A497B2")
 )
 
 
@@ -32,8 +34,9 @@ rock_palettes <- list(
 #' \code{californication}, \code{coltrane}, \code{electric}, \code{faithnomore}, 
 #' \code{gogo}, \code{gunsnroses},\code{harvey}, \code{heap},
 #' \code{husker}, \code{janelle}, \code{maiden},\code{metallica},
-#'  \code{miles}, \code{muse},\code{nevermind}, \code{nodoubt}, 
-#'  \code{oasis}, \code{swift}, \code{tencc}
+#' \code{miles}, \code{muse},\code{nevermind}, \code{nodoubt}, 
+#' \code{oasis}, \code{swift}, \code{tencc}, \code{hellawaits}, 
+#' \code{peacesells}
 #'
 #' @param n Number of colors desired. 
 #' 
