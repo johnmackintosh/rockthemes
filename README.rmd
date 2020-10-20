@@ -131,6 +131,26 @@ rock_palette("gunsnroses")
 ```
 
 
+## Slayer
+
+Inspiration
+
+# <img src="man/figures/hellawaits.png" width="160px" align="left" />
+
+```{r}
+rock_palette("hellawaits")
+```
+
+## Meagdeth
+
+Inspiration
+
+# <img src="man/figures/peacesells.png" width="160px" align="left" />
+
+```{r}
+rock_palette("peacesells")
+```
+
 ## PJ Harvey
 
 Inspiration
@@ -303,6 +323,16 @@ show_col(gogo_pal()(10))
 
 ```{r}
 show_col(gunsnroses_pal()(10))
+
+```
+
+```{r}
+show_col(hellawaits_pal()(10))
+
+```
+
+```{r}
+show_col(peacesells_pal()(10))
 
 ```
 

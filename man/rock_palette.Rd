@@ -12,7 +12,8 @@ rock_palette(name, n, type = c("discrete", "continuous"))
 \code{gogo}, \code{gunsnroses},\code{harvey}, \code{heap},
 \code{husker}, \code{janelle}, \code{maiden},\code{metallica},
 \code{miles}, \code{muse},\code{nevermind}, \code{nodoubt},
-\code{oasis}, \code{swift}, \code{tencc}}
+\code{oasis}, \code{swift}, \code{tencc}, \code{hellawaits},
+\code{peacesells}}
 
 \item{n}{Number of colors desired.
 
