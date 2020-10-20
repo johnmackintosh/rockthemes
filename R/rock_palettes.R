@@ -14,10 +14,10 @@ rock_palettes <- list(
     miles = c("#C1C6CF", "#180C18", "#933450", "#D99755"),
     muse = c("#3B1A35","#D27F9A","#885EA5","#9D94B3"),
     nevermind = c("#B5BECE","#4DB8DA","#286B9F","#121725"),
+    nodoubt = c("#385581", "#6dbac6", "#dac190", "#c9052c"),
     oasis = c("#B5AF93", "#293845", "#5B4E4D", "#685F41"),
     swift = c("#CDC1B1","#444550","#865242", "#A26847"),
-    tencc = c("#FADB75", "#BDA2A8", "#AB6749", "#211710"), 
-    nodoubt = c("#385581", "#6dbac6", "#dac190", "#c9052c")
+    tencc = c("#FADB75", "#BDA2A8", "#AB6749", "#211710")
 )
 
 
