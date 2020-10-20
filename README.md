@@ -47,6 +47,8 @@ package.
 #library(remotes)
 #remotes::install_github("johnmackintosh/rockthemes")
 library(rockthemes)
+#> Warning: replacing previous import 'vctrs::data_frame' by 'tibble::data_frame'
+#> when loading 'dplyr'
 library(ggplot2)
 library(dplyr)
 #> 
@@ -455,21 +457,12 @@ off the ground quickly
 ## Code of Conduct
 
 Please note that the rockthemes project is released with a [Contributor
-Code of
-Conduct](https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html).
-
-By contributing to this project, you agree to abide by its terms.
+Code of Conduct](CODE_OF_CONDUCT.md). By contributing to this project
+you agree to abide by its terms.
 
 ## Contributing
 
-PR’s are welcome, if you feel there is a glaring omission.
-
-Please include an image of the album cover, relevant code.
-
-Please try to keep artists / albums in chronological order in the
-readme.
-
-Don’t forget to update the name param of the rock\_palette function
+See the [Contribution guide](.github/CONTRIBUTING.md)
 
 ## More ggplot2 examples
 

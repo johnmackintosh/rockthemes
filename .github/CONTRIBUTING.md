@@ -29,14 +29,13 @@ If you want to suggest a palette, please file an issue with the artist, album ti
     The title of your PR should briefly describe the change.
     The body of your PR should contain `Fixes #issue-number`.
 
-*  For user-facing changes, add a bullet to the top of `NEWS.md` (i.e. just below the first header). Follow the style described in <https://style.tidyverse.org/news.html>.
 
 ### Code style
 
 
 *  We use [roxygen2](https://cran.r-project.org/package=roxygen2), with [Markdown syntax](https://cran.r-project.org/web/packages/roxygen2/vignettes/rd-formatting.html), for documentation.  
 
-*  We use [testthat](https://cran.r-project.org/package=testthat) for unit tests. 
+*  We will use [testthat](https://cran.r-project.org/package=testthat) for unit tests. 
    Contributions with test cases included are easier to accept.  
 
 ## Code of Conduct
