@@ -1,4 +1,5 @@
 rock_palettes <- list(
+    abbeyroad = c("#2C3F40", "#CED1C1", "#93CCDF", "#5892AF"),
     californication = c("#BB5C33", "#15649C", "#E3D6BB", "#7296B8"),
     coltrane = c("#053138","#22A1B6","#0B8CA9","#AEC7BE"),
     electric = c("#626063","#E9DABA","#CF8B64","#5E98C6"),
@@ -11,6 +12,7 @@ rock_palettes <- list(
     husker = c("#422537", "#D58078","#86A556", "#624FB0"),
     janelle = c("#916364","#E2D6BF", "#21121B", "#B3ACC7"),
     maiden = c("#8FBBCE", "#265F8A", "#78704B", "#4A5372"),
+    melloncollie = c("#484A5A", "#C69648", "#9BA48C", "#949CAC"),
     metallica = c("#652113", "#D8CABC","#D77021", "#9E8C99"),
     miles = c("#C1C6CF", "#180C18", "#933450", "#D99755"),
     muse = c("#3B1A35","#D27F9A","#885EA5","#9D94B3"),
@@ -18,6 +20,7 @@ rock_palettes <- list(
     nodoubt = c("#385581", "#6dbac6", "#dac190", "#c9052c"),
     oasis = c("#B5AF93", "#293845", "#5B4E4D", "#685F41"),
     peacesells = c("#9A5155", "#483943", "#ECC463", "#A497B2"),
+    siamesedream = c("#F0E9E0","#2F1F16","#A34D2C", "#CD8E40"),
     swift = c("#CDC1B1","#444550","#865242", "#A26847"),
     tencc = c("#FADB75", "#BDA2A8", "#AB6749", "#211710")
 )
