@@ -48,15 +48,7 @@ package.
 #remotes::install_github("johnmackintosh/rockthemes")
 library(rockthemes)
 library(ggplot2)
-library(dplyr, suppressPackageStartupMessages(TRUE))
-#> 
-#> Attaching package: 'dplyr'
-#> The following objects are masked from 'package:stats':
-#> 
-#>     filter, lag
-#> The following objects are masked from 'package:base':
-#> 
-#>     intersect, setdiff, setequal, union
+library(dplyr)
 library(scales)
 library(gapminder)
 ```
@@ -345,135 +337,60 @@ colours, which hopefully increases their utility for data visualisation.
 
 ``` r
 show_col(californication_pal()(10),labels = FALSE)
-```
-
-![](man/figures/README-cal10-1.png)<!-- -->
-
-``` r
 show_col(coltrane_pal()(10), labels = FALSE)
-```
-
-![](man/figures/README-coltrane10-1.png)<!-- -->
-
-``` r
 show_col(deelite_pal()(10),labels = FALSE)
 ```
 
-![](man/figures/README-deelite10-1.png)<!-- -->
+<img src="man/figures/README-cal10-1.png" width="33%" /><img src="man/figures/README-cal10-2.png" width="33%" /><img src="man/figures/README-cal10-3.png" width="33%" />
 
 ``` r
 show_col(electric_pal()(10),labels = FALSE)
-```
-
-![](man/figures/README-electric10-1.png)<!-- -->
-
-``` r
 show_col(gogo_pal()(10),labels = FALSE)
-```
-
-![](man/figures/README-gogo10-1.png)<!-- -->
-
-``` r
 show_col(gunsnroses_pal()(10),labels = FALSE)
 ```
 
-![](man/figures/README-gnr10-1.png)<!-- -->
+<img src="man/figures/README-electric10-1.png" width="33%" /><img src="man/figures/README-electric10-2.png" width="33%" /><img src="man/figures/README-electric10-3.png" width="33%" />
 
 ``` r
 show_col(harvey_pal()(10),labels = FALSE)
-```
-
-![](man/figures/README-harvey10-1.png)<!-- -->
-
-``` r
 show_col(heep_pal()(10),labels = FALSE)
-```
-
-![](man/figures/README-heep10-1.png)<!-- -->
-
-``` r
 show_col(hellawaits_pal()(10),labels = FALSE)
 ```
 
-![](man/figures/README-slayer10-1.png)<!-- -->
+<img src="man/figures/README-harvey10-1.png" width="33%" /><img src="man/figures/README-harvey10-2.png" width="33%" /><img src="man/figures/README-harvey10-3.png" width="33%" />
 
 ``` r
 show_col(husker_pal()(10),labels = FALSE)
-```
-
-![](man/figures/README-husker10-1.png)<!-- -->
-
-``` r
 show_col(janelle_pal()(10),labels = FALSE)
-```
-
-![](man/figures/README-janell10-1.png)<!-- -->
-
-``` r
 show_col(maiden_pal()(10),labels = FALSE)
 ```
 
-![](man/figures/README-maiden10-1.png)<!-- -->
+<img src="man/figures/README-husker10-1.png" width="33%" /><img src="man/figures/README-husker10-2.png" width="33%" /><img src="man/figures/README-husker10-3.png" width="33%" />
 
 ``` r
 show_col(metallica_pal()(10),labels = FALSE)
-```
-
-![](man/figures/README-metallica10-1.png)<!-- -->
-
-``` r
 show_col(miles_pal()(10),labels = FALSE)
-```
-
-![](man/figures/README-miles10-1.png)<!-- -->
-
-``` r
 show_col(muse_pal()(10),labels = FALSE)
 ```
 
-![](man/figures/README-muse10-1.png)<!-- -->
+<img src="man/figures/README-metallica10-1.png" width="33%" /><img src="man/figures/README-metallica10-2.png" width="33%" /><img src="man/figures/README-metallica10-3.png" width="33%" />
 
 ``` r
 show_col(nevermind_pal()(10),labels = FALSE)
-```
-
-![](man/figures/README-nevermind10-1.png)<!-- -->
-
-``` r
 show_col(nodoubt_pal()(10),labels = FALSE)
-```
-
-![](man/figures/README-nodoubt10-1.png)<!-- -->
-
-``` r
 show_col(oasis_pal()(10),labels = FALSE)
 ```
 
-![](man/figures/README-oasis10-1.png)<!-- -->
+<img src="man/figures/README-nevermind10-1.png" width="33%" /><img src="man/figures/README-nevermind10-2.png" width="33%" /><img src="man/figures/README-nevermind10-3.png" width="33%" />
 
 ``` r
 show_col(peacesells_pal()(10),labels = FALSE)
-```
-
-![](man/figures/README-megadeth10-1.png)<!-- -->
-
-``` r
 show_col(real_thing_pal()(10),labels = FALSE)
-```
-
-![](man/figures/README-faithnomore10-1.png)<!-- -->
-
-``` r
 show_col(taylor_pal()(10),labels = FALSE)
-```
-
-![](man/figures/README-taylor10-1.png)<!-- -->
-
-``` r
 show_col(tencc_pal()(10),labels = FALSE)
 ```
 
-![](man/figures/README-tencc10-1.png)<!-- -->
+<img src="man/figures/README-megadeth10-1.png" width="25%" /><img src="man/figures/README-megadeth10-2.png" width="25%" /><img src="man/figures/README-megadeth10-3.png" width="25%" /><img src="man/figures/README-megadeth10-4.png" width="25%" />
 
 ## Credit
 

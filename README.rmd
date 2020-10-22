@@ -49,12 +49,12 @@ Because [this repo of Metallica inspired palettes](https://github.com/johnmackin
 
 This will probably not go to CRAN, so please install using the remotes package.
 
-```{r}
+```{r message=FALSE, warning=FALSE}
 #library(remotes)
 #remotes::install_github("johnmackintosh/rockthemes")
 library(rockthemes)
 library(ggplot2)
-library(dplyr, suppressPackageStartupMessages(TRUE))
+library(dplyr)
 library(scales)
 library(gapminder)
 ```
@@ -320,125 +320,57 @@ rock_palette("tencc")
 
 The following palettes share the same inspirations, but there are more colours, which hopefully increases their utility for data visualisation.
 
-```{r cal10}
+```{r cal10, fig.show = "hold", out.width = "33%"}
 show_col(californication_pal()(10),labels = FALSE)
-
-```
-
-```{r coltrane10, fig.width=3}
 show_col(coltrane_pal()(10), labels = FALSE)
-
-```
-
-
-```{r deelite10}
 show_col(deelite_pal()(10),labels = FALSE)
-
 ```
 
 
-
-```{r electric10}
+```{r electric10, fig.show = "hold", out.width = "33%"}
 show_col(electric_pal()(10),labels = FALSE)
-
-```
-
-
-```{r gogo10}
 show_col(gogo_pal()(10),labels = FALSE)
-
-```
-
-
-```{r gnr10}
 show_col(gunsnroses_pal()(10),labels = FALSE)
 
 ```
 
 
-```{r harvey10}
+
+```{r harvey10, fig.show = "hold", out.width = "33%"}
 show_col(harvey_pal()(10),labels = FALSE)
-
-```
-
-```{r heep10}
 show_col(heep_pal()(10),labels = FALSE)
-
-```
-
-
-```{r slayer10}
 show_col(hellawaits_pal()(10),labels = FALSE)
 
 ```
 
 
-```{r husker10}
+
+```{r husker10,fig.show = "hold", out.width = "33%"}
 show_col(husker_pal()(10),labels = FALSE)
-
-```
-
-```{r janell10}
 show_col(janelle_pal()(10),labels = FALSE)
-
-```
-
-
-```{r maiden10}
 show_col(maiden_pal()(10),labels = FALSE)
-
 ```
 
 
-```{r metallica10}
+```{r metallica10, fig.show = "hold", out.width = "33%"}
 show_col(metallica_pal()(10),labels = FALSE)
-
-```
-
-```{r miles10}
 show_col(miles_pal()(10),labels = FALSE)
-
-```
-
-
-```{r muse10}
 show_col(muse_pal()(10),labels = FALSE)
 
 ```
 
-```{r nevermind10}
+
+```{r nevermind10, fig.show = "hold", out.width = "33%"}
 show_col(nevermind_pal()(10),labels = FALSE)
-
-```
-
-```{r nodoubt10}
 show_col(nodoubt_pal()(10),labels = FALSE)
-
-```
-
-```{r oasis10}
 show_col(oasis_pal()(10),labels = FALSE)
-
 ```
 
 
-```{r megadeth10}
+```{r megadeth10, fig.show = "hold", out.width = "25%"}
 show_col(peacesells_pal()(10),labels = FALSE)
-
-```
-
-
-```{r faithnomore10}
 show_col(real_thing_pal()(10),labels = FALSE)
-
-```
-
-```{r taylor10}
 show_col(taylor_pal()(10),labels = FALSE)
-
-```
-
-```{r tencc10}
 show_col(tencc_pal()(10),labels = FALSE)
 
 ```
