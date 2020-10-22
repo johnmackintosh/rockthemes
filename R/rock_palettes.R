@@ -19,7 +19,8 @@ rock_palettes <- list(
     oasis = c("#B5AF93", "#293845", "#5B4E4D", "#685F41"),
     peacesells = c("#9A5155", "#483943", "#ECC463", "#A497B2"),
     swift = c("#CDC1B1","#444550","#865242", "#A26847"),
-    tencc = c("#FADB75", "#BDA2A8", "#AB6749", "#211710")
+    tencc = c("#FADB75", "#BDA2A8", "#AB6749", "#211710"),
+    deelite= c("#48448e","#fc4d97", "#8ccc58"," #b82578")
 )
 
 
