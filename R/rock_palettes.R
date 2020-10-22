@@ -1,8 +1,7 @@
 rock_palettes <- list(
-    abbeyroad = c("#2C3F40", "#CED1C1", "#93CCDF", "#5892AF"),
     californication = c("#BB5C33", "#15649C", "#E3D6BB", "#7296B8"),
     coltrane = c("#053138","#22A1B6","#0B8CA9","#AEC7BE"),
-    deelite = c("#48448e","#fc4d97", "#8ccc58"," #b82578"),
+    deelite = c("#48448e","#fc4d97", "#8ccc58","#b82578"),
     electric = c("#626063","#E9DABA","#CF8B64","#5E98C6"),
     faithnomore = c("#D2BAAA", "#3B2320", "#C02F28", "#D6B63A"),
     gogo = c("#C4C9C8", "#259BDA", "#B26E47", "#87492F"),

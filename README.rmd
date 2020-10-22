@@ -7,7 +7,9 @@ output: github_document
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
-  fig.path = "man/figures/README-"
+  fig.path = "man/figures/README-",
+  fig.height = 2,
+  fig.width = 3
 )
 ```
 
@@ -52,7 +54,7 @@ This will probably not go to CRAN, so please install using the remotes package.
 #remotes::install_github("johnmackintosh/rockthemes")
 library(rockthemes)
 library(ggplot2)
-library(dplyr)
+library(dplyr, suppressPackageStartupMessages(TRUE))
 library(scales)
 library(gapminder)
 ```
@@ -66,7 +68,7 @@ Inspiration
 
 # <img src="man/figures/californication.png" width="160px" align="left" />
 
-```{r californication}
+```{r californication, fig.show = "hold",fig.width=3, fig.height=2}
 rock_palette("californication")
 
 ```
@@ -81,6 +83,14 @@ Inspiration
 ```{r coltrane}
 rock_palette("coltrane")
 
+```
+
+## Deee-Lite
+
+Inspiration 
+# <img src="man/figures/deeelite.png" width="160px" align="left" />
+```{r deelite}
+rock_palette("deelite")
 ```
 
 
@@ -272,6 +282,17 @@ Inspiration
 rock_palette("peacesells")
 ```
 
+## Smashing Pumpkins
+Inspiration
+
+# <img src="man/figures/melloncollie.png" width="160px" align="left" />
+
+```{r melloncollie}
+rock_palette("melloncollie")
+```
+
+
+
 ## Taylor Swift
 
 Inspiration
@@ -300,117 +321,125 @@ rock_palette("tencc")
 The following palettes share the same inspirations, but there are more colours, which hopefully increases their utility for data visualisation.
 
 ```{r cal10}
-show_col(californication_pal()(10))
+show_col(californication_pal()(10),labels = FALSE)
 
 ```
 
-```{r coltrane10}
-show_col(coltrane_pal()(10))
+```{r coltrane10, fig.width=3}
+show_col(coltrane_pal()(10), labels = FALSE)
 
 ```
+
+
+```{r deelite10}
+show_col(deelite_pal()(10),labels = FALSE)
+
+```
+
+
 
 ```{r electric10}
-show_col(electric_pal()(10))
+show_col(electric_pal()(10),labels = FALSE)
 
 ```
 
 
 ```{r gogo10}
-show_col(gogo_pal()(10))
+show_col(gogo_pal()(10),labels = FALSE)
 
 ```
 
 
 ```{r gnr10}
-show_col(gunsnroses_pal()(10))
+show_col(gunsnroses_pal()(10),labels = FALSE)
 
 ```
 
 
 ```{r harvey10}
-show_col(harvey_pal()(10))
+show_col(harvey_pal()(10),labels = FALSE)
 
 ```
 
 ```{r heep10}
-show_col(heep_pal()(10))
+show_col(heep_pal()(10),labels = FALSE)
 
 ```
 
 
 ```{r slayer10}
-show_col(hellawaits_pal()(10))
+show_col(hellawaits_pal()(10),labels = FALSE)
 
 ```
 
 
 ```{r husker10}
-show_col(husker_pal()(10))
+show_col(husker_pal()(10),labels = FALSE)
 
 ```
 
 ```{r janell10}
-show_col(janelle_pal()(10))
+show_col(janelle_pal()(10),labels = FALSE)
 
 ```
 
 
 ```{r maiden10}
-show_col(maiden_pal()(10))
+show_col(maiden_pal()(10),labels = FALSE)
 
 ```
 
 
 ```{r metallica10}
-show_col(metallica_pal()(10))
+show_col(metallica_pal()(10),labels = FALSE)
 
 ```
 
 ```{r miles10}
-show_col(miles_pal()(10))
+show_col(miles_pal()(10),labels = FALSE)
 
 ```
 
 
 ```{r muse10}
-show_col(muse_pal()(10))
+show_col(muse_pal()(10),labels = FALSE)
 
 ```
 
 ```{r nevermind10}
-show_col(nevermind_pal()(10))
+show_col(nevermind_pal()(10),labels = FALSE)
 
 ```
 
 ```{r nodoubt10}
-show_col(nodoubt_pal()(10))
+show_col(nodoubt_pal()(10),labels = FALSE)
 
 ```
 
 ```{r oasis10}
-show_col(oasis_pal()(10))
+show_col(oasis_pal()(10),labels = FALSE)
 
 ```
 
 
 ```{r megadeth10}
-show_col(peacesells_pal()(10))
+show_col(peacesells_pal()(10),labels = FALSE)
 
 ```
 
 
 ```{r faithnomore10}
-show_col(real_thing_pal()(10))
+show_col(real_thing_pal()(10),labels = FALSE)
 
 ```
 
 ```{r taylor10}
-show_col(taylor_pal()(10))
+show_col(taylor_pal()(10),labels = FALSE)
 
 ```
 
 ```{r tencc10}
-show_col(tencc_pal()(10))
+show_col(tencc_pal()(10),labels = FALSE)
 
 ```
 
@@ -435,40 +464,41 @@ See the [Contribution guide](.github/CONTRIBUTING.md)
 
 ## More ggplot2 examples
 
-```{r}
+```{r, fig.width=5, fig.height=3, echo = FALSE}
 data <- gapminder::gapminder %>% 
     filter(country %in% c("France", "Germany", "Ireland", "Italy", "Japan")) %>% 
     mutate(year = as.Date(paste(year, "-01-01", sep = "", format = '%Y-%b-%d')))
-    
+  
+  
 ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
     geom_area(alpha = 0.8) +
-    scale_x_date(breaks = data$year, date_labels = "%Y") +
-    scale_y_continuous(expand = c(0, 0), labels = scales::dollar) +
-    scale_fill_tencc()
+    theme_void() + 
+    scale_fill_tencc() + 
+  ggtitle(label = "scale_fill_tencc")
     
     ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
     geom_area(alpha = 0.8) +
-    scale_x_date(breaks = data$year, date_labels = "%Y") +
-    scale_y_continuous(expand = c(0, 0), labels = scales::dollar) +
-    scale_fill_husker()
+    theme_void() + 
+    scale_fill_husker() + 
+  ggtitle(label = "scale_fill_husker")
     
     
     ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
-    geom_area(alpha = 0.8) +
-    scale_x_date(breaks = data$year, date_labels = "%Y") +
-    scale_y_continuous(expand = c(0, 0), labels = scales::dollar) +
-    scale_fill_janelle()
+     geom_area(alpha = 0.8) +
+    theme_void() + 
+    scale_fill_janelle() + 
+  ggtitle(label = "scale_fill_janelle")
   
     ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
     geom_area(alpha = 0.8) +
-    scale_x_date(breaks = data$year, date_labels = "%Y") +
-    scale_y_continuous(expand = c(0, 0), labels = scales::dollar) +
-    scale_fill_muse()
+    theme_void() + 
+    scale_fill_muse() + 
+  ggtitle(label = "scale_fill_muse")
     
     ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
     geom_area(alpha = 0.8) +
-    scale_x_date(breaks = data$year, date_labels = "%Y") +
-    scale_y_continuous(expand = c(0, 0), labels = scales::dollar) +
-    scale_fill_nodoubt()
+    theme_void() + 
+    scale_fill_nodoubt() + 
+  ggtitle(label = "scale_fill_nodoubt")
     
 ```

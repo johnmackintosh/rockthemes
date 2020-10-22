@@ -47,8 +47,10 @@ package.
 #library(remotes)
 #remotes::install_github("johnmackintosh/rockthemes")
 library(rockthemes)
+#> Warning: replacing previous import 'vctrs::data_frame' by 'tibble::data_frame'
+#> when loading 'dplyr'
 library(ggplot2)
-library(dplyr)
+library(dplyr, suppressPackageStartupMessages(TRUE))
 #> 
 #> Attaching package: 'dplyr'
 #> The following objects are masked from 'package:stats':
@@ -86,6 +88,17 @@ rock_palette("coltrane")
 ```
 
 ![](man/figures/README-coltrane-1.png)<!-- -->
+
+## Deee-Lite
+
+Inspiration \#
+<img src="man/figures/deeelite.png" width="160px" align="left" />
+
+``` r
+rock_palette("deelite")
+```
+
+![](man/figures/README-deelite-1.png)<!-- -->
 
 ## Electric
 
@@ -291,6 +304,18 @@ rock_palette("peacesells")
 
 ![](man/figures/README-peacesells-1.png)<!-- -->
 
+## Smashing Pumpkins
+
+Inspiration
+
+# <img src="man/figures/melloncollie.png" width="160px" align="left" />
+
+``` r
+rock_palette("melloncollie")
+```
+
+![](man/figures/README-melloncollie-1.png)<!-- -->
+
 ## Taylor Swift
 
 Inspiration
@@ -321,127 +346,133 @@ The following palettes share the same inspirations, but there are more
 colours, which hopefully increases their utility for data visualisation.
 
 ``` r
-show_col(californication_pal()(10))
+show_col(californication_pal()(10),labels = FALSE)
 ```
 
 ![](man/figures/README-cal10-1.png)<!-- -->
 
 ``` r
-show_col(coltrane_pal()(10))
+show_col(coltrane_pal()(10), labels = FALSE)
 ```
 
 ![](man/figures/README-coltrane10-1.png)<!-- -->
 
 ``` r
-show_col(electric_pal()(10))
+show_col(deelite_pal()(10),labels = FALSE)
+```
+
+![](man/figures/README-deelite10-1.png)<!-- -->
+
+``` r
+show_col(electric_pal()(10),labels = FALSE)
 ```
 
 ![](man/figures/README-electric10-1.png)<!-- -->
 
 ``` r
-show_col(gogo_pal()(10))
+show_col(gogo_pal()(10),labels = FALSE)
 ```
 
 ![](man/figures/README-gogo10-1.png)<!-- -->
 
 ``` r
-show_col(gunsnroses_pal()(10))
+show_col(gunsnroses_pal()(10),labels = FALSE)
 ```
 
 ![](man/figures/README-gnr10-1.png)<!-- -->
 
 ``` r
-show_col(harvey_pal()(10))
+show_col(harvey_pal()(10),labels = FALSE)
 ```
 
 ![](man/figures/README-harvey10-1.png)<!-- -->
 
 ``` r
-show_col(heep_pal()(10))
+show_col(heep_pal()(10),labels = FALSE)
 ```
 
 ![](man/figures/README-heep10-1.png)<!-- -->
 
 ``` r
-show_col(hellawaits_pal()(10))
+show_col(hellawaits_pal()(10),labels = FALSE)
 ```
 
 ![](man/figures/README-slayer10-1.png)<!-- -->
 
 ``` r
-show_col(husker_pal()(10))
+show_col(husker_pal()(10),labels = FALSE)
 ```
 
 ![](man/figures/README-husker10-1.png)<!-- -->
 
 ``` r
-show_col(janelle_pal()(10))
+show_col(janelle_pal()(10),labels = FALSE)
 ```
 
 ![](man/figures/README-janell10-1.png)<!-- -->
 
 ``` r
-show_col(maiden_pal()(10))
+show_col(maiden_pal()(10),labels = FALSE)
 ```
 
 ![](man/figures/README-maiden10-1.png)<!-- -->
 
 ``` r
-show_col(metallica_pal()(10))
+show_col(metallica_pal()(10),labels = FALSE)
 ```
 
 ![](man/figures/README-metallica10-1.png)<!-- -->
 
 ``` r
-show_col(miles_pal()(10))
+show_col(miles_pal()(10),labels = FALSE)
 ```
 
 ![](man/figures/README-miles10-1.png)<!-- -->
 
 ``` r
-show_col(muse_pal()(10))
+show_col(muse_pal()(10),labels = FALSE)
 ```
 
 ![](man/figures/README-muse10-1.png)<!-- -->
 
 ``` r
-show_col(nevermind_pal()(10))
+show_col(nevermind_pal()(10),labels = FALSE)
 ```
 
 ![](man/figures/README-nevermind10-1.png)<!-- -->
 
 ``` r
-show_col(nodoubt_pal()(10))
+show_col(nodoubt_pal()(10),labels = FALSE)
 ```
 
 ![](man/figures/README-nodoubt10-1.png)<!-- -->
 
 ``` r
-show_col(oasis_pal()(10))
+show_col(oasis_pal()(10),labels = FALSE)
 ```
 
 ![](man/figures/README-oasis10-1.png)<!-- -->
 
 ``` r
-show_col(peacesells_pal()(10))
+show_col(peacesells_pal()(10),labels = FALSE)
 ```
 
 ![](man/figures/README-megadeth10-1.png)<!-- -->
 
 ``` r
-show_col(real_thing_pal()(10))
+show_col(real_thing_pal()(10),labels = FALSE)
 ```
 
 ![](man/figures/README-faithnomore10-1.png)<!-- -->
 
 ``` r
-show_col(taylor_pal()(10))
+show_col(taylor_pal()(10),labels = FALSE)
 ```
 
 ![](man/figures/README-taylor10-1.png)<!-- -->
 
 ``` r
-show_col(tencc_pal()(10))
+show_col(tencc_pal()(10),labels = FALSE)
 ```
 
 ![](man/figures/README-tencc10-1.png)<!-- -->
@@ -464,61 +495,4 @@ See the [Contribution guide](.github/CONTRIBUTING.md)
 
 ## More ggplot2 examples
 
-``` r
-data <- gapminder::gapminder %>% 
-    filter(country %in% c("France", "Germany", "Ireland", "Italy", "Japan")) %>% 
-    mutate(year = as.Date(paste(year, "-01-01", sep = "", format = '%Y-%b-%d')))
-    
-ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
-    geom_area(alpha = 0.8) +
-    scale_x_date(breaks = data$year, date_labels = "%Y") +
-    scale_y_continuous(expand = c(0, 0), labels = scales::dollar) +
-    scale_fill_tencc()
-```
-
-![](man/figures/README-unnamed-chunk-2-1.png)<!-- -->
-
-``` r
-    
-    ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
-    geom_area(alpha = 0.8) +
-    scale_x_date(breaks = data$year, date_labels = "%Y") +
-    scale_y_continuous(expand = c(0, 0), labels = scales::dollar) +
-    scale_fill_husker()
-```
-
-![](man/figures/README-unnamed-chunk-2-2.png)<!-- -->
-
-``` r
-    
-    
-    ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
-    geom_area(alpha = 0.8) +
-    scale_x_date(breaks = data$year, date_labels = "%Y") +
-    scale_y_continuous(expand = c(0, 0), labels = scales::dollar) +
-    scale_fill_janelle()
-```
-
-![](man/figures/README-unnamed-chunk-2-3.png)<!-- -->
-
-``` r
-  
-    ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
-    geom_area(alpha = 0.8) +
-    scale_x_date(breaks = data$year, date_labels = "%Y") +
-    scale_y_continuous(expand = c(0, 0), labels = scales::dollar) +
-    scale_fill_muse()
-```
-
-![](man/figures/README-unnamed-chunk-2-4.png)<!-- -->
-
-``` r
-    
-    ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
-    geom_area(alpha = 0.8) +
-    scale_x_date(breaks = data$year, date_labels = "%Y") +
-    scale_y_continuous(expand = c(0, 0), labels = scales::dollar) +
-    scale_fill_nodoubt()
-```
-
-![](man/figures/README-unnamed-chunk-2-5.png)<!-- -->
+![](man/figures/README-unnamed-chunk-2-1.png)<!-- -->![](man/figures/README-unnamed-chunk-2-2.png)<!-- -->![](man/figures/README-unnamed-chunk-2-3.png)<!-- -->![](man/figures/README-unnamed-chunk-2-4.png)<!-- -->![](man/figures/README-unnamed-chunk-2-5.png)<!-- -->

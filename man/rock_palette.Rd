@@ -8,12 +8,12 @@ rock_palette(name, n, type = c("discrete", "continuous"))
 }
 \arguments{
 \item{name}{Name of palette. Select one:
-\code{californication}, \code{coltrane}, \code{electric}, \code{faithnomore},
-\code{gogo}, \code{gunsnroses},\code{harvey}, \code{heep},
-\code{hellawaits}, \code{husker}, \code{janelle}, \code{maiden},
-\code{metallica}, \code{miles}, \code{muse},\code{nevermind},
-\code{nodoubt}, \code{oasis}, \code{peacesells}, \code{swift},
-\code{tencc}}
+\code{abbeyroad}, \code{californication}, \code{coltrane}, \code{deelite},
+\code{electric}, \code{faithnomore}, \code{gogo}, \code{gunsnroses},
+\code{harvey}, \code{heep}, \code{hellawaits}, \code{husker},
+\code{janelle}, \code{maiden}, \code{melloncollie},\code{metallica},
+\code{miles}, \code{muse}, \code{nevermind}, \code{nodoubt},
+\code{oasis}, \code{peacesells}, \code{swift},\code{tencc}}
 
 \item{n}{Number of colors desired.
 
