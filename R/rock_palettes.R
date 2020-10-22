@@ -22,7 +22,8 @@ rock_palettes <- list(
     peacesells = c("#9A5155", "#483943", "#ECC463", "#A497B2"),
     siamesedream = c("#F0E9E0","#2F1F16","#A34D2C", "#CD8E40"),
     swift = c("#CDC1B1","#444550","#865242", "#A26847"),
-    tencc = c("#FADB75", "#BDA2A8", "#AB6749", "#211710")
+    tencc = c("#FADB75", "#BDA2A8", "#AB6749", "#211710"),
+    deelite= c("#48448e","#fc4d97", "#8ccc58"," #b82578")
 )
 
 
