@@ -62,317 +62,236 @@ library(gapminder)
 # Palettes and Themes
 
 
-## Californication
-
-Inspiration
-
-# <img src="man/figures/californication.png" width="160px" align="left" />
-
-```{r californication, fig.show = "hold",fig.width=3, fig.height=2}
+```{r californication, fig.show = "hold",out.width = "33%"}
 rock_palette("californication")
-
-```
-
-
-## Coltrane
-
-Inspiration
-
-# <img src="man/figures/coltrane.png" width="160px" align="left" />
-
-```{r coltrane}
 rock_palette("coltrane")
-
-```
-
-## Deee-Lite
-
-Inspiration 
-# <img src="man/figures/deeelite.png" width="160px" align="left" />
-```{r deelite}
 rock_palette("deelite")
+
 ```
 
 
-## Electric
 
-Inspiration
-
-# <img src="man/figures/electric.png" width="160px" align="left" />
-
-```{r electric}
+```{r electric, fig.show = "hold",out.width = "33%"}
 rock_palette("electric")
-```
-
-
-##  Faith No More
-
-Inspiration
-
-# <img src="man/figures/realthing.png" width="160px" align="left" />
-
-```{r faithnomore}
 rock_palette("faithnomore")
-
-```
-
-
-## Go Gos
-
-Inspiration
-
-# <img src="man/figures/gogos.png" width="160px" align="left" />
-
-```{r gogo}
 rock_palette("gogo")
-
 ```
 
 
 
-## Guns N' Roses
-
-Inspiration
-
-# <img src="man/figures/gunsnroses.png" width="160px" align="left" />
-
-```{r gnr}
+```{r gnr, fig.show = "hold",out.width = "33%"}
 rock_palette("gunsnroses")
-```
-
-
-## PJ Harvey
-
-Inspiration
-
-# <img src="man/figures/harvey.png" width="160px" align="left" />
-
-```{r harvey}
 rock_palette("harvey")
-```
-
-
-## Uria Heep
-
-Inspiration
-
-# <img src="man/figures/heep.png" width="160px" align="left" />
-
-```{r heep}
 rock_palette("heep")
 ```
 
 
-## Hell Awaits - Slayer
 
-Inspiration
-
-# <img src="man/figures/hellawaits.png" width="160px" align="left" />
-
-```{r slayer}
+```{r slayer, fig.show = "hold",out.width = "33%"}
 rock_palette("hellawaits")
-```
-
-## Husker Du
-
-Inspiration
-
-# <img src="man/figures/husker.png" width="160px" align="left" />
-
-```{r husker}
 rock_palette("husker")
-```
-
-
-
-## Janelle Monae
-
-Inspiration
-
-# <img src="man/figures/janelle.png" width="160px" align="left" />
-
-```{r janelle}
 rock_palette("janelle")
 ```
 
 
-## Iron Maiden
 
-Inspiration
-
-# <img src="man/figures/maiden.png" width="160px" align="left" />
-
-```{r maiden}
+```{r maiden, fig.show = "hold",out.width = "33%"}
 rock_palette("maiden")
-```
-
-
-## Metallica 
-
-Inspiration
-
-# <img src="man/figures/metallica.png" width="160px" align="left" />
-
-```{r metallica}
+rock_palette("melloncollie")
 rock_palette("metallica")
 ```
 
-## Miles Davis
 
-Inspiration
 
-# <img src="man/figures/miles.png" width="160px" align="left" />
-
-```{r miles}
+```{r muse, fig.show = "hold",out.width = "33%"}
 rock_palette("miles")
-```
-
-
-## Muse
-
-Inspiration
-
-# <img src="man/figures/muse.png" width="160px" align="left" />
-
-```{r muse}
 rock_palette("muse")
-```
-
-
-## Nirvana 
-
-Inspiration
-
-# <img src="man/figures/nirvana.png" width="160px" align="left" />
-
-```{r nirvana}
 rock_palette("nevermind")
 ```
 
 
-## No Doubt
 
-Inspiration
-
-# <img src="man/figures/nodoubt.png" width="160px" align="left" />
-
-```{r nodoubt}
+```{r oasis,  fig.show = "hold",out.width = "33%"}
 rock_palette("nodoubt")
-```
-
-
-## Oasis
-
-Inspiration
-
-# <img src="man/figures/oasis.png" width="160px" align="left" />
-
-```{r oasis}
 rock_palette("oasis")
-```
-
-
-## Peace Sells - Megadeth
-
-Inspiration
-
-# <img src="man/figures/peacesells.png" width="160px" align="left" />
-
-```{r peacesells}
 rock_palette("peacesells")
 ```
 
-## Smashing Pumpkins
-Inspiration
 
-# <img src="man/figures/melloncollie.png" width="160px" align="left" />
-
-```{r melloncollie}
-rock_palette("melloncollie")
-```
-
-
-
-## Taylor Swift
-
-Inspiration
-
-# <img src="man/figures/taylor.png" width="160px" align="left" />
-
-```{r swift}
+```{r swift, fig.show = "hold",out.width = "50%"}
 rock_palette("swift")
-```
-
-
-##  10CC
-
-
-Inspiration
-
-# <img src="man/figures/tencc.png" width="160px" align="left" />
-
-```{r tencc}
 rock_palette("tencc")
 ```
+
 
 
 ## Longer colour palettes, more suited for ggplot2 use
 
 The following palettes share the same inspirations, but there are more colours, which hopefully increases their utility for data visualisation.
 
-```{r cal10, fig.show = "hold", out.width = "33%"}
-show_col(californication_pal()(10),labels = FALSE)
-show_col(coltrane_pal()(10), labels = FALSE)
-show_col(deelite_pal()(10),labels = FALSE)
-```
+```{r, fig.width=4, fig.height=3, echo = FALSE, fig.show = "hold", out.width = "25%"}
+data <- gapminder::gapminder %>% 
+    filter(country %in% c("France", "Germany", "Ireland", "Italy", 
+                        "Japan", "Norway", "Belarus", "United Kingdom",
+                        "Peru", "Spain"))  %>% 
+    mutate(year = as.Date(paste(year, "-01-01", sep = "", format = '%Y-%b-%d')))
 
 
-```{r electric10, fig.show = "hold", out.width = "33%"}
-show_col(electric_pal()(10),labels = FALSE)
-show_col(gogo_pal()(10),labels = FALSE)
-show_col(gunsnroses_pal()(10),labels = FALSE)
+ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
+    geom_area(alpha = 0.8) +
+    theme_void() + 
+    theme(legend.position = "none") + 
+    scale_fill_californication() + 
+    ggtitle(label = "scale_fill_californication")  
 
-```
+ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
+    geom_area(alpha = 0.8) +
+    theme_void() + 
+    theme(legend.position = "none") + 
+    scale_fill_coltrane() + 
+    ggtitle(label = "scale_fill_coltrane")  
 
+ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
+    geom_area(alpha = 0.8) +
+    theme_void() + 
+    theme(legend.position = "none") + 
+    scale_fill_deelite() + 
+    ggtitle(label = "scale_fill_deelite") 
 
+ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
+    geom_area(alpha = 0.8) +
+    theme_void() + 
+    theme(legend.position = "none") + 
+    scale_fill_electric() + 
+    ggtitle(label = "scale_fill_electric")  
 
-```{r harvey10, fig.show = "hold", out.width = "33%"}
-show_col(harvey_pal()(10),labels = FALSE)
-show_col(heep_pal()(10),labels = FALSE)
-show_col(hellawaits_pal()(10),labels = FALSE)
+ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
+    geom_area(alpha = 0.8) +
+    theme_void() + 
+    theme(legend.position = "none") + 
+    scale_fill_gogo() + 
+    ggtitle(label = "scale_fill_gogo")  
 
-```
+ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
+    geom_area(alpha = 0.8) +
+    theme_void() + 
+    theme(legend.position = "none") + 
+    scale_fill_gunsnroses() + 
+    ggtitle(label = "scale_fill_gunsnroses")  
 
+ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
+    geom_area(alpha = 0.8) +
+    theme_void() + 
+    theme(legend.position = "none") + 
+    scale_fill_harvey() + 
+    ggtitle(label = "scale_fill_harvey")  
 
+ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
+    geom_area(alpha = 0.8) +
+    theme_void() + 
+    theme(legend.position = "none") + 
+    scale_fill_heep() + 
+    ggtitle(label = "scale_fill_heep")  
 
-```{r husker10,fig.show = "hold", out.width = "33%"}
-show_col(husker_pal()(10),labels = FALSE)
-show_col(janelle_pal()(10),labels = FALSE)
-show_col(maiden_pal()(10),labels = FALSE)
-```
+ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
+    geom_area(alpha = 0.8) +
+    theme_void() + 
+    theme(legend.position = "none") + 
+    scale_fill_hellawaits() + 
+    ggtitle(label = "scale_fill_hellawaits")  
 
+ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
+    geom_area(alpha = 0.8) +
+    theme_void() + 
+    theme(legend.position = "none") + 
+    scale_fill_husker() + 
+    ggtitle(label = "scale_fill_husker")
 
-```{r metallica10, fig.show = "hold", out.width = "33%"}
-show_col(metallica_pal()(10),labels = FALSE)
-show_col(miles_pal()(10),labels = FALSE)
-show_col(muse_pal()(10),labels = FALSE)
+ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
+    geom_area(alpha = 0.8) +
+    theme_void() + 
+    theme(legend.position = "none") + 
+    scale_fill_janelle() + 
+    ggtitle(label = "scale_fill_janelle")
 
-```
+ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
+    geom_area(alpha = 0.8) +
+    theme_void() + 
+    theme(legend.position = "none") + 
+    scale_fill_maiden() + 
+    ggtitle(label = "scale_fill_maiden")
 
+ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
+    geom_area(alpha = 0.8) +
+    theme_void() + 
+    theme(legend.position = "none") + 
+    scale_fill_melloncollie() + 
+    ggtitle(label = "scale_fill_melloncollie")
 
-```{r nevermind10, fig.show = "hold", out.width = "33%"}
-show_col(nevermind_pal()(10),labels = FALSE)
-show_col(nodoubt_pal()(10),labels = FALSE)
-show_col(oasis_pal()(10),labels = FALSE)
-```
+ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
+    geom_area(alpha = 0.8) +
+    theme_void() + 
+    theme(legend.position = "none") + 
+    scale_fill_metallica() + 
+    ggtitle(label = "scale_fill_metallica")
 
+ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
+    geom_area(alpha = 0.8) +
+    theme_void() + 
+    theme(legend.position = "none") + 
+    scale_fill_muse() + 
+    ggtitle(label = "scale_fill_muse")
 
-```{r megadeth10, fig.show = "hold", out.width = "25%"}
-show_col(peacesells_pal()(10),labels = FALSE)
-show_col(real_thing_pal()(10),labels = FALSE)
-show_col(taylor_pal()(10),labels = FALSE)
-show_col(tencc_pal()(10),labels = FALSE)
+ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
+    geom_area(alpha = 0.8) +
+    theme_void() + 
+    theme(legend.position = "none") + 
+    scale_fill_nevermind() + 
+    ggtitle(label = "scale_fill_nevermind")
 
+ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
+    geom_area(alpha = 0.8) +
+    theme_void() + 
+    theme(legend.position = "none") + 
+    scale_fill_nodoubt() + 
+    ggtitle(label = "scale_fill_nodoubt")
+  
+ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
+    geom_area(alpha = 0.8) +
+    theme_void() + 
+    theme(legend.position = "none") + 
+    scale_fill_oasis() + 
+    ggtitle(label = "scale_fill_oasis")
+
+ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
+    geom_area(alpha = 0.8) +
+    theme_void() + 
+    theme(legend.position = "none") + 
+    scale_fill_peacesells() + 
+    ggtitle(label = "scale_fill_peacesells")
+
+ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
+    geom_area(alpha = 0.8) +
+    theme_void() + 
+    theme(legend.position = "none") + 
+    scale_fill_real_thing() + 
+    ggtitle(label = "scale_fill_realthing")
+
+ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
+    geom_area(alpha = 0.8) +
+    theme_void() + 
+    theme(legend.position = "none") + 
+    scale_fill_taylor() + 
+    ggtitle(label = "scale_fill_taylor")
+
+ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
+    geom_area(alpha = 0.8) +
+    theme_void() + 
+    theme(legend.position = "none") + 
+    scale_fill_tencc() + 
+    ggtitle(label = "scale_fill_tencc")
+    
+    
 ```
 
 
@@ -392,45 +311,3 @@ project you agree to abide by its terms.
 ## Contributing
 
 See the [Contribution guide](.github/CONTRIBUTING.md)
-
-
-## More ggplot2 examples
-
-```{r, fig.width=5, fig.height=3, echo = FALSE}
-data <- gapminder::gapminder %>% 
-    filter(country %in% c("France", "Germany", "Ireland", "Italy", "Japan")) %>% 
-    mutate(year = as.Date(paste(year, "-01-01", sep = "", format = '%Y-%b-%d')))
-  
-  
-ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
-    geom_area(alpha = 0.8) +
-    theme_void() + 
-    scale_fill_tencc() + 
-  ggtitle(label = "scale_fill_tencc")
-    
-    ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
-    geom_area(alpha = 0.8) +
-    theme_void() + 
-    scale_fill_husker() + 
-  ggtitle(label = "scale_fill_husker")
-    
-    
-    ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
-     geom_area(alpha = 0.8) +
-    theme_void() + 
-    scale_fill_janelle() + 
-  ggtitle(label = "scale_fill_janelle")
-  
-    ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
-    geom_area(alpha = 0.8) +
-    theme_void() + 
-    scale_fill_muse() + 
-  ggtitle(label = "scale_fill_muse")
-    
-    ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
-    geom_area(alpha = 0.8) +
-    theme_void() + 
-    scale_fill_nodoubt() + 
-  ggtitle(label = "scale_fill_nodoubt")
-    
-```

@@ -55,342 +55,75 @@ library(gapminder)
 
 # Palettes and Themes
 
-## Californication
-
-Inspiration
-
-# <img src="man/figures/californication.png" width="160px" align="left" />
-
 ``` r
 rock_palette("californication")
-```
-
-![](man/figures/README-californication-1.png)<!-- -->
-
-## Coltrane
-
-Inspiration
-
-# <img src="man/figures/coltrane.png" width="160px" align="left" />
-
-``` r
 rock_palette("coltrane")
-```
-
-![](man/figures/README-coltrane-1.png)<!-- -->
-
-## Deee-Lite
-
-Inspiration \#
-<img src="man/figures/deeelite.png" width="160px" align="left" />
-
-``` r
 rock_palette("deelite")
 ```
 
-![](man/figures/README-deelite-1.png)<!-- -->
-
-## Electric
-
-Inspiration
-
-# <img src="man/figures/electric.png" width="160px" align="left" />
+<img src="man/figures/README-californication-1.png" width="33%" /><img src="man/figures/README-californication-2.png" width="33%" /><img src="man/figures/README-californication-3.png" width="33%" />
 
 ``` r
 rock_palette("electric")
-```
-
-![](man/figures/README-electric-1.png)<!-- -->
-
-## Faith No More
-
-Inspiration
-
-# <img src="man/figures/realthing.png" width="160px" align="left" />
-
-``` r
 rock_palette("faithnomore")
-```
-
-![](man/figures/README-faithnomore-1.png)<!-- -->
-
-## Go Gos
-
-Inspiration
-
-# <img src="man/figures/gogos.png" width="160px" align="left" />
-
-``` r
 rock_palette("gogo")
 ```
 
-![](man/figures/README-gogo-1.png)<!-- -->
-
-## Guns N’ Roses
-
-Inspiration
-
-# <img src="man/figures/gunsnroses.png" width="160px" align="left" />
+<img src="man/figures/README-electric-1.png" width="33%" /><img src="man/figures/README-electric-2.png" width="33%" /><img src="man/figures/README-electric-3.png" width="33%" />
 
 ``` r
 rock_palette("gunsnroses")
-```
-
-![](man/figures/README-gnr-1.png)<!-- -->
-
-## PJ Harvey
-
-Inspiration
-
-# <img src="man/figures/harvey.png" width="160px" align="left" />
-
-``` r
 rock_palette("harvey")
-```
-
-![](man/figures/README-harvey-1.png)<!-- -->
-
-## Uria Heep
-
-Inspiration
-
-# <img src="man/figures/heep.png" width="160px" align="left" />
-
-``` r
 rock_palette("heep")
 ```
 
-![](man/figures/README-heep-1.png)<!-- -->
-
-## Hell Awaits - Slayer
-
-Inspiration
-
-# <img src="man/figures/hellawaits.png" width="160px" align="left" />
+<img src="man/figures/README-gnr-1.png" width="33%" /><img src="man/figures/README-gnr-2.png" width="33%" /><img src="man/figures/README-gnr-3.png" width="33%" />
 
 ``` r
 rock_palette("hellawaits")
-```
-
-![](man/figures/README-slayer-1.png)<!-- -->
-
-## Husker Du
-
-Inspiration
-
-# <img src="man/figures/husker.png" width="160px" align="left" />
-
-``` r
 rock_palette("husker")
-```
-
-![](man/figures/README-husker-1.png)<!-- -->
-
-## Janelle Monae
-
-Inspiration
-
-# <img src="man/figures/janelle.png" width="160px" align="left" />
-
-``` r
 rock_palette("janelle")
 ```
 
-![](man/figures/README-janelle-1.png)<!-- -->
-
-## Iron Maiden
-
-Inspiration
-
-# <img src="man/figures/maiden.png" width="160px" align="left" />
+<img src="man/figures/README-slayer-1.png" width="33%" /><img src="man/figures/README-slayer-2.png" width="33%" /><img src="man/figures/README-slayer-3.png" width="33%" />
 
 ``` r
 rock_palette("maiden")
-```
-
-![](man/figures/README-maiden-1.png)<!-- -->
-
-## Metallica
-
-Inspiration
-
-# <img src="man/figures/metallica.png" width="160px" align="left" />
-
-``` r
+rock_palette("melloncollie")
 rock_palette("metallica")
 ```
 
-![](man/figures/README-metallica-1.png)<!-- -->
-
-## Miles Davis
-
-Inspiration
-
-# <img src="man/figures/miles.png" width="160px" align="left" />
+<img src="man/figures/README-maiden-1.png" width="33%" /><img src="man/figures/README-maiden-2.png" width="33%" /><img src="man/figures/README-maiden-3.png" width="33%" />
 
 ``` r
 rock_palette("miles")
-```
-
-![](man/figures/README-miles-1.png)<!-- -->
-
-## Muse
-
-Inspiration
-
-# <img src="man/figures/muse.png" width="160px" align="left" />
-
-``` r
 rock_palette("muse")
-```
-
-![](man/figures/README-muse-1.png)<!-- -->
-
-## Nirvana
-
-Inspiration
-
-# <img src="man/figures/nirvana.png" width="160px" align="left" />
-
-``` r
 rock_palette("nevermind")
 ```
 
-![](man/figures/README-nirvana-1.png)<!-- -->
-
-## No Doubt
-
-Inspiration
-
-# <img src="man/figures/nodoubt.png" width="160px" align="left" />
+<img src="man/figures/README-muse-1.png" width="33%" /><img src="man/figures/README-muse-2.png" width="33%" /><img src="man/figures/README-muse-3.png" width="33%" />
 
 ``` r
 rock_palette("nodoubt")
-```
-
-![](man/figures/README-nodoubt-1.png)<!-- -->
-
-## Oasis
-
-Inspiration
-
-# <img src="man/figures/oasis.png" width="160px" align="left" />
-
-``` r
 rock_palette("oasis")
-```
-
-![](man/figures/README-oasis-1.png)<!-- -->
-
-## Peace Sells - Megadeth
-
-Inspiration
-
-# <img src="man/figures/peacesells.png" width="160px" align="left" />
-
-``` r
 rock_palette("peacesells")
 ```
 
-![](man/figures/README-peacesells-1.png)<!-- -->
-
-## Smashing Pumpkins
-
-Inspiration
-
-# <img src="man/figures/melloncollie.png" width="160px" align="left" />
-
-``` r
-rock_palette("melloncollie")
-```
-
-![](man/figures/README-melloncollie-1.png)<!-- -->
-
-## Taylor Swift
-
-Inspiration
-
-# <img src="man/figures/taylor.png" width="160px" align="left" />
+<img src="man/figures/README-oasis-1.png" width="33%" /><img src="man/figures/README-oasis-2.png" width="33%" /><img src="man/figures/README-oasis-3.png" width="33%" />
 
 ``` r
 rock_palette("swift")
-```
-
-![](man/figures/README-swift-1.png)<!-- -->
-
-## 10CC
-
-Inspiration
-
-# <img src="man/figures/tencc.png" width="160px" align="left" />
-
-``` r
 rock_palette("tencc")
 ```
 
-![](man/figures/README-tencc-1.png)<!-- -->
+<img src="man/figures/README-swift-1.png" width="50%" /><img src="man/figures/README-swift-2.png" width="50%" />
 
 ## Longer colour palettes, more suited for ggplot2 use
 
 The following palettes share the same inspirations, but there are more
 colours, which hopefully increases their utility for data visualisation.
 
-``` r
-show_col(californication_pal()(10),labels = FALSE)
-show_col(coltrane_pal()(10), labels = FALSE)
-show_col(deelite_pal()(10),labels = FALSE)
-```
-
-<img src="man/figures/README-cal10-1.png" width="33%" /><img src="man/figures/README-cal10-2.png" width="33%" /><img src="man/figures/README-cal10-3.png" width="33%" />
-
-``` r
-show_col(electric_pal()(10),labels = FALSE)
-show_col(gogo_pal()(10),labels = FALSE)
-show_col(gunsnroses_pal()(10),labels = FALSE)
-```
-
-<img src="man/figures/README-electric10-1.png" width="33%" /><img src="man/figures/README-electric10-2.png" width="33%" /><img src="man/figures/README-electric10-3.png" width="33%" />
-
-``` r
-show_col(harvey_pal()(10),labels = FALSE)
-show_col(heep_pal()(10),labels = FALSE)
-show_col(hellawaits_pal()(10),labels = FALSE)
-```
-
-<img src="man/figures/README-harvey10-1.png" width="33%" /><img src="man/figures/README-harvey10-2.png" width="33%" /><img src="man/figures/README-harvey10-3.png" width="33%" />
-
-``` r
-show_col(husker_pal()(10),labels = FALSE)
-show_col(janelle_pal()(10),labels = FALSE)
-show_col(maiden_pal()(10),labels = FALSE)
-```
-
-<img src="man/figures/README-husker10-1.png" width="33%" /><img src="man/figures/README-husker10-2.png" width="33%" /><img src="man/figures/README-husker10-3.png" width="33%" />
-
-``` r
-show_col(metallica_pal()(10),labels = FALSE)
-show_col(miles_pal()(10),labels = FALSE)
-show_col(muse_pal()(10),labels = FALSE)
-```
-
-<img src="man/figures/README-metallica10-1.png" width="33%" /><img src="man/figures/README-metallica10-2.png" width="33%" /><img src="man/figures/README-metallica10-3.png" width="33%" />
-
-``` r
-show_col(nevermind_pal()(10),labels = FALSE)
-show_col(nodoubt_pal()(10),labels = FALSE)
-show_col(oasis_pal()(10),labels = FALSE)
-```
-
-<img src="man/figures/README-nevermind10-1.png" width="33%" /><img src="man/figures/README-nevermind10-2.png" width="33%" /><img src="man/figures/README-nevermind10-3.png" width="33%" />
-
-``` r
-show_col(peacesells_pal()(10),labels = FALSE)
-show_col(real_thing_pal()(10),labels = FALSE)
-show_col(taylor_pal()(10),labels = FALSE)
-show_col(tencc_pal()(10),labels = FALSE)
-```
-
-<img src="man/figures/README-megadeth10-1.png" width="25%" /><img src="man/figures/README-megadeth10-2.png" width="25%" /><img src="man/figures/README-megadeth10-3.png" width="25%" /><img src="man/figures/README-megadeth10-4.png" width="25%" />
+<img src="man/figures/README-unnamed-chunk-2-1.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-2.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-3.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-4.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-5.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-6.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-7.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-8.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-9.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-10.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-11.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-12.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-13.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-14.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-15.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-16.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-17.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-18.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-19.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-20.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-21.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-22.png" width="25%" />
 
 ## Credit
 
@@ -407,7 +140,3 @@ you agree to abide by its terms.
 ## Contributing
 
 See the [Contribution guide](.github/CONTRIBUTING.md)
-
-## More ggplot2 examples
-
-![](man/figures/README-unnamed-chunk-2-1.png)<!-- -->![](man/figures/README-unnamed-chunk-2-2.png)<!-- -->![](man/figures/README-unnamed-chunk-2-3.png)<!-- -->![](man/figures/README-unnamed-chunk-2-4.png)<!-- -->![](man/figures/README-unnamed-chunk-2-5.png)<!-- -->
