@@ -34,10 +34,33 @@ This is a collection of colour palettes based on classic rock album covers.
 
 Not all of the artists are 'rock', but they appeared in lists of classic rock album covers and the internet is never wrong, is it ;)
 
-The albums were chosen  either for their striking covers (in terms of colour), or simply, because
-they are bona fide rock classics. 
+Other albums were chosen  either for their striking covers (in terms of colour), or simply, or because they are bona fide rock classics, or because I like them. 
 
-Your job is to guess which is which.
+Featuring: 
+
+- Californication ( Red Hot Chili Peppers)
+- Blue Train (John Coltrane)
+- Groove is in the Heart (Deee-Lite)
+- Electric (The Cult) * bona fide rock classic*
+- Beauty and the Beat - The GoGos
+- Appetite for Destruction (Guns 'n' Roses)
+- To Bring You My Love - P J Harvey
+- The Magician's Birthday - Uriah Heep
+- Hell Awaits (Slayer - submission by Cris Beeley)
+- Warehouse Songs and Stories (Husker Du)
+- Dirty Computer (Janelle Monae)
+- Seventh Son of a Seventh Son (Iron Maiden)
+- Melloncollie and the Infinite Sadness (Smashing Pumpkins, submission by C Mainey)
+- Master of Puppets (Metallica)
+- Bitches Brew (Miles Davis)
+- Simulation Theory (Muse)
+- Nevermind (Nirvana)
+- Tragic Kingdom (No Doubt)
+- Definitely Maybe (Oasis)
+- Peace Sells (Megadeth, submission by C Beeley)
+- The Real Thing (Faith No More)
+- 1989 (Taylor Swift)
+- Ten out of Ten (10CC)
 
 
 ## Why?

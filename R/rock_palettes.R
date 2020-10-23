@@ -10,7 +10,7 @@ rock_palettes <- list(
     heep = c("#466E9A", "#E84D45", "#21201C", "#A1BAAC"),
     hellawaits = c("#995026", "#281D13", "#D7C698", "#AC9D9A"),
     husker = c("#422537", "#D58078","#86A556", "#624FB0"),
-    janelle = c("#916364","#E2D6BF", "#21121B", "#B3ACC7"),
+    janelle = c("#ab9ed4","#d6e055", "#cb6f42", "#7d2d3b"),
     maiden = c("#8FBBCE", "#265F8A", "#78704B", "#4A5372"),
     melloncollie = c("#484A5A", "#C69648", "#9BA48C", "#949CAC"),
     metallica = c("#652113", "#D8CABC","#D77021", "#9E8C99"),
