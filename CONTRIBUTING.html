@@ -47,7 +47,6 @@
 
 
 <meta property="og:title" content="Contributing to rockthemes" />
-<meta property="og:image" content="/logo.png" />
 
 
 
@@ -119,7 +118,7 @@
 <div id="submitting-a-palette" class="section level2">
 <h2 class="hasAnchor">
 <a href="#submitting-a-palette" class="anchor"></a>Submitting a palette</h2>
-<p>If you want to suggest a palette, please file an issue with the artist, album title and a small image or link to the album cover.</p>
+<p>If you want to suggest a palette, please file an issue with the artist, album title and a link to the album cover.</p>
 <div id="pull-request-process" class="section level3">
 <h3 class="hasAnchor">
 <a href="#pull-request-process" class="anchor"></a>Pull request process</h3>
@@ -128,8 +127,14 @@
 <li><p>Install all development dependences with <code>devtools::install_dev_deps()</code>, and then make sure the package passes R CMD check by running <code>devtools::check()</code>. If R CMD check doesn’t pass cleanly, it’s a good idea to ask for help before continuing.</p></li>
 <li><p>Create a Git branch for your pull request (PR). We recommend using <code>usethis::pr_init("brief-description-of-change")</code>.</p></li>
 <li><p>Changes you will need to make:</p></li>
-<li><p>Add a 4 colour palette to rock_palletes.R. I use <a href="https://www.canva.com/colors/color-palette-generator/">canva’s online tool</a>. Please ensure the new palette name is entered in the correct alphabetical order in both the palette list and the param values</p></li>
-<li><p>Create a ten colour palette from the image. I used <a href="https://loading.io/color/random/">loading.io/</a> with variance set to around 20 and Count set to 10 (I left all the other options at their default, ticked settings).</p></li>
+<li><p>Add a 4 colour palette to rock_palletes.R.</p></li>
+</ul>
+<p>I use <a href="https://www.canva.com/colors/color-palette-generator/">canva’s online tool</a>, but you are welcome to choose whatever else works for you.</p>
+<p><em>Please</em> ensure the new palette name is entered in the correct alphabetical order in <em>both</em> the <em>palette list</em> <em>and</em> the <em>param values</em>.</p>
+<p>Run <code>devtools::document</code> to update the package documentation</p>
+<p>There is a minimal test in <img src="/tests/testthat/test-rock_palettes.R"> Add your palette to that (just copy / paste an existing line and amend to your new palette name). Rerun the tests to ensure it passes (this will pick up errors where a palette is added but not added to the function params)</p>
+<ul>
+<li><p>Create a ten colour palette from the image. I used <a href="https://loading.io/color/random/">loading.io/</a> with Count set to 10 (I left all the other options at their default, ticked settings).</p></li>
 <li><p>Add new “album_palette.R” file where you substitute the palette name, using one of the existing ones as a guide. There are 38 instances that will need updating in each palette file.</p></li>
 <li><p>Make your changes, commit to git, and then create a PR by running <code>usethis::pr_push()</code>, and following the prompts in your browser. The title of your PR should briefly describe the change. The body of your PR should contain <code>Fixes #issue-number</code>.</p></li>
 </ul>
