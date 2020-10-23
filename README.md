@@ -63,6 +63,23 @@ library(gapminder)
 
 # Palettes and Themes
 
+## Abbey Road
+
+Inspiration
+
+# <a href="https://en.wikipedia.org/wiki/File:Beatles_-_Abbey_Road.jpg#/media/File:Beatles_-_Abbey_Road.jpg"><img src="https://upload.wikimedia.org/wikipedia/en/4/42/Beatles_-_Abbey_Road.jpg" alt="The cover of Abbey Road has no printed words. It is a photo of the Beatles, in side view, crossing the street in single file." width="160px" align="left"></a>
+
+<br><span style="font-size: 10px;"> By Source,
+<a href="//en.wikipedia.org/wiki/File:Beatles_-_Abbey_Road.jpg" title="Fair use of copyrighted material in the context of Abbey Road">Fair
+use</a>,
+<a href="https://en.wikipedia.org/w/index.php?curid=4897516">Link</a></span>
+
+``` r
+rock_palette("abbeyroad")
+```
+
+![](man/figures/README-abbeyroad-1.png)<!-- -->
+
 ## Californication
 
 Inspiration
@@ -207,6 +224,25 @@ rock_palette("maiden")
 
 ![](man/figures/README-maiden-1.png)<!-- -->
 
+## Mellon Collie and the Infitine Sadness
+
+Inspiration
+
+# <a href="https://en.wikipedia.org/wiki/File:The_Smashing_Pumpkins_-_Mellon_Collie_And_The_infinite_Sadness.jpg#/media/File:The_Smashing_Pumpkins_-_Mellon_Collie_And_The_infinite_Sadness.jpg"><img src="https://upload.wikimedia.org/wikipedia/en/7/76/The_Smashing_Pumpkins_-_Mellon_Collie_And_The_infinite_Sadness.jpg" alt="A painting of women in outer space" width="160px" align="left"></a>
+
+<br><span style="font-size: 10px;"> By
+<span title="must have been published or publicly displayed outside Wikipedia">Source</span>
+(<a href="//en.wikipedia.org/wiki/Wikipedia:Non-free_content_criteria#4" title="Wikipedia:Non-free content criteria">WP:NFCC\#4</a>),
+<a href="//en.wikipedia.org/wiki/File:The_Smashing_Pumpkins_-_Mellon_Collie_And_The_infinite_Sadness.jpg" title="Fair use of copyrighted material in the context of Mellon Collie and the Infinite Sadness">Fair
+use</a>,
+<a href="https://en.wikipedia.org/w/index.php?curid=64531870">Link</a></span>
+
+``` r
+rock_palette("melloncollie")
+```
+
+![](man/figures/README-melloncollie-1.png)<!-- -->
+
 ## Metallica
 
 Inspiration
@@ -291,6 +327,23 @@ rock_palette("peacesells")
 
 ![](man/figures/README-peacesells-1.png)<!-- -->
 
+## Siamese Dream
+
+Inspiration
+
+# <a href="https://en.wikipedia.org/wiki/File:SmashingPumpkins-SiameseDream.jpg#/media/File:SmashingPumpkins-SiameseDream.jpg"><img src="https://upload.wikimedia.org/wikipedia/en/4/44/SmashingPumpkins-SiameseDream.jpg" alt="SmashingPumpkins-SiameseDream.jpg" width="160px" align="left"></a>
+
+<br><span style="font-size: 10px;"> By Source,
+<a href="//en.wikipedia.org/wiki/File:SmashingPumpkins-SiameseDream.jpg" title="Fair use of copyrighted material in the context of Siamese Dream">Fair
+use</a>,
+<a href="https://en.wikipedia.org/w/index.php?curid=224244">Link</a></span>
+
+``` r
+rock_palette("siamesedream")
+```
+
+![](man/figures/README-siamesedream-1.png)<!-- -->
+
 ## Taylor Swift
 
 Inspiration
@@ -319,6 +372,12 @@ rock_palette("tencc")
 
 The following palettes share the same inspirations, but there are more
 colours, which hopefully increases their utility for data visualisation.
+
+``` r
+show_col(abbeyroad_pal()(10))
+```
+
+![](man/figures/README-abb10-1.png)<!-- -->
 
 ``` r
 show_col(californication_pal()(10))
@@ -387,6 +446,12 @@ show_col(maiden_pal()(10))
 ![](man/figures/README-maiden10-1.png)<!-- -->
 
 ``` r
+show_col(melloncollie_pal()(10))
+```
+
+![](man/figures/README-melloncollie10-1.png)<!-- -->
+
+``` r
 show_col(metallica_pal()(10))
 ```
 
@@ -435,6 +500,12 @@ show_col(real_thing_pal()(10))
 ![](man/figures/README-faithnomore10-1.png)<!-- -->
 
 ``` r
+show_col(siamesedream_pal()(10))
+```
+
+![](man/figures/README-siamesedream10-1.png)<!-- -->
+
+``` r
 show_col(taylor_pal()(10))
 ```
 
@@ -469,7 +540,7 @@ data <- gapminder::gapminder %>%
     filter(country %in% c("France", "Germany", "Ireland", "Italy", "Japan")) %>% 
     mutate(year = as.Date(paste(year, "-01-01", sep = "", format = '%Y-%b-%d')))
     
-ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
+    ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
     geom_area(alpha = 0.8) +
     scale_x_date(breaks = data$year, date_labels = "%Y") +
     scale_y_continuous(expand = c(0, 0), labels = scales::dollar) +
@@ -502,6 +573,17 @@ ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
 ![](man/figures/README-unnamed-chunk-2-3.png)<!-- -->
 
 ``` r
+    
+    ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
+    geom_area(alpha = 0.8) +
+    scale_x_date(breaks = data$year, date_labels = "%Y") +
+    scale_y_continuous(expand = c(0, 0), labels = scales::dollar) +
+    scale_fill_melloncollie()
+```
+
+![](man/figures/README-unnamed-chunk-2-4.png)<!-- -->
+
+``` r
   
     ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
     geom_area(alpha = 0.8) +
@@ -510,7 +592,7 @@ ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
     scale_fill_muse()
 ```
 
-![](man/figures/README-unnamed-chunk-2-4.png)<!-- -->
+![](man/figures/README-unnamed-chunk-2-5.png)<!-- -->
 
 ``` r
     
@@ -521,4 +603,4 @@ ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
     scale_fill_nodoubt()
 ```
 
-![](man/figures/README-unnamed-chunk-2-5.png)<!-- -->
+![](man/figures/README-unnamed-chunk-2-6.png)<!-- -->

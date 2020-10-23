@@ -59,6 +59,17 @@ library(gapminder)
 
 # Palettes and Themes
 
+## Abbey Road
+
+Inspiration
+
+# <a href="https://en.wikipedia.org/wiki/File:Beatles_-_Abbey_Road.jpg#/media/File:Beatles_-_Abbey_Road.jpg"><img src="https://upload.wikimedia.org/wikipedia/en/4/42/Beatles_-_Abbey_Road.jpg" alt="The cover of Abbey Road has no printed words. It is a photo of the Beatles, in side view, crossing the street in single file." width="160px" align="left"></a>
+<br><span style="font-size: 10px;"> By Source, <a href="//en.wikipedia.org/wiki/File:Beatles_-_Abbey_Road.jpg" title="Fair use of copyrighted material in the context of Abbey Road">Fair use</a>, <a href="https://en.wikipedia.org/w/index.php?curid=4897516">Link</a></span>
+
+```{r abbeyroad}
+rock_palette("abbeyroad")
+
+```
 
 ## Californication
 
@@ -196,6 +207,19 @@ Inspiration
 rock_palette("maiden")
 ```
 
+## Mellon Collie and the Infitine Sadness
+
+Inspiration
+
+# <a href="https://en.wikipedia.org/wiki/File:The_Smashing_Pumpkins_-_Mellon_Collie_And_The_infinite_Sadness.jpg#/media/File:The_Smashing_Pumpkins_-_Mellon_Collie_And_The_infinite_Sadness.jpg"><img src="https://upload.wikimedia.org/wikipedia/en/7/76/The_Smashing_Pumpkins_-_Mellon_Collie_And_The_infinite_Sadness.jpg" alt="A painting of women in outer space" width="160px" align="left"></a>
+<br><span style="font-size: 10px;">  By <span title="must have been published or publicly displayed outside Wikipedia">Source</span> (<a href="//en.wikipedia.org/wiki/Wikipedia:Non-free_content_criteria#4" title="Wikipedia:Non-free content criteria">WP:NFCC#4</a>), <a href="//en.wikipedia.org/wiki/File:The_Smashing_Pumpkins_-_Mellon_Collie_And_The_infinite_Sadness.jpg" title="Fair use of copyrighted material in the context of Mellon Collie and the Infinite Sadness">Fair use</a>, <a href="https://en.wikipedia.org/w/index.php?curid=64531870">Link</a></span>
+
+
+```{r melloncollie}
+rock_palette("melloncollie")
+
+```
+
 
 ## Metallica 
 
@@ -216,7 +240,6 @@ Inspiration
 ```{r miles}
 rock_palette("miles")
 ```
-
 
 ## Muse
 
@@ -272,6 +295,18 @@ Inspiration
 rock_palette("peacesells")
 ```
 
+## Siamese Dream
+
+Inspiration
+
+# <a href="https://en.wikipedia.org/wiki/File:SmashingPumpkins-SiameseDream.jpg#/media/File:SmashingPumpkins-SiameseDream.jpg"><img src="https://upload.wikimedia.org/wikipedia/en/4/44/SmashingPumpkins-SiameseDream.jpg" alt="SmashingPumpkins-SiameseDream.jpg" width="160px" align="left"></a>
+<br><span style="font-size: 10px;"> By Source, <a href="//en.wikipedia.org/wiki/File:SmashingPumpkins-SiameseDream.jpg" title="Fair use of copyrighted material in the context of Siamese Dream">Fair use</a>, <a href="https://en.wikipedia.org/w/index.php?curid=224244">Link</a></span>
+
+```{r siamesedream}
+rock_palette("siamesedream")
+
+```
+
 ## Taylor Swift
 
 Inspiration
@@ -298,6 +333,11 @@ rock_palette("tencc")
 ## Longer colour palettes, more suited for ggplot2 use
 
 The following palettes share the same inspirations, but there are more colours, which hopefully increases their utility for data visualisation.
+
+```{r abb10}
+show_col(abbeyroad_pal()(10))
+
+```
 
 ```{r cal10}
 show_col(californication_pal()(10))
@@ -354,12 +394,15 @@ show_col(janelle_pal()(10))
 
 ```
 
-
 ```{r maiden10}
 show_col(maiden_pal()(10))
 
 ```
 
+```{r melloncollie10}
+show_col(melloncollie_pal()(10))
+
+```
 
 ```{r metallica10}
 show_col(metallica_pal()(10))
@@ -404,6 +447,11 @@ show_col(real_thing_pal()(10))
 
 ```
 
+```{r siamesedream10}
+show_col(siamesedream_pal()(10))
+
+```
+
 ```{r taylor10}
 show_col(taylor_pal()(10))
 
@@ -440,7 +488,7 @@ data <- gapminder::gapminder %>%
     filter(country %in% c("France", "Germany", "Ireland", "Italy", "Japan")) %>% 
     mutate(year = as.Date(paste(year, "-01-01", sep = "", format = '%Y-%b-%d')))
     
-ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
+    ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
     geom_area(alpha = 0.8) +
     scale_x_date(breaks = data$year, date_labels = "%Y") +
     scale_y_continuous(expand = c(0, 0), labels = scales::dollar) +
@@ -458,6 +506,12 @@ ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
     scale_x_date(breaks = data$year, date_labels = "%Y") +
     scale_y_continuous(expand = c(0, 0), labels = scales::dollar) +
     scale_fill_janelle()
+    
+    ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
+    geom_area(alpha = 0.8) +
+    scale_x_date(breaks = data$year, date_labels = "%Y") +
+    scale_y_continuous(expand = c(0, 0), labels = scales::dollar) +
+    scale_fill_melloncollie()
   
     ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
     geom_area(alpha = 0.8) +
