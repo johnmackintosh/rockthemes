@@ -5,7 +5,7 @@ This outlines how to propose a change to rockthemes.
 
 ## Submitting a palette
 
-If you want to suggest a palette, please file an issue with the artist, album title and a small image or link to the album cover. 
+If you want to suggest a palette, please file an issue with the artist, album title and a link to the album cover. 
 
 
 ### Pull request process
@@ -18,9 +18,20 @@ If you want to suggest a palette, please file an issue with the artist, album ti
 
 
 * Changes you will need to make: 
- - Add a 4 colour palette to rock_palletes.R. I use [canva's online tool](https://www.canva.com/colors/color-palette-generator/). Please ensure the new palette name is entered in the correct alphabetical order in both the palette list and the param values  
+ - Add a 4 colour palette to rock_palletes.R. 
  
- - Create a ten colour palette from the image. I used [loading.io/](https://loading.io/color/random/) with variance set  to around 20 and Count set to 10 (I left all the other options at their default, ticked settings). 
+I use [canva's online tool](https://www.canva.com/colors/color-palette-generator/), 
+but you are welcome to choose whatever else works for you.
+
+*Please* ensure the new palette name is entered in the correct alphabetical order in *both* the _palette list_ *and* the _param values_.  
+
+Run ```devtools::document``` to update the package documentation
+
+
+There is a minimal test in ![](/tests/testthat/test-rock_palettes.R)
+Add your palette to that (just copy / paste an existing line and amend to your new palette name). Rerun the tests to ensure it passes (this will pick up errors where a palette is added but not added to the  function params)
+ 
+ - Create a ten colour palette from the image. I used [loading.io/](https://loading.io/color/random/) with Count set to 10 (I left all the other options at their default, ticked settings). 
  
  - Add new "album_palette.R" file where you substitute the palette name, using one of the existing ones as a guide. There are 38 instances that will need updating in each palette file.  
  
