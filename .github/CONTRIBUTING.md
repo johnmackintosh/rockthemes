@@ -28,7 +28,7 @@ but you are welcome to choose whatever else works for you.
 Run ```devtools::document``` to update the package documentation
 
 
-There is a minimal test in ![](/tests/testthat/test-rock_palettes.R)
+There is a minimal test in [the tests/testthat folder](/tests/testthat/test-rock_palettes.R)
 Add your palette to that (just copy / paste an existing line and amend to your new palette name). Rerun the tests to ensure it passes (this will pick up errors where a palette is added but not added to the  function params)
  
  - Create a ten colour palette from the image. I used [loading.io/](https://loading.io/color/random/) with Count set to 10 (I left all the other options at their default, ticked settings). 
