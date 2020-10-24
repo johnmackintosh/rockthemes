@@ -52,6 +52,7 @@ Featuring:
   - Tragic Kingdom (No Doubt)
   - Definitely Maybe (Oasis)
   - Peace Sells (Megadeth, submission by C Beeley)
+  - Siamese Dream (Smashing Pumpkins, submission by C Mainey)
   - The Real Thing (Faith No More)
   - 1989 (Taylor Swift)
   - Ten out of Ten (10CC)
@@ -138,18 +139,19 @@ rock_palette("peacesells")
 <img src="man/figures/README-oasis-1.png" width="33%" /><img src="man/figures/README-oasis-2.png" width="33%" /><img src="man/figures/README-oasis-3.png" width="33%" />
 
 ``` r
+rock_palette("siamesedream")
 rock_palette("swift")
 rock_palette("tencc")
 ```
 
-<img src="man/figures/README-swift-1.png" width="50%" /><img src="man/figures/README-swift-2.png" width="50%" />
+<img src="man/figures/README-swift-1.png" width="33%" /><img src="man/figures/README-swift-2.png" width="33%" /><img src="man/figures/README-swift-3.png" width="33%" />
 
 ## Longer colour palettes, more suited for ggplot2 use
 
 The following palettes share the same inspirations, but there are more
 colours, which hopefully increases their utility for data visualisation.
 
-<img src="man/figures/README-unnamed-chunk-2-1.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-2.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-3.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-4.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-5.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-6.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-7.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-8.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-9.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-10.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-11.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-12.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-13.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-14.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-15.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-16.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-17.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-18.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-19.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-20.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-21.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-22.png" width="25%" />
+<img src="man/figures/README-unnamed-chunk-2-1.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-2.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-3.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-4.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-5.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-6.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-7.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-8.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-9.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-10.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-11.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-12.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-13.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-14.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-15.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-16.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-17.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-18.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-19.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-20.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-21.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-22.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-23.png" width="25%" />
 
 ## Credit
 

@@ -58,6 +58,7 @@ Featuring:
 - Tragic Kingdom (No Doubt)
 - Definitely Maybe (Oasis)
 - Peace Sells (Megadeth, submission by C Beeley)
+- Siamese Dream (Smashing Pumpkins, submission by C Mainey)
 - The Real Thing (Faith No More)
 - 1989 (Taylor Swift)
 - Ten out of Ten (10CC)
@@ -141,7 +142,9 @@ rock_palette("peacesells")
 ```
 
 
-```{r swift, fig.show = "hold",out.width = "50%"}
+
+```{r swift,  fig.show = "hold",out.width = "33%"}
+rock_palette("siamesedream")
 rock_palette("swift")
 rock_palette("tencc")
 ```
@@ -158,6 +161,7 @@ data <- gapminder::gapminder %>%
                         "Japan", "Norway", "Belarus", "United Kingdom",
                         "Peru", "Spain"))  %>% 
     mutate(year = as.Date(paste(year, "-01-01", sep = "", format = '%Y-%b-%d')))
+
 
 
 ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
@@ -304,6 +308,13 @@ ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
     geom_area(alpha = 0.8) +
     theme_void() + 
     theme(legend.position = "none") + 
+    scale_fill_siamesedream() + 
+    ggtitle(label = "scale_fill_siamesedream")
+
+ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
+    geom_area(alpha = 0.8) +
+    theme_void() + 
+    theme(legend.position = "none") + 
     scale_fill_taylor() + 
     ggtitle(label = "scale_fill_taylor")
 
@@ -334,3 +345,4 @@ project you agree to abide by its terms.
 ## Contributing
 
 See the [Contribution guide](.github/CONTRIBUTING.md)
+
