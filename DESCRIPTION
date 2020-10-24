@@ -17,6 +17,7 @@ Imports:
     scales,
     glue
 Suggests:
-    dplyr, 
-    gapminder 
-    
+    dplyr,
+    gapminder,
+    testthat,
+    covr

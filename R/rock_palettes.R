@@ -1,7 +1,7 @@
 rock_palettes <- list(
-    abbeyroad = c("#2C3F40", "#CED1C1", "#93CCDF", "#5892AF"),
     californication = c("#BB5C33", "#15649C", "#E3D6BB", "#7296B8"),
     coltrane = c("#053138","#22A1B6","#0B8CA9","#AEC7BE"),
+    deelite = c("#48448e","#8ccc58", "#fc4d97", "#b82578"),
     electric = c("#626063","#E9DABA","#CF8B64","#5E98C6"),
     faithnomore = c("#D2BAAA", "#3B2320", "#C02F28", "#D6B63A"),
     gogo = c("#C4C9C8", "#259BDA", "#B26E47", "#87492F"),
@@ -10,7 +10,7 @@ rock_palettes <- list(
     heep = c("#466E9A", "#E84D45", "#21201C", "#A1BAAC"),
     hellawaits = c("#995026", "#281D13", "#D7C698", "#AC9D9A"),
     husker = c("#422537", "#D58078","#86A556", "#624FB0"),
-    janelle = c("#916364","#E2D6BF", "#21121B", "#B3ACC7"),
+    janelle = c("#ab9ed4","#d6e055", "#cb6f42", "#7d2d3b"),
     maiden = c("#8FBBCE", "#265F8A", "#78704B", "#4A5372"),
     melloncollie = c("#484A5A", "#C69648", "#9BA48C", "#949CAC"),
     metallica = c("#652113", "#D8CABC","#D77021", "#9E8C99"),
@@ -34,12 +34,12 @@ rock_palettes <- list(
 #' See also: https://github.com/johnmackintosh/metallicaRt for metallica palettes
 #'
 #' @param name Name of palette. Select one:
-#' \code{californication}, \code{coltrane}, \code{electric}, \code{faithnomore}, 
-#' \code{gogo}, \code{gunsnroses},\code{harvey}, \code{heep},
-#' \code{hellawaits}, \code{husker}, \code{janelle}, \code{maiden},
-#' \code{metallica}, \code{miles}, \code{muse},\code{nevermind},  
-#' \code{nodoubt}, \code{oasis}, \code{peacesells}, \code{swift},  
-#' \code{tencc}
+#' \code{abbeyroad}, \code{californication}, \code{coltrane}, \code{deelite}, 
+#' \code{electric}, \code{faithnomore}, \code{gogo}, \code{gunsnroses},
+#' \code{harvey}, \code{heep}, \code{hellawaits}, \code{husker},
+#' \code{janelle}, \code{maiden}, \code{melloncollie},\code{metallica}, 
+#' \code{miles}, \code{muse}, \code{nevermind}, \code{nodoubt}, 
+#' \code{oasis}, \code{peacesells}, \code{swift},\code{tencc}
 #'
 #' @param n Number of colors desired. 
 #' 
@@ -85,11 +85,4 @@ print.palette <- function(x, ...) {
     
     image(1:n, 1, as.matrix(1:n), col = x,
           ylab = "", xaxt = "n", yaxt = "n", bty = "n")
-    
-    rect(0, 0.95, n + 1, 1.05, col = rgb(1, 1, 1, 0.7), border = NA)
-    text((n + 1) / 2, 1, labels = attr(x,"name"), cex = 1, family = "serif")
-    for (i in 1:n) {
-        rect(i - .5, .65, i + .5, .75, col = rgb(1, 1, 1, 0.7), border = NA)
-        text(i, .7, labels = x[i], cex = 1, family = "serif")
-    }
 }
