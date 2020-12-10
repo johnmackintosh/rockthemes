@@ -45,7 +45,7 @@ rock_palettes <- list(
 #'
 #' @return A vector of colors.
 #' @export
-#'
+#' 
 #' @examples
 #' rock_palette("swift")
 #'
