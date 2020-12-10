@@ -11,7 +11,7 @@ ledzep_palette <- c(
     "#E69023"
 )
 
-#' @title ledzep_celebday_palette
+#' @title ledzep_palette
 #' @description Led Zeppelin - Celebration Day colour palette
 #' @inheritDotParams ggplot2::discrete_scale
 #' @param n number of colors

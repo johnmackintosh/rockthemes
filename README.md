@@ -26,36 +26,32 @@ Not all of the artists are ‘rock’, but they appeared in lists of classic
 rock album covers and the internet is never wrong, is it ;)
 
 Other albums were chosen either for their striking covers (in terms of
-colour), or simply, or because they are bona fide rock classics, or
-because I like them.
+colour), because they are bona fide rock classics, or just because I
+like them.
 
 Featuring:
 
-  - Californication ( Red Hot Chili Peppers)
+  - Dirt (Alice In Chains, submission by G Hutson)
+  - Californication (Red Hot Chili Peppers)
   - Blue Train (John Coltrane)
+  - Facelift (Alice In Chains)
   - Groove is in the Heart (Deee-Lite, submitted by R Wilson)
-  - Electric (The Cult) \* bona fide rock classic\*
-  - Beauty and the Beat - The GoGos
-  - Appetite for Destruction (Guns ‘n’ Roses)
+  - Electric (The Cult)
   - To Bring You My Love - P J Harvey
   - The Magician’s Birthday - Uriah Heep
   - Hell Awaits (Slayer - submission by C Beeley)
   - Warehouse Songs and Stories (Husker Du)
   - Dirty Computer (Janelle Monae)
-  - Seventh Son of a Seventh Son (Iron Maiden)
   - Melloncollie and the Infinite Sadness (Smashing Pumpkins, submission
     by C Mainey)
-  - Master of Puppets (Metallica)
   - Bitches Brew (Miles Davis)
   - Simulation Theory (Muse)
-  - Nevermind (Nirvana)
   - Tragic Kingdom (No Doubt)
-  - Definitely Maybe (Oasis)
   - Peace Sells (Megadeth, submission by C Beeley)
   - Siamese Dream (Smashing Pumpkins, submission by C Mainey)
   - The Real Thing (Faith No More)
   - 1989 (Taylor Swift)
-  - Ten out of Ten (10CC)
+  - Celebration Day (Led Zeppelin, submission by G Hutson)
 
 ## Why?
 
@@ -83,23 +79,23 @@ library(gapminder)
 # Palettes and Themes
 
 ``` r
+rock_palette("alice")
 rock_palette("californication")
 rock_palette("coltrane")
-rock_palette("deelite")
 ```
 
 <img src="man/figures/README-californication-1.png" width="33%" /><img src="man/figures/README-californication-2.png" width="33%" /><img src="man/figures/README-californication-3.png" width="33%" />
 
 ``` r
+rock_palette("deelite")
 rock_palette("electric")
-rock_palette("faithnomore")
-rock_palette("gogo")
+rock_palette("facelift")
 ```
 
 <img src="man/figures/README-electric-1.png" width="33%" /><img src="man/figures/README-electric-2.png" width="33%" /><img src="man/figures/README-electric-3.png" width="33%" />
 
 ``` r
-rock_palette("gunsnroses")
+rock_palette("faithnomore")
 rock_palette("harvey")
 rock_palette("heep")
 ```
@@ -115,43 +111,35 @@ rock_palette("janelle")
 <img src="man/figures/README-slayer-1.png" width="33%" /><img src="man/figures/README-slayer-2.png" width="33%" /><img src="man/figures/README-slayer-3.png" width="33%" />
 
 ``` r
-rock_palette("maiden")
 rock_palette("melloncollie")
-rock_palette("metallica")
+rock_palette("miles")
+rock_palette("muse")
 ```
 
 <img src="man/figures/README-maiden-1.png" width="33%" /><img src="man/figures/README-maiden-2.png" width="33%" /><img src="man/figures/README-maiden-3.png" width="33%" />
 
 ``` r
-rock_palette("miles")
-rock_palette("muse")
-rock_palette("nevermind")
+rock_palette("nodoubt")
+rock_palette("peacesells")
+rock_palette("siamesedream")
 ```
 
 <img src="man/figures/README-muse-1.png" width="33%" /><img src="man/figures/README-muse-2.png" width="33%" /><img src="man/figures/README-muse-3.png" width="33%" />
 
 ``` r
-rock_palette("nodoubt")
-rock_palette("oasis")
-rock_palette("peacesells")
-```
 
-<img src="man/figures/README-oasis-1.png" width="33%" /><img src="man/figures/README-oasis-2.png" width="33%" /><img src="man/figures/README-oasis-3.png" width="33%" />
-
-``` r
-rock_palette("siamesedream")
 rock_palette("swift")
-rock_palette("tencc")
+rock_palette("zeppelin")
 ```
 
-<img src="man/figures/README-swift-1.png" width="33%" /><img src="man/figures/README-swift-2.png" width="33%" /><img src="man/figures/README-swift-3.png" width="33%" />
+<img src="man/figures/README-swift-1.png" width="33%" /><img src="man/figures/README-swift-2.png" width="33%" />
 
 ## Longer colour palettes, more suited for ggplot2 use
 
 The following palettes share the same inspirations, but there are more
 colours, which hopefully increases their utility for data visualisation.
 
-<img src="man/figures/README-unnamed-chunk-2-1.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-2.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-3.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-4.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-5.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-6.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-7.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-8.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-9.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-10.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-11.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-12.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-13.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-14.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-15.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-16.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-17.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-18.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-19.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-20.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-21.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-22.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-23.png" width="25%" />
+<img src="man/figures/README-unnamed-chunk-2-1.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-2.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-3.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-4.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-5.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-6.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-7.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-8.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-9.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-10.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-11.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-12.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-13.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-14.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-15.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-16.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-17.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-18.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-19.png" width="25%" />
 
 ## Credit
 
