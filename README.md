@@ -8,13 +8,13 @@ rockthemes
 [![Build
 Status](https://travis-ci.com/johnmackintosh/rockthemes.svg?branch=main)](https://travis-ci.com/johnmackintosh/rockthemes)
 
-![R-CMD-check](https://github.com/johnmackintosh/rockthemes/workflows/R-CMD-check/badge.svg)
-
 ![Render
 README](https://github.com/johnmackintosh/rockthemes/workflows/Render%20README/badge.svg)
 
-![pkgdown](https://github.com/johnmackintosh/metallicaRt/workflows/pkgdown/badge.svg)
+![pkgdown](https://github.com/johnmackintosh/rockthemes/workflows/pkgdown/badge.svg)
 
+[![R build
+status](https://github.com/johnmackintosh/rockthemes/workflows/R-CMD-check/badge.svg)](https://github.com/johnmackintosh/rockthemes/actions)
 <!-- badges: end -->
 
 ## What?
