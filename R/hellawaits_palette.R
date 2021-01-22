@@ -73,7 +73,7 @@ scale_color_hellawaits <- function(n, type = "discrete",
                                          reverse = reverse), ...)
     } else {
         ggplot2::scale_color_gradientn(colors = hellawaits_pal(n = n, type = type,
-                                                         reverse = reverse)(8))
+                                                         reverse = reverse)(256))
     }
 }
 
@@ -109,6 +109,6 @@ scale_fill_hellawaits <- function(n, type = "discrete",
                                          reverse = reverse), ...)
     } else {
         ggplot2::scale_fill_gradientn(colors = hellawaits_pal(n = n, type = type,
-                                                        reverse = reverse)(8))
+                                                        reverse = reverse)(256))
     }
 }

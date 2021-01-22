@@ -73,7 +73,7 @@ scale_color_siamesedream <- function(n, type = "discrete",
                                                  reverse = reverse), ...)
     } else {
         ggplot2::scale_color_gradientn(colors = siamesedream_pal(n = n, type = type,
-                                                                 reverse = reverse)(8))
+                                                                 reverse = reverse)(256))
     }
 }
 
@@ -109,6 +109,6 @@ scale_fill_siamesedream <- function(n, type = "discrete",
                                                  reverse = reverse), ...)
     } else {
         ggplot2::scale_fill_gradientn(colors = siamesedream_pal(n = n, type = type,
-                                                                reverse = reverse)(8))
+                                                                reverse = reverse)(256))
     }
 }

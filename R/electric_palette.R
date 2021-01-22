@@ -65,7 +65,7 @@ scale_color_electric <- function(n, type = "discrete",
                                            reverse = reverse), ...)
     } else {
         ggplot2::scale_color_gradientn(colors = electric_pal(n = n, type = type,
-                                                           reverse = reverse)(8))
+                                                           reverse = reverse)(256))
     }
 }
 
@@ -101,6 +101,6 @@ scale_fill_electric <- function(n, type = "discrete",
                                            reverse = reverse), ...)
     } else {
         ggplot2::scale_fill_gradientn(colors = electric_pal(n = n, type = type,
-                                                          reverse = reverse)(8))
+                                                          reverse = reverse)(256))
     }
 }

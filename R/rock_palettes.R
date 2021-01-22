@@ -16,6 +16,7 @@ rock_palettes <- list(
     muse = c("#3B1A35","#D27F9A","#885EA5","#9D94B3"),
     nodoubt = c("#385581", "#6dbac6", "#dac190", "#c9052c"),
     peacesells = c("#9A5155", "#483943", "#ECC463", "#A497B2"),
+    secondlaw = c("#505797","#58958C","#9D7382","#100F11"),
     siamesedream = c("#F0E9E0","#2F1F16","#A34D2C", "#CD8E40"),
     swift = c("#CDC1B1","#444550","#865242", "#A26847"),
     zeppelin = c("#EFDB15","#739C9C","#0D484C","#C71A08")
@@ -35,7 +36,8 @@ rock_palettes <- list(
 #' \code{electric}, \code{facelift}, \code{faithnomore}, \code{harvey},
 #' \code{heep}, \code{hellawaits}, \code{husker}, \code{janelle},
 #' \code{melloncollie},\code{miles}, \code{muse}, \code{nodoubt}, 
-#' \code{peacesells}, \code{swift},  \code{siamesedream},\code{zeppelin}
+#' \code{peacesells},\code{secondlaw}, \code{siamesedream}, \code{swift},
+#'  \code{zeppelin}
 #'
 #' @param n Number of colors desired. 
 #' 

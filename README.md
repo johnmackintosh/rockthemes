@@ -48,6 +48,7 @@ Featuring:
   - Simulation Theory (Muse)
   - Tragic Kingdom (No Doubt)
   - Peace Sells (Megadeth, submission by C Beeley)
+  - The 2ND Law (Muse, submission by G Hutson)
   - Siamese Dream (Smashing Pumpkins, submission by C Mainey)
   - The Real Thing (Faith No More)
   - 1989 (Taylor Swift)
@@ -121,25 +122,25 @@ rock_palette("muse")
 ``` r
 rock_palette("nodoubt")
 rock_palette("peacesells")
-rock_palette("siamesedream")
+rock_palette("secondlaw")
 ```
 
 <img src="man/figures/README-muse-1.png" width="33%" /><img src="man/figures/README-muse-2.png" width="33%" /><img src="man/figures/README-muse-3.png" width="33%" />
 
 ``` r
-
+rock_palette("siamesedream")
 rock_palette("swift")
 rock_palette("zeppelin")
 ```
 
-<img src="man/figures/README-swift-1.png" width="33%" /><img src="man/figures/README-swift-2.png" width="33%" />
+<img src="man/figures/README-swift-1.png" width="33%" /><img src="man/figures/README-swift-2.png" width="33%" /><img src="man/figures/README-swift-3.png" width="33%" />
 
 ## Longer colour palettes, more suited for ggplot2 use
 
 The following palettes share the same inspirations, but there are more
 colours, which hopefully increases their utility for data visualisation.
 
-<img src="man/figures/README-unnamed-chunk-2-1.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-2.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-3.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-4.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-5.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-6.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-7.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-8.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-9.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-10.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-11.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-12.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-13.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-14.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-15.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-16.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-17.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-18.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-19.png" width="25%" />
+<img src="man/figures/README-unnamed-chunk-2-1.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-2.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-3.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-4.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-5.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-6.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-7.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-8.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-9.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-10.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-11.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-12.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-13.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-14.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-15.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-16.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-17.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-18.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-19.png" width="25%" /><img src="man/figures/README-unnamed-chunk-2-20.png" width="25%" />
 
 ## Credit
 

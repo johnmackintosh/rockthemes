@@ -65,7 +65,7 @@ scale_color_real_thing <- function(n, type = "discrete",
                                              reverse = reverse), ...)
     } else {
         ggplot2::scale_color_gradientn(colors = real_thing_pal(n = n, type = type,
-                                                             reverse = reverse)(8))
+                                                             reverse = reverse)(256))
     }
 }
 
@@ -101,6 +101,6 @@ scale_fill_real_thing <- function(n, type = "discrete",
                                              reverse = reverse), ...)
     } else {
         ggplot2::scale_fill_gradientn(colors = real_thing_pal(n = n, type = type,
-                                                            reverse = reverse)(8))
+                                                            reverse = reverse)(256))
     }
 }

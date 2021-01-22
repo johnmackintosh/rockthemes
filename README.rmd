@@ -54,6 +54,7 @@ Featuring:
 - Simulation Theory (Muse)
 - Tragic Kingdom (No Doubt)
 - Peace Sells (Megadeth, submission by C Beeley)
+- The 2ND Law (Muse, submission by G Hutson)
 - Siamese Dream (Smashing Pumpkins, submission by C Mainey)
 - The Real Thing (Faith No More)
 - 1989 (Taylor Swift)
@@ -125,13 +126,13 @@ rock_palette("muse")
 ```{r muse, fig.show = "hold",out.width = "33%"}
 rock_palette("nodoubt")
 rock_palette("peacesells")
-rock_palette("siamesedream")
+rock_palette("secondlaw")
 ```
 
 
 
 ```{r swift,  fig.show = "hold",out.width = "33%"}
-
+rock_palette("siamesedream")
 rock_palette("swift")
 rock_palette("zeppelin")
 ```
@@ -274,6 +275,15 @@ ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
     theme(legend.position = "none") + 
     scale_fill_siamesedream() + 
     ggtitle(label = "scale_fill_siamesedream")
+
+
+ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
+    geom_area(alpha = 0.8) +
+    theme_void() + 
+    theme(legend.position = "none") + 
+    scale_fill_second_law() + 
+    ggtitle(label = "scale_fill_second_law")
+
 
 ggplot(data = data, aes(x = year, y = gdpPercap, fill = country)) +
     geom_area(alpha = 0.8) +

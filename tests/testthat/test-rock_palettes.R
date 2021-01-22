@@ -18,6 +18,7 @@ test_that("palettes display correctly", {
   expect_true(!is.null(rock_palette("nodoubt")))
   expect_true(!is.null(rock_palette("peacesells")))
   expect_true(!is.null(rock_palette("siamesedream")))
+  expect_true(!is.null(rock_palette("secondlaw")))
   expect_true(!is.null(rock_palette("swift")))
   expect_true(!is.null(rock_palette("zeppelin")))
 })

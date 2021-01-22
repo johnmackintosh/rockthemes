@@ -12,7 +12,8 @@ rock_palette(name, n, type = c("discrete", "continuous"))
 \code{electric}, \code{facelift}, \code{faithnomore}, \code{harvey},
 \code{heep}, \code{hellawaits}, \code{husker}, \code{janelle},
 \code{melloncollie},\code{miles}, \code{muse}, \code{nodoubt},
-\code{peacesells}, \code{swift},  \code{siamesedream},\code{zeppelin}}
+\code{peacesells},\code{secondlaw}, \code{siamesedream}, \code{swift},
+\code{zeppelin}}
 
 \item{n}{Number of colors desired.
 
