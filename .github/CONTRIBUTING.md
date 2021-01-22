@@ -5,7 +5,13 @@ This outlines how to propose a change to rockthemes.
 
 ## Submitting a palette
 
-If you want to suggest a palette, please file an issue with the artist, album title and a link to the album cover. 
+If you want to suggest a palette, please start a new discussion first. I want to keep the number of palettes reasonably manageable, so it might need to be a case of one in, one out.
+
+It would be good if you could link to the cover or already have a draft 4 and 10 colour palette so we can see how the palettes look.
+
+Metal albums tend to go heavy on black, red and white colour scales which don't really appeal, so try to avoid those. 
+
+If all is good, then file an issue with the artist, album title and a link to the album cover. 
 
 
 ### Pull request process
@@ -18,22 +24,27 @@ If you want to suggest a palette, please file an issue with the artist, album ti
 
 
 * Changes you will need to make: 
- - Add a 4 colour palette to rock_palletes.R. 
+ - Add a 4 colour palette to rock_palletes.R 
  
 I use [canva's online tool](https://www.canva.com/colors/color-palette-generator/), 
 but you are welcome to choose whatever else works for you.
 
-*Please* ensure the new palette name is entered in the correct alphabetical order in *both* the _palette list_ *and* the _param values_.  
+- *Please* ensure the new palette name is entered in the correct alphabetical order in *both* the _palette list_ *and* the _param values_.  
 
-Run ```devtools::document``` to update the package documentation
+- Run ```devtools::document``` to update the package documentation
 
 
-There is a minimal test in [the tests/testthat folder](/tests/testthat/test-rock_palettes.R)
-Add your palette to that (just copy / paste an existing line and amend to your new palette name). Rerun the tests to ensure it passes (this will pick up errors where a palette is added but not added to the  function params)
+_There is a minimal test_ in [the tests/testthat folder](/tests/testthat/test-rock_palettes.R)
+*Add your palette to that* (just copy / paste an existing line and amend to your new palette name). Rerun the tests to ensure it passes (this will pick up errors where a palette is added but not added to the  function params)
  
  - Create a ten colour palette from the image. I used [loading.io/](https://loading.io/color/random/) with Count set to 10 (I left all the other options at their default, ticked settings). 
  
- - Add new "album_palette.R" file where you substitute the palette name, using one of the existing ones as a guide. There are 38 instances that will need updating in each palette file.  
+ - Add new "album_palette.R" file where you substitute the palette name, using one of the existing ones as a guide. There are 38 instances that will need updating in each palette file. If you are submitting a palette from an artist where one already exists (e.g. there are now 2 Muse themes), please check the existing one and ensure all references to the new palette are different to the existing one. 
+ 
+ 
+ ## Update readme (optional)
+ 
+ It's helpful, but not necessary, if you can update the readme, keeping things in alphabetical order where possible (it's tempting to add new palettes to the bottom of each section but this gets confusing very quickly). The readme is rendered via github actions. 
  
 
 *   Make your changes, commit to git, and then create a PR by running `usethis::pr_push()`, and following the prompts in your browser.
