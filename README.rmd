@@ -69,7 +69,7 @@ Because [this repo of Metallica inspired palettes](https://github.com/johnmackin
 
 This will probably not go to CRAN, so please install using the remotes package.
 
-```{r message=FALSE, warning=FALSE}
+```{r message=FALSE, warning=FALSE, echo = FALSE}
 #library(remotes)
 #remotes::install_github("johnmackintosh/rockthemes")
 library(rockthemes)
@@ -87,7 +87,6 @@ rock_palette("alice")
 rock_palette("californication")
 rock_palette("coltrane")
 ```
-
 
 
 ```{r electric, fig.show = "hold",out.width = "33%"}
@@ -134,6 +133,305 @@ rock_palette("secondlaw")
 rock_palette("siamesedream")
 rock_palette("swift")
 rock_palette("zeppelin")
+```
+
+
+## Palettes in action
+
+```{r beeb1, fig.show='hold', fig.with = 5, fig.height = 3, out.width= "33%", echo=FALSE}
+facet <- gapminder %>%
+  filter(continent != "Americas") %>%
+  group_by(continent, year) %>%
+  summarise(pop = sum(as.numeric(pop)), .groups = 'drop_last') %>% 
+  ungroup()
+
+#Alice
+
+ggplot() +
+  geom_area(data = facet, aes(x = year, y = pop, fill = continent)) +
+  facet_wrap(~ continent, scales = "free", ncol = 4) + 
+  scale_fill_manual(values = rock_palette("alice")) +
+  geom_hline(yintercept = 0, size = 1, colour = "#333333") +
+  theme_void() +
+  theme(legend.position = "none",
+        axis.text.x = element_blank(),
+        axis.text.y = element_blank()) +
+  labs(title = "alice",
+       x = NULL, y = NULL)
+
+# Californication
+ggplot() +
+  geom_area(data = facet, aes(x = year, y = pop, fill = continent)) +
+  facet_wrap(~ continent, scales = "free", ncol = 4) + 
+  scale_fill_manual(values = rock_palette("californication")) +
+  geom_hline(yintercept = 0, size = 1, colour = "#333333") +
+  theme_void() +
+  theme(legend.position = "none",
+        axis.text.x = element_blank(),
+        axis.text.y = element_blank()) +
+  labs(title = "californication",
+       x = NULL, y = NULL)
+
+# Coltrane
+
+ggplot() +
+  geom_area(data = facet, aes(x = year, y = pop, fill = continent)) +
+  facet_wrap(~ continent, scales = "free", ncol = 4) + 
+  scale_fill_manual(values = rock_palette("coltrane")) +
+  geom_hline(yintercept = 0, size = 1, colour = "#333333") +
+  theme_void() +
+  theme(legend.position = "none",
+        axis.text.x = element_blank(),
+        axis.text.y = element_blank()) +
+  labs(title = "coltrane",
+       #subtitle = "Relative population growth by continent,1952-2007", 
+       x = NULL, y = NULL)
+
+# Deelite
+ggplot() +
+  geom_area(data = facet, aes(x = year, y = pop, fill = continent)) +
+  facet_wrap(~ continent, scales = "free", ncol = 4) + 
+  scale_fill_manual(values = rock_palette("deelite")) +
+  geom_hline(yintercept = 0, size = 1, colour = "#333333") +
+  theme_void() +
+  theme(legend.position = "none",
+        axis.text.x = element_blank(),
+        axis.text.y = element_blank()) +
+  labs(title = "ceeLite",
+       #subtitle = "Relative population growth by continent,1952-2007", 
+       x = NULL, y = NULL)
+
+# Electric
+ggplot() +
+  geom_area(data = facet, aes(x = year, y = pop, fill = continent)) +
+  facet_wrap(~ continent, scales = "free", ncol = 4) + 
+  scale_fill_manual(values = rock_palette("electric")) +
+  geom_hline(yintercept = 0, size = 1, colour = "#333333") +
+  theme_void() +
+  theme(legend.position = "none",
+        axis.text.x = element_blank(),
+        axis.text.y = element_blank()) +
+  labs(title = "electric",
+       #subtitle = "Relative population growth by continent,1952-2007", 
+       x = NULL, y = NULL)
+
+
+# Facelift
+ggplot() +
+  geom_area(data = facet, aes(x = year, y = pop, fill = continent)) +
+  facet_wrap(~ continent, scales = "free", ncol = 4) + 
+  scale_fill_manual(values = rock_palette("facelift")) +
+  geom_hline(yintercept = 0, size = 1, colour = "#333333") +
+  theme_void() +
+  theme(legend.position = "none",
+        axis.text.x = element_blank(),
+        axis.text.y = element_blank()) +
+  labs(title = "facelift",
+       #subtitle = "Relative population growth by continent,1952-2007", 
+       x = NULL, y = NULL)
+
+# FNM
+ggplot() +
+  geom_area(data = facet, aes(x = year, y = pop, fill = continent)) +
+  facet_wrap(~ continent, scales = "free", ncol = 4) + 
+  scale_fill_manual(values = rock_palette("faithnomore")) +
+  geom_hline(yintercept = 0, size = 1, colour = "#333333") +
+  theme_void() +
+  theme(legend.position = "none",
+        axis.text.x = element_blank(),
+        axis.text.y = element_blank()) +
+  labs(title = "faithnomore",
+       x = NULL, y = NULL)
+
+# Harvey
+ggplot() +
+  geom_area(data = facet, aes(x = year, y = pop, fill = continent)) +
+  facet_wrap(~ continent, scales = "free", ncol = 4) + 
+  scale_fill_manual(values = rock_palette("harvey")) +
+  geom_hline(yintercept = 0, size = 1, colour = "#333333") +
+  theme_void() +
+  theme(legend.position = "none",
+        axis.text.x = element_blank(),
+        axis.text.y = element_blank()) +
+  labs(title = "harvey",
+       x = NULL, y = NULL)
+# Heep
+ggplot() +
+  geom_area(data = facet, aes(x = year, y = pop, fill = continent)) +
+  facet_wrap(~ continent, scales = "free", ncol = 4) + 
+  scale_fill_manual(values = rock_palette("heep")) +
+  geom_hline(yintercept = 0, size = 1, colour = "#333333") +
+  theme_void() +
+  theme(legend.position = "none",
+        axis.text.x = element_blank(),
+        axis.text.y = element_blank()) +
+  labs(title = "heep",
+       x = NULL, y = NULL)
+
+# Hell Awaits
+ggplot() +
+  geom_area(data = facet, aes(x = year, y = pop, fill = continent)) +
+  facet_wrap(~ continent, scales = "free", ncol = 4) + 
+  scale_fill_manual(values = rock_palette("hellawaits")) +
+  geom_hline(yintercept = 0, size = 1, colour = "#333333") +
+  theme_void() +
+  theme(legend.position = "none",
+        axis.text.x = element_blank(),
+        axis.text.y = element_blank()) +
+  labs(title = "hellawaits",
+       x = NULL, y = NULL)
+
+
+# Husker
+ggplot() +
+  geom_area(data = facet, aes(x = year, y = pop, fill = continent)) +
+  facet_wrap(~ continent, scales = "free", ncol = 4) + 
+  scale_fill_manual(values = rock_palette("husker")) +
+  geom_hline(yintercept = 0, size = 1, colour = "#333333") +
+  theme_void() +
+  theme(legend.position = "none",
+        axis.text.x = element_blank(),
+        axis.text.y = element_blank()) +
+  labs(title = "husker",
+       x = NULL, y = NULL)
+
+
+# Janelle
+ggplot() +
+  geom_area(data = facet, aes(x = year, y = pop, fill = continent)) +
+  facet_wrap(~ continent, scales = "free", ncol = 4) + 
+  scale_fill_manual(values = rock_palette("janelle")) +
+  geom_hline(yintercept = 0, size = 1, colour = "#333333") +
+  theme_void() +
+  theme(legend.position = "none",
+        axis.text.x = element_blank(),
+        axis.text.y = element_blank()) +
+  labs(title = "janelle",
+       x = NULL, y = NULL)
+
+
+# melloncollie
+ggplot() +
+  geom_area(data = facet, aes(x = year, y = pop, fill = continent)) +
+  facet_wrap(~ continent, scales = "free", ncol = 4) + 
+  scale_fill_manual(values = rock_palette("melloncollie")) +
+  geom_hline(yintercept = 0, size = 1, colour = "#333333") +
+  theme_void() +
+  theme(legend.position = "none",
+        axis.text.x = element_blank(),
+        axis.text.y = element_blank()) +
+  labs(title = "melloncollie",
+       x = NULL, y = NULL)
+
+
+# miles
+ggplot() +
+  geom_area(data = facet, aes(x = year, y = pop, fill = continent)) +
+  facet_wrap(~ continent, scales = "free", ncol = 4) + 
+  scale_fill_manual(values = rock_palette("miles")) +
+  geom_hline(yintercept = 0, size = 1, colour = "#333333") +
+  theme_void() +
+  theme(legend.position = "none",
+        axis.text.x = element_blank(),
+        axis.text.y = element_blank()) +
+  labs(title = "miles",
+       x = NULL, y = NULL)
+
+# muse
+ggplot() +
+  geom_area(data = facet, aes(x = year, y = pop, fill = continent)) +
+  facet_wrap(~ continent, scales = "free", ncol = 4) + 
+  scale_fill_manual(values = rock_palette("muse")) +
+  geom_hline(yintercept = 0, size = 1, colour = "#333333") +
+  theme_void() +
+  theme(legend.position = "none",
+        axis.text.x = element_blank(),
+        axis.text.y = element_blank()) +
+  labs(title = "muse",
+       x = NULL, y = NULL)
+
+
+# nodoubt
+ggplot() +
+  geom_area(data = facet, aes(x = year, y = pop, fill = continent)) +
+  facet_wrap(~ continent, scales = "free", ncol = 4) + 
+  scale_fill_manual(values = rock_palette("nodoubt")) +
+  geom_hline(yintercept = 0, size = 1, colour = "#333333") +
+  theme_void() +
+  theme(legend.position = "none",
+        axis.text.x = element_blank(),
+        axis.text.y = element_blank()) +
+  labs(title = "nodoubt",
+       x = NULL, y = NULL)
+
+
+# Peace Sells... But Who's Buying
+ggplot() +
+  geom_area(data = facet, aes(x = year, y = pop, fill = continent)) +
+  facet_wrap(~ continent, scales = "free", ncol = 4) + 
+  scale_fill_manual(values = rock_palette("peacesells")) +
+  geom_hline(yintercept = 0, size = 1, colour = "#333333") +
+  theme_void() +
+  theme(legend.position = "none",
+        axis.text.x = element_blank(),
+        axis.text.y = element_blank()) +
+  labs(title = "peacesells",
+       x = NULL, y = NULL)
+
+# secondlaw
+ggplot() +
+  geom_area(data = facet, aes(x = year, y = pop, fill = continent)) +
+  facet_wrap(~ continent, scales = "free", ncol = 4) + 
+  scale_fill_manual(values = rock_palette("secondlaw")) +
+  geom_hline(yintercept = 0, size = 1, colour = "#333333") +
+  theme_void() +
+  theme(legend.position = "none",
+        axis.text.x = element_blank(),
+        axis.text.y = element_blank()) +
+  labs(title = "secondlaw",
+       x = NULL, y = NULL)
+
+# siamesedream
+ggplot() +
+  geom_area(data = facet, aes(x = year, y = pop, fill = continent)) +
+  facet_wrap(~ continent, scales = "free", ncol = 4) + 
+  scale_fill_manual(values = rock_palette("siamesedream")) +
+  geom_hline(yintercept = 0, size = 1, colour = "#333333") +
+  theme_void() +
+  theme(legend.position = "none",
+        axis.text.x = element_blank(),
+        axis.text.y = element_blank()) +
+  labs(title = "siamesedream",
+       x = NULL, y = NULL)
+
+
+# swift
+ggplot() +
+  geom_area(data = facet, aes(x = year, y = pop, fill = continent)) +
+  facet_wrap(~ continent, scales = "free", ncol = 4) + 
+  scale_fill_manual(values = rock_palette("swift")) +
+  geom_hline(yintercept = 0, size = 1, colour = "#333333") +
+  theme_void() +
+  theme(legend.position = "none",
+        axis.text.x = element_blank(),
+        axis.text.y = element_blank()) +
+  labs(title = "swift",
+       x = NULL, y = NULL)
+
+# zeppelin
+ggplot() +
+  geom_area(data = facet, aes(x = year, y = pop, fill = continent)) +
+  facet_wrap(~ continent, scales = "free", ncol = 4) + 
+  scale_fill_manual(values = rock_palette("zeppelin")) +
+  geom_hline(yintercept = 0, size = 1, colour = "#333333") +
+  theme_void() +
+  theme(legend.position = "none",
+        axis.text.x = element_blank(),
+        axis.text.y = element_blank()) +
+  labs(title = "zeppelin",
+       x = NULL, y = NULL)
+
+
 ```
 
 

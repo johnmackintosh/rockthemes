@@ -31,28 +31,28 @@ like them.
 
 Featuring:
 
-  - Dirt (Alice In Chains, submission by G Hutson)
-  - Californication (Red Hot Chili Peppers)
-  - Blue Train (John Coltrane)
-  - Facelift (Alice In Chains)
-  - Groove is in the Heart (Deee-Lite, submitted by R Wilson)
-  - Electric (The Cult)
-  - To Bring You My Love - P J Harvey
-  - The Magician’s Birthday - Uriah Heep
-  - Hell Awaits (Slayer - submission by C Beeley)
-  - Warehouse Songs and Stories (Husker Du)
-  - Dirty Computer (Janelle Monae)
-  - Melloncollie and the Infinite Sadness (Smashing Pumpkins, submission
+-   Dirt (Alice In Chains, submission by G Hutson)
+-   Californication (Red Hot Chili Peppers)
+-   Blue Train (John Coltrane)
+-   Facelift (Alice In Chains)
+-   Groove is in the Heart (Deee-Lite, submitted by R Wilson)
+-   Electric (The Cult)
+-   To Bring You My Love - P J Harvey
+-   The Magician’s Birthday - Uriah Heep
+-   Hell Awaits (Slayer - submission by C Beeley)
+-   Warehouse Songs and Stories (Husker Du)
+-   Dirty Computer (Janelle Monae)
+-   Melloncollie and the Infinite Sadness (Smashing Pumpkins, submission
     by C Mainey)
-  - Bitches Brew (Miles Davis)
-  - Simulation Theory (Muse)
-  - Tragic Kingdom (No Doubt)
-  - Peace Sells (Megadeth, submission by C Beeley)
-  - The 2ND Law (Muse, submission by G Hutson)
-  - Siamese Dream (Smashing Pumpkins, submission by C Mainey)
-  - The Real Thing (Faith No More)
-  - 1989 (Taylor Swift)
-  - Celebration Day (Led Zeppelin, submission by G Hutson)
+-   Bitches Brew (Miles Davis)
+-   Simulation Theory (Muse)
+-   Tragic Kingdom (No Doubt)
+-   Peace Sells (Megadeth, submission by C Beeley)
+-   The 2ND Law (Muse, submission by G Hutson)
+-   Siamese Dream (Smashing Pumpkins, submission by C Mainey)
+-   The Real Thing (Faith No More)
+-   1989 (Taylor Swift)
+-   Celebration Day (Led Zeppelin, submission by G Hutson)
 
 ## Why?
 
@@ -66,16 +66,6 @@ more scope for data visualisation purposes.
 
 This will probably not go to CRAN, so please install using the remotes
 package.
-
-``` r
-#library(remotes)
-#remotes::install_github("johnmackintosh/rockthemes")
-library(rockthemes)
-library(ggplot2)
-library(dplyr)
-library(scales)
-library(gapminder)
-```
 
 # Palettes and Themes
 
@@ -134,6 +124,10 @@ rock_palette("zeppelin")
 ```
 
 <img src="man/figures/README-swift-1.png" width="33%" /><img src="man/figures/README-swift-2.png" width="33%" /><img src="man/figures/README-swift-3.png" width="33%" />
+
+## Palettes in action
+
+<img src="man/figures/README-beeb1-1.png" width="33%" /><img src="man/figures/README-beeb1-2.png" width="33%" /><img src="man/figures/README-beeb1-3.png" width="33%" /><img src="man/figures/README-beeb1-4.png" width="33%" /><img src="man/figures/README-beeb1-5.png" width="33%" /><img src="man/figures/README-beeb1-6.png" width="33%" /><img src="man/figures/README-beeb1-7.png" width="33%" /><img src="man/figures/README-beeb1-8.png" width="33%" /><img src="man/figures/README-beeb1-9.png" width="33%" /><img src="man/figures/README-beeb1-10.png" width="33%" /><img src="man/figures/README-beeb1-11.png" width="33%" /><img src="man/figures/README-beeb1-12.png" width="33%" /><img src="man/figures/README-beeb1-13.png" width="33%" /><img src="man/figures/README-beeb1-14.png" width="33%" /><img src="man/figures/README-beeb1-15.png" width="33%" /><img src="man/figures/README-beeb1-16.png" width="33%" /><img src="man/figures/README-beeb1-17.png" width="33%" /><img src="man/figures/README-beeb1-18.png" width="33%" /><img src="man/figures/README-beeb1-19.png" width="33%" /><img src="man/figures/README-beeb1-20.png" width="33%" /><img src="man/figures/README-beeb1-21.png" width="33%" />
 
 ## Longer colour palettes, more suited for ggplot2 use
 
