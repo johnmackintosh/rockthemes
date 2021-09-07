@@ -149,7 +149,7 @@ facet <- gapminder %>%
 
 ggplot() +
   geom_area(data = facet, aes(x = year, y = pop, fill = continent)) +
-  facet_wrap(~ continent, scales = "free", ncol = 4) + 
+  facet_wrap(~ continent, scales = "free", ncol = 2) + 
   scale_fill_manual(values = rock_palette("alice")) +
   geom_hline(yintercept = 0, size = 1, colour = "#333333") +
   theme_void() +
@@ -162,7 +162,7 @@ ggplot() +
 # Californication
 ggplot() +
   geom_area(data = facet, aes(x = year, y = pop, fill = continent)) +
-  facet_wrap(~ continent, scales = "free", ncol = 4) + 
+  facet_wrap(~ continent, scales = "free", ncol = 2) + 
   scale_fill_manual(values = rock_palette("californication")) +
   geom_hline(yintercept = 0, size = 1, colour = "#333333") +
   theme_void() +
@@ -176,7 +176,7 @@ ggplot() +
 
 ggplot() +
   geom_area(data = facet, aes(x = year, y = pop, fill = continent)) +
-  facet_wrap(~ continent, scales = "free", ncol = 4) + 
+  facet_wrap(~ continent, scales = "free", ncol = 2) + 
   scale_fill_manual(values = rock_palette("coltrane")) +
   geom_hline(yintercept = 0, size = 1, colour = "#333333") +
   theme_void() +
@@ -190,7 +190,7 @@ ggplot() +
 # Deelite
 ggplot() +
   geom_area(data = facet, aes(x = year, y = pop, fill = continent)) +
-  facet_wrap(~ continent, scales = "free", ncol = 4) + 
+  facet_wrap(~ continent, scales = "free", ncol = 2) + 
   scale_fill_manual(values = rock_palette("deelite")) +
   geom_hline(yintercept = 0, size = 1, colour = "#333333") +
   theme_void() +
@@ -204,7 +204,7 @@ ggplot() +
 # Electric
 ggplot() +
   geom_area(data = facet, aes(x = year, y = pop, fill = continent)) +
-  facet_wrap(~ continent, scales = "free", ncol = 4) + 
+  facet_wrap(~ continent, scales = "free", ncol = 2) + 
   scale_fill_manual(values = rock_palette("electric")) +
   geom_hline(yintercept = 0, size = 1, colour = "#333333") +
   theme_void() +
@@ -219,7 +219,7 @@ ggplot() +
 # Facelift
 ggplot() +
   geom_area(data = facet, aes(x = year, y = pop, fill = continent)) +
-  facet_wrap(~ continent, scales = "free", ncol = 4) + 
+  facet_wrap(~ continent, scales = "free", ncol = 2) + 
   scale_fill_manual(values = rock_palette("facelift")) +
   geom_hline(yintercept = 0, size = 1, colour = "#333333") +
   theme_void() +
@@ -233,7 +233,7 @@ ggplot() +
 # FNM
 ggplot() +
   geom_area(data = facet, aes(x = year, y = pop, fill = continent)) +
-  facet_wrap(~ continent, scales = "free", ncol = 4) + 
+  facet_wrap(~ continent, scales = "free", ncol = 2) + 
   scale_fill_manual(values = rock_palette("faithnomore")) +
   geom_hline(yintercept = 0, size = 1, colour = "#333333") +
   theme_void() +
@@ -246,7 +246,7 @@ ggplot() +
 # Harvey
 ggplot() +
   geom_area(data = facet, aes(x = year, y = pop, fill = continent)) +
-  facet_wrap(~ continent, scales = "free", ncol = 4) + 
+  facet_wrap(~ continent, scales = "free", ncol = 2) + 
   scale_fill_manual(values = rock_palette("harvey")) +
   geom_hline(yintercept = 0, size = 1, colour = "#333333") +
   theme_void() +
@@ -258,7 +258,7 @@ ggplot() +
 # Heep
 ggplot() +
   geom_area(data = facet, aes(x = year, y = pop, fill = continent)) +
-  facet_wrap(~ continent, scales = "free", ncol = 4) + 
+  facet_wrap(~ continent, scales = "free", ncol = 2) + 
   scale_fill_manual(values = rock_palette("heep")) +
   geom_hline(yintercept = 0, size = 1, colour = "#333333") +
   theme_void() +
@@ -271,7 +271,7 @@ ggplot() +
 # Hell Awaits
 ggplot() +
   geom_area(data = facet, aes(x = year, y = pop, fill = continent)) +
-  facet_wrap(~ continent, scales = "free", ncol = 4) + 
+  facet_wrap(~ continent, scales = "free", ncol = 2) + 
   scale_fill_manual(values = rock_palette("hellawaits")) +
   geom_hline(yintercept = 0, size = 1, colour = "#333333") +
   theme_void() +
@@ -285,7 +285,7 @@ ggplot() +
 # Husker
 ggplot() +
   geom_area(data = facet, aes(x = year, y = pop, fill = continent)) +
-  facet_wrap(~ continent, scales = "free", ncol = 4) + 
+  facet_wrap(~ continent, scales = "free", ncol = 2) + 
   scale_fill_manual(values = rock_palette("husker")) +
   geom_hline(yintercept = 0, size = 1, colour = "#333333") +
   theme_void() +
@@ -299,7 +299,7 @@ ggplot() +
 # Janelle
 ggplot() +
   geom_area(data = facet, aes(x = year, y = pop, fill = continent)) +
-  facet_wrap(~ continent, scales = "free", ncol = 4) + 
+  facet_wrap(~ continent, scales = "free", ncol = 2) + 
   scale_fill_manual(values = rock_palette("janelle")) +
   geom_hline(yintercept = 0, size = 1, colour = "#333333") +
   theme_void() +
@@ -313,7 +313,7 @@ ggplot() +
 # melloncollie
 ggplot() +
   geom_area(data = facet, aes(x = year, y = pop, fill = continent)) +
-  facet_wrap(~ continent, scales = "free", ncol = 4) + 
+  facet_wrap(~ continent, scales = "free", ncol = 2) + 
   scale_fill_manual(values = rock_palette("melloncollie")) +
   geom_hline(yintercept = 0, size = 1, colour = "#333333") +
   theme_void() +
@@ -327,7 +327,7 @@ ggplot() +
 # miles
 ggplot() +
   geom_area(data = facet, aes(x = year, y = pop, fill = continent)) +
-  facet_wrap(~ continent, scales = "free", ncol = 4) + 
+  facet_wrap(~ continent, scales = "free", ncol = 2) + 
   scale_fill_manual(values = rock_palette("miles")) +
   geom_hline(yintercept = 0, size = 1, colour = "#333333") +
   theme_void() +
@@ -340,7 +340,7 @@ ggplot() +
 # muse
 ggplot() +
   geom_area(data = facet, aes(x = year, y = pop, fill = continent)) +
-  facet_wrap(~ continent, scales = "free", ncol = 4) + 
+  facet_wrap(~ continent, scales = "free", ncol = 2) + 
   scale_fill_manual(values = rock_palette("muse")) +
   geom_hline(yintercept = 0, size = 1, colour = "#333333") +
   theme_void() +
@@ -354,7 +354,7 @@ ggplot() +
 # nodoubt
 ggplot() +
   geom_area(data = facet, aes(x = year, y = pop, fill = continent)) +
-  facet_wrap(~ continent, scales = "free", ncol = 4) + 
+  facet_wrap(~ continent, scales = "free", ncol = 2) + 
   scale_fill_manual(values = rock_palette("nodoubt")) +
   geom_hline(yintercept = 0, size = 1, colour = "#333333") +
   theme_void() +
@@ -368,7 +368,7 @@ ggplot() +
 # Peace Sells... But Who's Buying
 ggplot() +
   geom_area(data = facet, aes(x = year, y = pop, fill = continent)) +
-  facet_wrap(~ continent, scales = "free", ncol = 4) + 
+  facet_wrap(~ continent, scales = "free", ncol = 2) + 
   scale_fill_manual(values = rock_palette("peacesells")) +
   geom_hline(yintercept = 0, size = 1, colour = "#333333") +
   theme_void() +
@@ -381,7 +381,7 @@ ggplot() +
 # secondlaw
 ggplot() +
   geom_area(data = facet, aes(x = year, y = pop, fill = continent)) +
-  facet_wrap(~ continent, scales = "free", ncol = 4) + 
+  facet_wrap(~ continent, scales = "free", ncol = 2) + 
   scale_fill_manual(values = rock_palette("secondlaw")) +
   geom_hline(yintercept = 0, size = 1, colour = "#333333") +
   theme_void() +
@@ -394,7 +394,7 @@ ggplot() +
 # siamesedream
 ggplot() +
   geom_area(data = facet, aes(x = year, y = pop, fill = continent)) +
-  facet_wrap(~ continent, scales = "free", ncol = 4) + 
+  facet_wrap(~ continent, scales = "free", ncol = 2) + 
   scale_fill_manual(values = rock_palette("siamesedream")) +
   geom_hline(yintercept = 0, size = 1, colour = "#333333") +
   theme_void() +
@@ -408,7 +408,7 @@ ggplot() +
 # swift
 ggplot() +
   geom_area(data = facet, aes(x = year, y = pop, fill = continent)) +
-  facet_wrap(~ continent, scales = "free", ncol = 4) + 
+  facet_wrap(~ continent, scales = "free", ncol = 2) + 
   scale_fill_manual(values = rock_palette("swift")) +
   geom_hline(yintercept = 0, size = 1, colour = "#333333") +
   theme_void() +
@@ -421,7 +421,7 @@ ggplot() +
 # zeppelin
 ggplot() +
   geom_area(data = facet, aes(x = year, y = pop, fill = continent)) +
-  facet_wrap(~ continent, scales = "free", ncol = 4) + 
+  facet_wrap(~ continent, scales = "free", ncol = 2) + 
   scale_fill_manual(values = rock_palette("zeppelin")) +
   geom_hline(yintercept = 0, size = 1, colour = "#333333") +
   theme_void() +

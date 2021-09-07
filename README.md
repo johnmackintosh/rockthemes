@@ -31,28 +31,28 @@ like them.
 
 Featuring:
 
-  - Dirt (Alice In Chains, submission by G Hutson)
-  - Californication (Red Hot Chili Peppers)
-  - Blue Train (John Coltrane)
-  - Facelift (Alice In Chains)
-  - Groove is in the Heart (Deee-Lite, submitted by R Wilson)
-  - Electric (The Cult)
-  - To Bring You My Love - P J Harvey
-  - The Magician’s Birthday - Uriah Heep
-  - Hell Awaits (Slayer - submission by C Beeley)
-  - Warehouse Songs and Stories (Husker Du)
-  - Dirty Computer (Janelle Monae)
-  - Melloncollie and the Infinite Sadness (Smashing Pumpkins, submission
+-   Dirt (Alice In Chains, submission by G Hutson)
+-   Californication (Red Hot Chili Peppers)
+-   Blue Train (John Coltrane)
+-   Facelift (Alice In Chains)
+-   Groove is in the Heart (Deee-Lite, submitted by R Wilson)
+-   Electric (The Cult)
+-   To Bring You My Love - P J Harvey
+-   The Magician’s Birthday - Uriah Heep
+-   Hell Awaits (Slayer - submission by C Beeley)
+-   Warehouse Songs and Stories (Husker Du)
+-   Dirty Computer (Janelle Monae)
+-   Melloncollie and the Infinite Sadness (Smashing Pumpkins, submission
     by C Mainey)
-  - Bitches Brew (Miles Davis)
-  - Simulation Theory (Muse)
-  - Tragic Kingdom (No Doubt)
-  - Peace Sells (Megadeth, submission by C Beeley)
-  - The 2ND Law (Muse, submission by G Hutson)
-  - Siamese Dream (Smashing Pumpkins, submission by C Mainey)
-  - The Real Thing (Faith No More)
-  - 1989 (Taylor Swift)
-  - Celebration Day (Led Zeppelin, submission by G Hutson)
+-   Bitches Brew (Miles Davis)
+-   Simulation Theory (Muse)
+-   Tragic Kingdom (No Doubt)
+-   Peace Sells (Megadeth, submission by C Beeley)
+-   The 2ND Law (Muse, submission by G Hutson)
+-   Siamese Dream (Smashing Pumpkins, submission by C Mainey)
+-   The Real Thing (Faith No More)
+-   1989 (Taylor Swift)
+-   Celebration Day (Led Zeppelin, submission by G Hutson)
 
 ## Why?
 
