@@ -197,7 +197,7 @@ ggplot() +
   theme(legend.position = "none",
         axis.text.x = element_blank(),
         axis.text.y = element_blank()) +
-  labs(title = "ceeLite",
+  labs(title = "deelite",
        #subtitle = "Relative population growth by continent,1952-2007", 
        x = NULL, y = NULL)
 
