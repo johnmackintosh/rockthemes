@@ -5,6 +5,9 @@ rockthemes
 
 <!-- badges: start -->
 
+[![Build
+Status](https://travis-ci.com/johnmackintosh/rockthemes.svg?branch=main)](https://travis-ci.com/johnmackintosh/rockthemes)
+
 ![Render
 README](https://github.com/johnmackintosh/rockthemes/workflows/Render%20README/badge.svg)
 
