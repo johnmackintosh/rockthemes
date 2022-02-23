@@ -44,7 +44,7 @@ nodoubt_pal <- function(n, type = c("discrete", "continuous"),
         stop(glue::glue("Palette does not have {n} colors, maximum is {length(nodoubt)}!"))
     }
     
-    nodoubte <- switch(type,
+    nodoubt <- switch(type,
                    continuous = grDevices::colorRampPalette(nodoubt)(n),
                    discrete = nodoubt[1:n])
     
